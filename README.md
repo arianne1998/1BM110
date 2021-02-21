@@ -1,4 +1,4 @@
 # 1BM110
-#test
 
-Push test
+
+pip install -r requirements.txt
