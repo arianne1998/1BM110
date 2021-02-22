@@ -1,3 +1,5 @@
+from pprint import pprint
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -30,3 +32,12 @@ for i in range(n_classes):
     roc_auc[i] =auc(fpr[i], tpr[i])
 
 print(roc_auc[0])
+
+
+depth = []
+for i in range(2, 11):
+    clf = DecisionTreeClassifier(max_depth=i)
+    # Perform 10-fold cross validation
+    scores = cross_val_score(estimator=clf, X=X_train, y=y_train, cv=10)
+    depth.append((i, scores.mean()))
+pprint(f"10-fold cross validation result: {depth}")
