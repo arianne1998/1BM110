@@ -59,4 +59,4 @@ meter_complete = pd.merge(info, meter_consumption, on='meter_id', how='left')
 complete_dataset = pd.merge(meter_complete, weather_correct, on=['meter_id', 'date'], how='left')
 
 # Write final dataset to csv
-complete_dataset.to_csv("Complete Dataset.csv")
+complete_dataset.to_csv("Datasets/Complete Dataset.csv")

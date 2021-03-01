@@ -1,10 +1,10 @@
 import pandas as pd
 
 # Read csv files
-data = pd.read_csv('Complete Dataset.csv')
+data = pd.read_csv('Datasets/Complete Dataset.csv')
 
 # determine what the maximum consumption value is of each meter on each date and make a df with id, date, and max consumption
-consumption = pd.read_csv("meter_consumption.csv")
+consumption = pd.read_csv("Datasets/meter_consumption.csv")
 consumption2 = consumption.drop(['meter_id', 'date'], axis=1)
 consumption3 = consumption2.max(axis=1)
 consumption4 = consumption[['meter_id', 'date']].copy()
@@ -119,4 +119,4 @@ data_cleaned11 = data_cleaned11.drop(['efficient_lighting_percentage'], axis=1)
 final_dataset = data_cleaned11
 
 # Write final dataset to csv
-final_dataset.to_csv("Final Dataset.csv")
+final_dataset.to_csv("Datasets/Final Dataset.csv")
