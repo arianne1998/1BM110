@@ -2,7 +2,7 @@ import pandas as pd
 
 # start with average temperatur
 # read csv file
-weather_avg = pd.read_csv("weather_avg.csv")
+weather_avg = pd.read_csv("Datasets/weather_avg.csv")
 
 # add id number
 weather_avg['id']=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51]
@@ -21,7 +21,7 @@ weather_avg_transposed2['avg temp']= weather_avg_transposed2.max(axis=1)
 weather_avg_correct=weather_avg_transposed2['avg temp']
 
 # Repeat the steps from the average temperature for the minimum temperature
-weather_min = pd.read_csv("weather_min.csv")
+weather_min = pd.read_csv("Datasets/weather_min.csv")
 weather_min['id']=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51]
 weather_min_pivoted = weather_min.pivot(index=None, columns='meter_id')
 weather_min_transposed = weather_min_pivoted.transpose()
@@ -30,7 +30,7 @@ weather_min_transposed2['min temp']= weather_min_transposed2.max(axis=1)
 weather_min_correct=weather_min_transposed2['min temp']
 
 # Repeat the steps from the average temperature for the maximum temperature
-weather_max = pd.read_csv("weather_max.csv")
+weather_max = pd.read_csv("Datasets/weather_max.csv")
 weather_max['id']=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51]
 weather_max_pivoted = weather_max.pivot(index=None, columns='meter_id')
 weather_max_transposed = weather_max_pivoted.transpose()
@@ -49,8 +49,8 @@ weather_correct = weather.reset_index()
 weather_correct.rename(columns={'level_0':'date'}, inplace=True)
 
 # Read csv files with meter info and meter consumptions
-info = pd.read_csv('info.csv')
-meter_consumption = pd.read_csv('meter_consumption.csv')
+info = pd.read_csv('Datasets/info.csv')
+meter_consumption = pd.read_csv('Datasets/meter_consumption.csv')
 
 # Merge info df and meter_consumption df to one df called meter_complete
 meter_complete = pd.merge(info, meter_consumption, on='meter_id', how='left')
