@@ -45,3 +45,15 @@ df_weather_avg = weather_avg_correct.to_frame()
 weather=df_weather_avg
 weather['min temp']=weather_min_correct
 weather['max temp']=weather_max_correct
+weather_correct = weather.reset_index()
+weather_correct.rename(columns={'level_0':'date'}, inplace=True)
+
+# Read csv files with meter info and meter consumptions
+info = pd.read_csv('info.csv')
+meter_consumption = pd.read_csv('meter_consumption.csv')
+
+# Merge info df and meter_consumption df to one df called meter_complete
+meter_complete = pd.merge(info, meter_consumption, on='meter_id', how='left')
+
+# Merge meter_complete df and weather_correct df to one df called complete_dataset
+complete_dataset = pd.merge(meter_complete, weather_correct, on=['meter_id', 'date'], how='left')
