@@ -1,5 +1,6 @@
 import pandas as pd
 from matplotlib import pyplot as plt
+import seaborn as sns
 
 dataset = pd.read_csv('Datasets/dataset_cleaned.csv')
 
@@ -13,7 +14,7 @@ x3 = dataset.avg_consumption[dataset['dwelling_type']=='detached_house']
 x4 = dataset.avg_consumption[dataset['dwelling_type']=='flat']
 x5 = dataset.avg_consumption[dataset['dwelling_type']=='terraced_house']
 xlabels = ['bungalow','semi detached house','detached house','flat','terraced house']
-#_ = plt.boxplot([x1,x2,x3,x4,x5],labels = labels)
+#_ = plt.boxplot([x1,x2,x3,x4,x5],labels = xlabels)
 
 y1 = dataset.avg_consumption[dataset['num_occupants']==1.0]
 y2 = dataset.avg_consumption[dataset['num_occupants']==2.0]
@@ -50,5 +51,5 @@ l4 = dataset.avg_consumption[dataset['efficient_lighting_percentage']=='75_to_10
 llabels = ['0 to 25','25 to 50','50 to 75','75 to 100']
 #plt.boxplot([l1,l2,l3,l4],labels = llabels)
 
-plt.scatter(dataset.num_bedrooms,dataset.avg_consumption)
+plt.scatter(avg_temperature,dataset.avg_consumption)
 plt.show()
