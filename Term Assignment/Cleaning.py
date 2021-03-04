@@ -28,6 +28,10 @@ datetimes = pd.to_datetime(data_cleaned3["date"], format="%Y/%m/%d")
 data_cleaned3['datetime']=datetimes
 data_cleaned3 = data_cleaned3.drop(['date'], axis=1)
 
+# Write dataset to csv before one hot encoding
+dataset_cleaned = data_cleaned3
+dataset_cleaned.to_csv("Datasets/dataset_cleaned.csv")
+
 # One hot encoding for dwelling type (5 types)
 # 5 types so 5 ids needed
 ids_5 = [1,2,3,4,5]
