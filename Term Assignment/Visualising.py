@@ -8,48 +8,39 @@ dataset['avg_consumption'] = (dataset['T1']+dataset['T2']+dataset['T3']+dataset[
 
 x = dataset.groupby(['meter_num_id','dwelling_type']).aggregate({'avg_consumption':'mean'})
 
-x1 = dataset.avg_consumption[dataset['dwelling_type']=='bungalow']
-x2 = dataset.avg_consumption[dataset['dwelling_type']=='semi_detached_house']
-x3 = dataset.avg_consumption[dataset['dwelling_type']=='detached_house']
-x4 = dataset.avg_consumption[dataset['dwelling_type']=='flat']
-x5 = dataset.avg_consumption[dataset['dwelling_type']=='terraced_house']
-xlabels = ['bungalow','semi detached house','detached house','flat','terraced house']
-#_ = plt.boxplot([x1,x2,x3,x4,x5],labels = xlabels)
+xlabels = ['bungalow','semi detached house','flat','detached house','terraced house']
+plt.figure()
+dwelling_type_plt = sns.boxplot(x = 'dwelling_type', y = 'avg_consumption',data = dataset)
+dwelling_type_plt = dwelling_type_plt.set_xticklabels(labels = xlabels, rotation=30)
+plt.savefig('Figures/boxplot_dwellingtype.png')
 
-y1 = dataset.avg_consumption[dataset['num_occupants']==1.0]
-y2 = dataset.avg_consumption[dataset['num_occupants']==2.0]
-y3 = dataset.avg_consumption[dataset['num_occupants']==3.0]
-y4 = dataset.avg_consumption[dataset['num_occupants']==4.0]
-#_ = plt.boxplot([y1,y2,y3,y4])
+plt.figure()
+num_occupants_plt = sns.boxplot(x = 'num_occupants',y='avg_consumption',data=dataset)
+plt.savefig('Figures/boxplot_numoccupants.png')
 
-g1 = dataset.avg_consumption[dataset['heating_fuel']=='gas']
-g2 = dataset.avg_consumption[dataset['heating_fuel']=='elec']
-g3 = dataset.avg_consumption[dataset['heating_fuel']=='lpg_oil']
-g4 = dataset.avg_consumption[dataset['heating_fuel']=='other']
-glabels = ['gas','electric','lpg oil','other']
-#_  = plt.boxplot([g1,g2,g3,g4],labels = glabels)
 
-t1 = dataset.avg_consumption[dataset['heating_temperature']=='below_18']
-t2 = dataset.avg_consumption[dataset['heating_temperature']=='18_to_20']
-t3 = dataset.avg_consumption[dataset['heating_temperature']=='above_20']
-t4 = dataset.avg_consumption[dataset['heating_temperature']=='not_sure']
-tlabels = ['Below 18','18 to 20','Above 20','Not sure']
-#_ = plt.boxplot([t1,t2,t3,t4],labels = tlabels)
+plt.figure()
+heating_fuel_plt = sns.boxplot(x='heating_fuel',y='avg_consumption',data=dataset)
+plt.savefig('Figures/boxplot_heatingfuel.png')
 
-i1 = dataset.avg_consumption[dataset['wall_insulation']=='n']
-i2 = dataset.avg_consumption[dataset['wall_insulation']=='y_cavity']
-i3 = dataset.avg_consumption[dataset['wall_insulation']=='y_internal']
-i4 = dataset.avg_consumption[dataset['wall_insulation']=='y_external']
-i5 = dataset.avg_consumption[dataset['wall_insulation']=='not_sure']
-ilabels = ['No','Cavity','Internal','External','Not sure']
-#_ = plt.boxplot([i1,i2,i3,i4,i5],labels = ilabels)
+plt.figure()
+heating_temperature_plt = sns.boxplot(x='heating_temperature',y='avg_consumption',data=dataset)
+plt.savefig('Figures/boxplot_heatingtemperature.png')
 
-l1 = dataset.avg_consumption[dataset['efficient_lighting_percentage']=='0_to_25']
-l2 = dataset.avg_consumption[dataset['efficient_lighting_percentage']=='25_to_50']
-l3 = dataset.avg_consumption[dataset['efficient_lighting_percentage']=='50_to_75']
-l4 = dataset.avg_consumption[dataset['efficient_lighting_percentage']=='75_to_100']
-llabels = ['0 to 25','25 to 50','50 to 75','75 to 100']
-#plt.boxplot([l1,l2,l3,l4],labels = llabels)
+plt.figure()
+wall_insulation_plt = sns.boxplot(x='wall_insulation',y='avg_consumption',data=dataset)
+plt.savefig('Figures/boxplot_wallinsulation.png')
 
-plt.scatter(avg_temperature,dataset.avg_consumption)
+plt.figure()
+efficient_lighting_percentage_plt = sns.boxplot(x='efficient_lighting_percentage',y='avg_consumption',data=dataset)
+plt.savefig('Figures/boxplot_efficientlightingpercentage.png')
+
+plt.figure()
+avg_temp_plt = plt.scatter(dataset['avg temp'],dataset.avg_consumption,s=1)
+avg_temp_plt = plt.xlabel('Average temperature')
+avg_temp_plt = plt.ylabel('Daily consumption')
+plt.savefig('Figures/scatterplot_avgtemp.png')
+
+#_ = plt.scatter(dataset['min temp'],dataset.avg_consumption,s=1)
+#_ = plt.scatter(dataset['max temp'],dataset.avg_consumption,s=1)
 plt.show()
