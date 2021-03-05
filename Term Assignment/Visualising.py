@@ -19,7 +19,7 @@ daily_max_dwelling_type = sns.boxplot(x = 'dwelling_type',y= 'daily_max',data = 
 xlabels = ['bungalow','semi detached house','flat','detached house','terraced house']
 plt.figure()
 dwelling_type_plt = sns.boxplot(x = 'dwelling_type', y = 'avg_consumption',data = dataset)
-dwelling_type_plt = dwelling_type_plt.set_xticklabels(labels = xlabels, rotation=30)
+dwelling_type_plt = dwelling_type_plt.set_xticklabels(labels = xlabels, rotation=10)
 plt.savefig('Figures/boxplot_dwellingtype.png')
 
 plt.figure()
@@ -69,6 +69,12 @@ x_correct = x.reset_index()
 plt.figure()
 daily_max_date = plt.scatter(x_correct['datetime'],x_correct['daily_max'])
 plt.savefig('Figures/date_daily30max.png')
+
+f = dataset.groupby(['datetime']).agg({'avg_consumption':'mean'})
+f_correct = f.reset_index()
+plt.figure()
+daily_max_date = plt.scatter(f_correct['datetime'],f_correct['avg_consumption'])
+plt.savefig('Figures/date_avgconsumption.png')
 
 y = dataset.groupby(['datetime']).agg({'avg temp':'mean'})
 y_correct = y.reset_index()
