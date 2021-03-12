@@ -1,5 +1,6 @@
 from pprint import pprint
 
+from sklearn import metrics
 import pandas as pd
 import numpy as np
 from sklearn import tree
@@ -9,6 +10,7 @@ from sklearn.preprocessing import label_binarize, StandardScaler
 from sklearn.tree import DecisionTreeClassifier
 from matplotlib import pyplot as plt
 from sklearn.linear_model import LogisticRegression, LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 
 # import csv files into dataframes
 info_df = pd.read_csv('Datasets/info.csv')
@@ -47,7 +49,32 @@ lrm.fit(train_x, train_y)
 
 # Predicting the Test set results
 y_pred = lrm.predict(test_x)
-# TODO fix the 'SettingWithCopyWarning' this produces
-test_x.loc[:, 'predictions'] = list(map(lambda x: max(x), y_pred))
+result = test_x.copy()
+result['predictions'] = list(map(lambda x: max(x), y_pred))
 
-print(test_x.head())
+print("LinearRegression Result:")
+print(result.head())
+print('Mean Absolute Error:', metrics.mean_absolute_error(test_y, y_pred))
+print('Mean Squared Error:', metrics.mean_squared_error(test_y, y_pred))
+print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(test_y, y_pred)))
+print("\n\n")
+
+# RandomForest
+sc = StandardScaler()
+scaled_train_x = sc.fit_transform(train_x)
+scaled_test_x = sc.transform(test_x)
+
+# TODO determine best Tree depth
+rfr = RandomForestRegressor(n_estimators=20, random_state=0)
+rfr.fit(scaled_train_x, train_y)
+y_pred = rfr.predict(scaled_test_x)
+# Not sure if we can use test_x here while predicting with on scaled_test_x
+result = test_x.copy()
+result['predictions'] = list(map(lambda x: max(x), y_pred))
+
+print("RandomForest Result:")
+print(result.head())
+print('Mean Absolute Error:', metrics.mean_absolute_error(test_y, y_pred))
+print('Mean Squared Error:', metrics.mean_squared_error(test_y, y_pred))
+print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(test_y, y_pred)))
+print("\n\n")
