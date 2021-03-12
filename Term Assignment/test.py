@@ -16,18 +16,26 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import make_pipeline
 
-final_df = pd.read_csv('Datasets/Final Dataset.csv')
 
 
 # Read final dataset
-final_df = pd.read_csv('Datasets/Final Dataset.csv')
+final_df = pd.read_csv('Datasets/final_dataset.csv')
 
 # Variables
-ignore_columns = ["boiler_age", "loft_insulation", "datetime"]
-label_columns = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
+ignore_columns = ["datetime", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9",
+                "T10", "T11", "T12", "T13", "T14", "T15", "T16",
                  "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
                  "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
                  "T45", "T46", "T47", "T48"]
+
+
+#make max value column
+final_df['max']=final_df[["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
+                           "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
+                            "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
+                            "T45", "T46", "T47", "T48"]].max(axis=1)
+label_columns=['max']
+
 
 # Remove columns which should be ignored
 final_df = final_df.drop(columns=ignore_columns)

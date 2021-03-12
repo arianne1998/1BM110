@@ -92,26 +92,26 @@ plt.legend(['test score', 'train score'], loc='upper left')
 # note that the 'rank' is > 1 for non-selected features
 #list(zip(train_x.columns,rfe.support_,rfe.ranking_))
 
-# final model
-n_features_optimal = 10
-
-lmr = LinearRegression()
-lmr.fit(train_x, train_y)
-
-rfe = RFE(lmr, n_features_to_select=n_features_optimal)
-rfe = rfe.fit(train_x, train_y)
-
-# predict prices of X_test
-y_pred = lmr.predict(X_test)
-r2 = sklearn.metrics.r2_score(y_test, y_pred)
-print(r2)
-
-print("LinearRegression Result:")
-print(result.head())
-print('Mean Absolute Error:', metrics.mean_absolute_error(test_y, y_pred))
-print('Mean Squared Error:', metrics.mean_squared_error(test_y, y_pred))
-print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(test_y, y_pred)))
-print("\n\n")
+# # final model
+# n_features_optimal = 10
+#
+# lmr = LinearRegression()
+# lmr.fit(train_x, train_y)
+#
+# rfe = RFE(lmr, n_features_to_select=n_features_optimal)
+# rfe = rfe.fit(train_x, train_y)
+#
+# # predict prices of X_test
+# y_pred = lmr.predict(X_test)
+# r2 = sklearn.metrics.r2_score(y_test, y_pred)
+# print(r2)
+#
+# print("LinearRegression Result:")
+# print(result.head())
+# print('Mean Absolute Error:', metrics.mean_absolute_error(test_y, y_pred))
+# print('Mean Squared Error:', metrics.mean_squared_error(test_y, y_pred))
+# print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(test_y, y_pred)))
+# print("\n\n")
 
 
 
