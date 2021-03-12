@@ -107,6 +107,5 @@ data_cleaned9 = data_cleaned9.drop(['dishwasher', 'freezer', 'fridge_freezer', '
 # final dataset
 final_dataset = data_cleaned9
 
-
 # Write final dataset to csv
 final_dataset.to_csv("Datasets/Final Dataset.csv")

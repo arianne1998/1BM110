@@ -4,7 +4,7 @@ from sklearn import metrics
 import pandas as pd
 import numpy as np
 from sklearn import tree
-from sklearn.metrics import roc_curve, auc, accuracy_score
+from sklearn.metrics import roc_curve, auc, accuracy_score, r2_score
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import label_binarize, StandardScaler
 from sklearn.tree import DecisionTreeClassifier
@@ -57,7 +57,12 @@ print(result.head())
 print('Mean Absolute Error:', metrics.mean_absolute_error(test_y, y_pred))
 print('Mean Squared Error:', metrics.mean_squared_error(test_y, y_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(test_y, y_pred)))
+
+r_squared=metrics.r2_score(test_y, y_pred)
+adjusted_r_squared = 1 - (1-r_squared)*(len(final_df)-1)/(len(final_df)-31-1)
+print(adjusted_r_squared)
 print("\n\n")
+
 
 # RandomForest
 sc = StandardScaler()
