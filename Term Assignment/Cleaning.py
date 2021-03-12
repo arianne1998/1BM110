@@ -91,21 +91,50 @@ heating_temperature_bin['heating_temperature']=heating_temperature_series
 data_cleaned8 = pd.merge(data_cleaned7, heating_temperature_bin, on='heating_temperature', how='left')
 data_cleaned8 = data_cleaned8.drop(['heating_temperature'], axis=1)
 
+# Sort date per 2 months
+data_cleaned8['month_number'] = pd.DatetimeIndex(data_cleaned8['datetime']).month
+data_cleaned8.loc[data_cleaned8['month_number']<=2,'month_group'] = 0
+data_cleaned8.loc[(data_cleaned8['month_number']<=4)&(data_cleaned8['month_number']>2),'month_group'] = 1
+data_cleaned8.loc[(data_cleaned8['month_number']<=6)&(data_cleaned8['month_number']>4),'month_group'] = 2
+data_cleaned8.loc[(data_cleaned8['month_number']<=8)&(data_cleaned8['month_number']>6),'month_group'] = 3
+data_cleaned8.loc[(data_cleaned8['month_number']<=10)&(data_cleaned8['month_number']>8),'month_group'] = 4
+data_cleaned8.loc[(data_cleaned8['month_number']<=12)&(data_cleaned8['month_number']>10),'month_group'] = 5
+data_cleaned9 = data_cleaned8.drop(['month_number'],axis = 1)
+
+# One hot encoding for months
+month_groups = data_cleaned9[['month_group']].drop_duplicates('month_group')
+month_groups_bin = pd.get_dummies(month_groups.month_group, prefix ='month_group')
+month_groups_series = pd.Series(month_groups['month_group'])
+month_groups_bin['month_group'] = month_groups_series
+data_cleaned9_1 = pd.merge(data_cleaned9,month_groups_bin,on='month_group',how='left')
+data_cleaned9_1 = data_cleaned9_1.drop(['month_group'],axis=1)
+
+# Binarize loft insulation
+data_cleaned9_1.loc[data_cleaned9_1['loft_insulation']=='y','loft_insulation_y']=1
+data_cleaned9_1.loc[data_cleaned9_1['loft_insulation']=='n','loft_insulation_y']=0
+data_cleaned9_1 = data_cleaned9_1.drop(['loft_insulation'],axis=1)
+
+# Binarize boiler age
+data_cleaned9_1.loc[data_cleaned9_1['boiler_age']=='old','boiler_age_new'] = 0
+data_cleaned9_1.loc[data_cleaned9_1['boiler_age']=='new','boiler_age_new'] = 1
+data_cleaned9_1 = data_cleaned9_1.drop(['boiler_age'],axis=1)
+
 # Transferring efficient lighting percentage to ordinal numbers (4 types)
-efficient_lighting_percentage = data_cleaned8[['efficient_lighting_percentage']].drop_duplicates('efficient_lighting_percentage')
+efficient_lighting_percentage = data_cleaned9_1[['efficient_lighting_percentage']].drop_duplicates('efficient_lighting_percentage')
 efficient_lighting_percentage['Ordinal_efficient_lighting_percentage']=ids_4
-data_cleaned9 = pd.merge(data_cleaned8, efficient_lighting_percentage, on='efficient_lighting_percentage', how='left')
-data_cleaned9 = data_cleaned9.drop(['efficient_lighting_percentage'], axis=1)
+data_cleaned10 = pd.merge(data_cleaned9_1, efficient_lighting_percentage, on='efficient_lighting_percentage', how='left')
+data_cleaned10 = data_cleaned10.drop(['efficient_lighting_percentage'], axis=1)
 
 # Catogarize household appliances into large appliances (Dishwasher, Freezer, Fridge freezer, Refrigerator, Tumble Dryer, Washing machine) and small appliances (game console, lapotp, PC, Router, Set top box, Tablet, TV) and sum the number of appliances
-data_cleaned9['large_appliances']=data_cleaned9['dishwasher']+data_cleaned9['freezer']+data_cleaned9['fridge_freezer']+data_cleaned9['refrigerator']+data_cleaned9['tumble_dryer']+data_cleaned9['washing_machine']
-data_cleaned9['small_appliances']=data_cleaned9['game_console']+data_cleaned9['laptop']+data_cleaned9['pc']+data_cleaned9['router']+data_cleaned9['set_top_box']+data_cleaned9['tablet']+data_cleaned9['tv']
+data_cleaned10['large_appliances']=data_cleaned10['dishwasher']+data_cleaned10['freezer']+data_cleaned10['fridge_freezer']+data_cleaned10['refrigerator']+data_cleaned10['tumble_dryer']+data_cleaned10['washing_machine']
+data_cleaned10['small_appliances']=data_cleaned10['game_console']+data_cleaned10['laptop']+data_cleaned10['pc']+data_cleaned10['router']+data_cleaned10['set_top_box']+data_cleaned10['tablet']+data_cleaned10['tv']
 
 # Drop rows appliances
-data_cleaned9 = data_cleaned9.drop(['dishwasher', 'freezer', 'fridge_freezer', 'refrigerator', 'tumble_dryer', 'washing_machine', 'game_console', 'laptop', 'pc', 'router', 'set_top_box', 'tablet', 'tv'], axis=1)
+data_cleaned10 = data_cleaned10.drop(['dishwasher', 'freezer', 'fridge_freezer', 'refrigerator', 'tumble_dryer', 'washing_machine', 'game_console', 'laptop', 'pc', 'router', 'set_top_box', 'tablet', 'tv'], axis=1)
 
-# final dataset
-final_dataset = data_cleaned9
+# final dataset and remove NaN values
+final_dataset = data_cleaned10
+final_dataset = final_dataset.dropna()
 
 # Write final dataset to csv
-final_dataset.to_csv("Datasets/Final Dataset.csv")
+final_dataset.to_csv("Datasets/final_dataset.csv")
