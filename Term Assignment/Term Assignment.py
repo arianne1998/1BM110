@@ -45,6 +45,12 @@ train_x, test_x, train_y, test_y = train_test_split(final_x, final_y, test_size=
 # Create and train LogisticRegression model
 lrm = LinearRegression()
 
+#10-fold cross validation with RMSE as performance measure
+scores = cross_val_score(lrm, train_x, train_y, scoring= 'neg_root_mean_squared_error', cv=10)
+Root_mean_square_error = scores.mean()
+print('Root Mean Squared Error:', abs(Root_mean_square_error))
+
+
 lrm.fit(train_x, train_y)
 
 # Predicting the Test set results
