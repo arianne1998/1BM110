@@ -5,6 +5,7 @@ import seaborn as sns
 import re
 
 import sklearn
+from sklearn.metrics import roc_curve, auc, accuracy_score, r2_score, mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import PolynomialFeatures
@@ -22,19 +23,26 @@ from sklearn.pipeline import make_pipeline
 final_df = pd.read_csv('Datasets/final_dataset.csv')
 
 # Variables
-ignore_columns = ["datetime", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9",
+ignore_columns = ["datetime", "meter_num_id", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9",
                 "T10", "T11", "T12", "T13", "T14", "T15", "T16",
                  "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
                  "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
                  "T45", "T46", "T47", "T48"]
 
 
-#make max value column
+#make max usage column
 final_df['max']=final_df[["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
                            "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
                             "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
                             "T45", "T46", "T47", "T48"]].max(axis=1)
 label_columns=['max']
+print(final_df['max'].mean())
+
+#make average usage column as extra predictor variable
+final_df['mean']=final_df[["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
+                           "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
+                            "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
+                            "T45", "T46", "T47", "T48"]].mean(axis=1)
 
 
 # Remove columns which should be ignored
@@ -50,21 +58,20 @@ final_y = final_df.copy()[label_columns]
 # Split dataframes into test and train with a ratio of 30%
 train_x, test_x, train_y, test_y = train_test_split(final_x, final_y, test_size=.3, random_state=0)
 
-length_for_params=len(train_x.columns)+1
-
-# step-1: create a cross-validation scheme
-folds = KFold(n_splits = 10, shuffle = True, random_state = 100)
+# step-1: create a 10 fold cross-validation scheme
+folds = KFold(n_splits = 5, shuffle = True, random_state = 100)
 
 # step-2: specify range of hyperparameters to tune
+length_for_params=len(train_x.columns)+1
 hyper_params = [{'n_features_to_select': list(range(1, length_for_params))}]
 
-# step-3: perform grid search
-# 3.1 specify model
+#perform grid search
+#specify model
 lr = LinearRegression()
 lr.fit(train_x, train_y)
 rfe = RFE(lr)
 
-# 3.2 call GridSearchCV()
+# call GridSearchCV()
 model_cv = GridSearchCV(estimator = rfe,
                         param_grid = hyper_params,
                         scoring= 'r2',
@@ -88,3 +95,20 @@ plt.ylabel('r-squared')
 plt.title("Optimal Number of Features")
 plt.legend(['test score', 'train score'], loc='upper left')
 plt.show()
+
+
+# final model
+n_features_optimal = 35
+
+lr = LinearRegression()
+lr.fit(train_x, train_y)
+
+rfe = RFE(lr, n_features_to_select=n_features_optimal)
+rfe = rfe.fit(train_x, train_y)
+
+# predict max usages of X_test
+y_pred = lr.predict(test_x)
+r2 = r2_score(test_y, y_pred)
+mse = mean_squared_error(test_y, y_pred)
+print("mean squared error of final test is ", mse)
+print("r squared of final test is ", r2)
