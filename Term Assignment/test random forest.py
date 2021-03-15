@@ -35,8 +35,19 @@ final_df['max'] = final_df[
      "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
      "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
      "T45", "T46", "T47", "T48"]].max(axis=1)
-label_columns = ['max']
-print(final_df['max'].mean())
+
+#turn into list and perform actions so max of tomorrow is in row of today and turn back into column and add to df
+max_aslist=final_df["max"].tolist()
+max_aslist.pop(0)
+def average(list):
+    return sum(list) / len(list)
+max_aslist.append(average(max_aslist))
+
+max = max_aslist
+final_df.loc[:,"max"] = max
+print(final_df)
+
+label_columns=['max']
 
 # make average usage column as an extra predictor
 final_df['mean'] = final_df[
@@ -60,22 +71,23 @@ train_x, test_x, train_y, test_y = train_test_split(final_x, final_y, test_size=
 train_y=np.ravel(train_y)
 test_y=np.ravel(test_y)
 
-# Random grid creation
+#####################################################################################################
+# Iteration grid creation
 # Number of trees in random forest
-n_estimators = [int(x) for x in np.linspace(start=200, stop=2000, num=10)]
+n_estimators = [int(x) for x in np.linspace(start=10, stop=1000, num=50)]
 
 # Number of features to consider at every split
-max_features = ['auto', 'sqrt']
+max_features = ['sqrt']
 
 # Maximum number of levels in tree
 max_depth = [int(x) for x in np.linspace(10, 110, num=11)]
 max_depth.append(None)
 
 # Minimum number of samples required to split a node
-min_samples_split = [2, 5, 10]
+min_samples_split = [2, 5, 10, 15, 20]
 
 # Minimum number of samples required at each leaf node
-min_samples_leaf = [1, 2, 4]
+min_samples_leaf = [2, 5, 10, 15, 20]
 
 # Method of selecting samples for training each tree
 bootstrap = [True, False]
@@ -89,36 +101,93 @@ random_grid = {'n_estimators': n_estimators,
                'bootstrap': bootstrap}
 
 
-# Use the random grid to search for the optimal hyperparameters
+# Use the grid to search for the optimal parameters
 # Create  base model to tune
 rf = RandomForestRegressor()
 
-# Random search of parameters, using k fold cross validation,
-# search across 100 different combinations, and use all available cores
+# Random search of parameters, using 5 fold cross validation (to reduce required computation time)
 rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=100, cv=5, verbose=2,
                                random_state=42, n_jobs=-1)
 
-
-# Fit the random search model
+# Fit the search model
 rf_random.fit(train_x, train_y)
 
-#evaluate random search
-#define evaluation
+#evaluate grid search search
 def evaluate(model, test_features, test_labels):
     predictions = model.predict(test_features)
+    errors = abs(predictions - test_labels)
+    mape = 100 * np.mean(errors / test_labels)
+    accuracy = 100 - mape
     mse = mean_squared_error(test_labels, predictions)
     print('Model Performance')
     print('mean squared error', mse)
+    print('Accuracy = {:0.2f}%.'.format(accuracy))
     return mse
 
-# calculate outcome of base model
-base_model = RandomForestRegressor(n_estimators=10, random_state=42) #TODO make a logical base_model for comparison
-base_model.fit(train_x, train_y)
-base_mse = evaluate(base_model, test_x, test_y)
+# calculate outcome of optimal model
+best_model = rf_random.best_estimator_
+random_mse = evaluate(best_model, test_x, test_y)
+
+# give the parameters which are used in the optimal model
+print(rf_random.best_params_)
+
+#####################################################################################################
+# refine the search by making a new grid with parameters around the best parameters found above
+# Iteration grid creation
+# Number of trees in random forest
+n_estimators = [int(x) for x in np.linspace(start=900, stop=1300, num=100)]
+
+# Number of features to consider at every split
+max_features = ['sqrt']
+
+# Maximum number of levels in tree
+max_depth = [int(x) for x in np.linspace(20, 50, num=20)]
+max_depth.append(None)
+
+# Minimum number of samples required to split a node
+min_samples_split = [18, 20, 22, 24, 26]
+
+# Minimum number of samples required at each leaf node
+min_samples_leaf = [1, 2, 3, 4, 5]
+
+# Method of selecting samples for training each tree
+bootstrap = [True]
+
+# Create the random grid
+random_grid = {'n_estimators': n_estimators,
+               'max_features': max_features,
+               'max_depth': max_depth,
+               'min_samples_split': min_samples_split,
+               'min_samples_leaf': min_samples_leaf,
+               'bootstrap': bootstrap}
+
+
+# Use the grid to search for the optimal parameters
+# Create  base model to tune
+rf = RandomForestRegressor()
+
+# Random search of parameters, using 5 fold cross validation (to reduce required computation time)
+rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=100, cv=5, verbose=2,
+                               random_state=42, n_jobs=-1)
+
+# Fit the search model
+rf_random.fit(train_x, train_y)
+
+#evaluate grid search search
+def evaluate(model, test_features, test_labels):
+    predictions = model.predict(test_features)
+    errors = abs(predictions - test_labels)
+    mape = 100 * np.mean(errors / test_labels)
+    accuracy = 100 - mape
+    mse = mean_squared_error(test_labels, predictions)
+    print('Model Performance')
+    print('mean squared error', mse)
+    print('Accuracy = {:0.2f}%.'.format(accuracy))
+    return mse
 
 # calculate outcome of optimal model
-best_random = rf_random.best_estimator_
-random_mse = evaluate(best_random, test_x, test_y)
+best_model = rf_random.best_estimator_
+random_mse = evaluate(best_model, test_x, test_y)
 
 # give the parameters which are used in the optimal model
 print(rf_random.best_params_)
