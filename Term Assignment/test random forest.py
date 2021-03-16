@@ -126,32 +126,54 @@ def evaluate(model, test_features, test_labels):
 
 # calculate outcome of optimal model
 best_model = rf_random.best_estimator_
-random_mse = evaluate(best_model, test_x, test_y)
+random_mse = evaluate(best_model, train_x, train_y)
 
 # give the parameters which are used in the optimal model
 print(rf_random.best_params_)
+
+
+n_estimators_start=round(rf_random.best_params_.get('n_estimators')*0.8,0)
+n_estimators_stop=round(rf_random.best_params_.get('n_estimators')*1.2,0)
+
+max_depth_start=round(rf_random.best_params_.get('max_depth')*0.8,0)
+max_depth_stop=round(rf_random.best_params_.get('max_depth')*1.2,0)
+
+min_samples_split_1=round(rf_random.best_params_.get('min_samples_split')*0.8,0)
+min_samples_split_2=round(rf_random.best_params_.get('min_samples_split')*0.9,0)
+min_samples_split_3=round(rf_random.best_params_.get('min_samples_split'),0)
+min_samples_split_4=round(rf_random.best_params_.get('min_samples_split')*1.1,0)
+min_samples_split_5=round(rf_random.best_params_.get('min_samples_split')*1.2,0)
+
+min_samples_leaf_1=round(rf_random.best_params_.get('min_samples_leaf')*0.8,0)
+min_samples_leaf_2=round(rf_random.best_params_.get('min_samples_leaf')*0.9,0)
+min_samples_leaf_3=round(rf_random.best_params_.get('min_samples_leaf'),0)
+min_samples_leaf_4=round(rf_random.best_params_.get('min_samples_leaf')*1.1,0)
+min_samples_leaf_5=round(rf_random.best_params_.get('min_samples_leaf')*1.2,0)
+
+bootstrap_choice=rf_random.best_params_.get('bootstrap')
+max_features_choice=rf_random.best_params_.get("max_features")
 
 #####################################################################################################
 # refine the search by making a new grid with parameters around the best parameters found above
 # Iteration grid creation
 # Number of trees in random forest
-n_estimators = [int(x) for x in np.linspace(start=900, stop=1300, num=100)]
+n_estimators = [int(x) for x in np.linspace(start=n_estimators_start, stop=n_estimators_stop, num=100)]
 
 # Number of features to consider at every split
-max_features = ['sqrt']
+max_features = max_features_choice
 
 # Maximum number of levels in tree
-max_depth = [int(x) for x in np.linspace(20, 50, num=20)]
+max_depth = [int(x) for x in np.linspace(max_depth_start, max_depth_stop, num=20)]
 max_depth.append(None)
 
 # Minimum number of samples required to split a node
-min_samples_split = [18, 20, 22, 24, 26]
+min_samples_split = [min_samples_split_1, min_samples_split_2, min_samples_split_3, min_samples_split_4, min_samples_split_5]
 
 # Minimum number of samples required at each leaf node
-min_samples_leaf = [1, 2, 3, 4, 5]
+min_samples_leaf = [min_samples_leaf_1, min_samples_leaf_2, min_samples_leaf_3, min_samples_leaf_4, min_samples_leaf_5]
 
 # Method of selecting samples for training each tree
-bootstrap = [True]
+bootstrap = [bootstrap_choice]
 
 # Create the random grid
 random_grid = {'n_estimators': n_estimators,
@@ -191,3 +213,5 @@ random_mse = evaluate(best_model, test_x, test_y)
 
 # give the parameters which are used in the optimal model
 print(rf_random.best_params_)
+
+
