@@ -41,19 +41,19 @@ final_y = final_df.copy()[label_columns]
 
 # Split dataframes into test and train with a ratio of 30% - 70%
 train_x, test_x, train_y, test_y = train_test_split(final_x, final_y, test_size=.3, random_state=0)
-train_y=np.ravel(train_y)
+
 test_y=np.ravel(test_y)
 
 #####################################################################################################
 # create grid for hyperparameter tuning, values are somewhat randomly sampled to make a first estimation
 # Number of trees in random forest
-n_estimators = [int(x) for x in np.linspace(start=10, stop=1000, num=50)]
+n_estimators = [int(x) for x in np.linspace(start=100, stop=1200, num=25)]
 
 # Number of features to consider at every split
 max_features = ['sqrt']
 
 # Maximum number of levels in tree
-max_depth = [int(x) for x in np.linspace(10, 110, num=11)]
+max_depth = [int(x) for x in np.linspace(10, 100, num=10)]
 max_depth.append(None)
 
 # Minimum number of samples required to split a node
@@ -62,7 +62,7 @@ min_samples_split = [10, 15, 20, 25, 30]
 # Minimum number of samples required at each leaf node
 min_samples_leaf = [1, 2, 5, 10, 15]
 
-# Method of selecting samples for training each tree
+# Method of selecting samples for training each tree, with or without replacement
 bootstrap = [True, False]
 
 # Create the random grid so it can be called upon later
@@ -78,7 +78,7 @@ random_grid = {'n_estimators': n_estimators,
 rf = RandomForestRegressor()
 
 # search of parameters using 5 fold cross validation (5 is used here instead of 10 to reduce required computation time)
-rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=100, cv=5, verbose=2,
+rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=400, cv=5, verbose=2,
                                random_state=42, n_jobs=-1)
 # Fit the search model
 rf_random.fit(train_x, train_y)
@@ -138,13 +138,13 @@ max_features_choice=rf_random.best_params_.get("max_features")
 #####################################################################################################
 # refine the search by making a new grid with parameters around the best parameters found above
 # Number of trees in random forest
-n_estimators = [int(x) for x in np.linspace(start=n_estimators_start, stop=n_estimators_stop, num=100)]
+n_estimators = [int(x) for x in np.linspace(start=n_estimators_start, stop=n_estimators_stop, num=25)]
 
 # Number of features to consider at every split
 max_features = max_features_choice
 
 # Maximum number of levels in tree
-max_depth = [int(x) for x in np.linspace(max_depth_start, max_depth_stop, num=20)]
+max_depth = [int(x) for x in np.linspace(max_depth_start, max_depth_stop, num=10)]
 max_depth.append(None)
 
 # Minimum number of samples required to split a node
@@ -170,7 +170,7 @@ random_grid = {'n_estimators': n_estimators,
 rf = RandomForestRegressor()
 
 # search of parameters using 5 fold cross validation (5 is used here instead of 10 to reduce required computation time)
-rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=100, cv=5, verbose=2,
+rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=400, cv=5, verbose=2,
                                random_state=42, n_jobs=-1)
 
 # Fit the search model
