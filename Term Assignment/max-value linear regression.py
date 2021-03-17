@@ -5,6 +5,7 @@ import seaborn as sns
 import re
 
 import sklearn
+from pandas import Series
 from sklearn.metrics import roc_curve, auc, accuracy_score, r2_score, mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
@@ -21,6 +22,7 @@ from sklearn.pipeline import make_pipeline
 final_df = pd.read_csv('Datasets/final_dataset.csv')
 final_df2 = pd.read_csv('Datasets/final_dataset.csv')
 
+
 # Variables, specify which variables are not needed for prediction and which variables will be predicted
 ignore_columns = ["datetime", "meter_num_id", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
                  "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
@@ -33,12 +35,12 @@ all_columns = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11
                  "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
                  "T45", "T46", "T47", "T48"]
 
-final_df['actual max value'] = final_df[["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
+final_df['max value'] = final_df[["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
                                      "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
                                      "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
                                      "T45", "T46", "T47", "T48"]].max(axis=1)
 
-label_columns = ["actual max value"]
+label_columns = ["max value"]
 
 
 # Remove columns which should be ignored
@@ -50,7 +52,9 @@ final_x = final_x.drop(columns=label_columns)
 final_y = final_df.copy()[label_columns]
 
 # Split dataframes into test and train with a ratio of 30% - 70%
-train_x, test_x, train_y, test_y = train_test_split(final_x, final_y, test_size=.3, random_state=0)
+train_x, test_x, train_y, test_y = train_test_split(final_x, final_y, test_size=.3, random_state=42)
+
+
 
 #####################################################################################################
 #create a 10 fold cross-validation scheme for validation
@@ -89,32 +93,24 @@ rfe = rfe.fit(train_x, train_y)
 
 #define evaluation and prediction for final test
 def evaluate(model, test_features, test_labels):
-#predict value of T1 up to T48 and add maximum to new dataframe with its corresponding date and meter number ID
     predictions = model.predict(test_features)
-    result = test_features.copy()
-    result['predictions'] = list(map(lambda x: max(x), predictions))
-    result.insert(0, "datetime", final_df2['datetime'])
-    result.insert(0, "meter_num_id", final_df2['meter_num_id'])
-    #calculate max value of the test test
-    result["actual max value"]=test_labels.max(axis=1)
-    print(result['predictions'].mean())
-    print(test_labels.max())
-    print(predictions.mean())
-    print(predictions)
-    label_cols=['actual max value', 'predictions', 'datetime', 'meter_num_id']
-    result_final=result.copy()[label_cols]
-    print(result['predictions'])
+    predictions=np.ravel(predictions)
+    predictions=predictions.tolist()
+    predictions_df=pd.DataFrame({'predictions':predictions})
+
+    predictions_df.insert(0, "datetime", final_df2['datetime'])
+    predictions_df.insert(0, "meter_num_id", final_df2['meter_num_id'])
+    predictions_df.insert(3, "max value", final_df['max value'])
 
     #calculate performance measures
-    mse = mean_squared_error(result['actual max value'], result['predictions'])
-    rmse = mean_squared_error(result['actual max value'], result['predictions'], squared=False)
+    mse = mean_squared_error(test_labels, predictions)
+    rmse = mean_squared_error(test_labels, predictions, squared=False)
 
-    #print measures and table with predictions
+    print(predictions_df)
     print('Model Performance')
-    print(result_final)
     print('mean squared error', mse)
     print('root mean squared error', rmse)
-    return mse
+    return predictions_df
 
 # make final prediction and evaluate the performance by calling the evaluation function
 base = evaluate(rfe, test_x, test_y)
