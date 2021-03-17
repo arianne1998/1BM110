@@ -42,7 +42,7 @@ final_y = final_df.copy()[label_columns]
 # Split dataframes into test and train with a ratio of 30%
 train_x, test_x, train_y, test_y = train_test_split(final_x, final_y, test_size=.3, random_state=0)
 
-# Create and train LogisticRegression model
+# Create and train LinearRegression model
 lrm = LinearRegression()
 
 #10-fold cross validation with RMSE as performance measure

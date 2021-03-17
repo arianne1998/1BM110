@@ -64,9 +64,32 @@ model_cv = GridSearchCV(estimator = rfe,
 model_cv.fit(train_x, train_y)
 cv_results = pd.DataFrame(model_cv.cv_results_)
 
+
 #choose optimal number of features to maximise model performance
-max_performance_feature=cv_results.loc[cv_results['mean_train_score'] == cv_results['mean_train_score'].max(), 'param_n_features_to_select'].iloc[0]
+max_performance_score = cv_results['mean_train_score'].max()
+max_performance_feature=cv_results.iloc[cv_results['mean_train_score'].idxmax()]['param_n_features_to_select']
 n_features_optimal = max_performance_feature
+
+# determine lowest amount of features that doesn't deviate more than 6% of the best score
+for i, score in list(enumerate(cv_results["mean_train_score"])):
+    max_diff_percentage = (score / max_performance_score * 100) - 100
+    if max_diff_percentage < 6:
+        n_features_optimal = cv_results.iloc[i]['param_n_features_to_select']
+        break
+
+
+# plotting the results to see which number of parameters is optimal while not overfitting based on r_squared value
+plt.figure(figsize=(16,6))
+plt.plot(cv_results["param_n_features_to_select"], cv_results["mean_test_score"])
+plt.plot(cv_results["param_n_features_to_select"], cv_results["mean_train_score"])
+plt.xlabel('number of features')
+plt.ylabel('r-squared')
+plt.title("Optimal Number of Features")
+plt.legend(['test score', 'train score'], loc='lower right')
+plt.axvline(x=n_features_optimal)
+plt.show()
+
+
 
 #train model based on the chosen number of features
 lr = LinearRegression()
