@@ -6,7 +6,7 @@ import re
 
 import sklearn
 from pandas import Series
-from sklearn.metrics import roc_curve, auc, accuracy_score, r2_score, mean_squared_error
+from sklearn.metrics import roc_curve, auc, accuracy_score, r2_score, mean_squared_error, mean_absolute_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import PolynomialFeatures
@@ -41,6 +41,7 @@ final_df['max value'] = final_df[["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8"
                                      "T45", "T46", "T47", "T48"]].max(axis=1)
 
 label_columns = ["max value"]
+
 
 
 # Remove columns which should be ignored
@@ -127,7 +128,6 @@ def evaluate(model, test_features, test_labels):
     rmse = mean_squared_error(test_labels, predictions, squared=False)
     r_squared = r2_score(test_labels, predictions)
     adj_r_squared = 1 - (1-r_squared)*(len(test_labels)-1)/(len(test_labels)-test_features.shape[1]-1)
-
     print(predictions_df)
     print('Model Performance')
     print('mean squared error', mse)

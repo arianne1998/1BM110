@@ -125,8 +125,6 @@ def evaluate(model, test_features, test_labels):
 best_model = rf_random.best_estimator_
 random_mse = evaluate(best_model, train_x, train_y)
 
-# give the parameters which are used in the preliminary model
-print("optimal parameters which are used in the preliminary model", rf_random.best_params_)
 
 #retrieve best parameters of search conducted above and create parameters similar to these for new hyperparameter tuning
 n_estimators_start=int(round(rf_random.best_params_.get('n_estimators')*0.8,0))
