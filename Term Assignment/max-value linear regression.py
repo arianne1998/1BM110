@@ -88,7 +88,7 @@ n_features_optimal = max_performance_feature
 # determine lowest amount of features that doesn't deviate more than 6% of the best score
 for i, score in list(enumerate(cv_results["mean_train_score"])):
     max_diff_percentage = (score / max_performance_score * 100) - 100
-    if max_diff_percentage < 6:
+    if max_diff_percentage < 5:
         n_features_optimal = cv_results.iloc[i]['param_n_features_to_select']
         break
 
@@ -125,11 +125,14 @@ def evaluate(model, test_features, test_labels):
     #calculate performance measures
     mse = mean_squared_error(test_labels, predictions)
     rmse = mean_squared_error(test_labels, predictions, squared=False)
+    r_squared = r2_score(test_labels, predictions)
+    adj_r_squared = 1 - (1-r_squared)*(len(test_labels)-1)/(len(test_labels)-test_features.shape[1]-1)
 
     print(predictions_df)
     print('Model Performance')
     print('mean squared error', mse)
     print('root mean squared error', rmse)
+    print('adjusted r squared value', adj_r_squared)
     return predictions_df
 
 # make final prediction and evaluate the performance by calling the evaluation function
