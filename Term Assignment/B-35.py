@@ -621,6 +621,6 @@ rf_random.fit(train_x, train_y)
 best_model = rf_random.best_estimator_
 random_mse = evaluate(best_model, test_x, test_y)
 
-# give the parameters which are used in the final optimal model
+# give the parameters which are used in the final model
 print("optimal parameters which are used in the final model", rf_random.best_params_)
 
