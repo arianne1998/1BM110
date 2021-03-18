@@ -49,6 +49,9 @@ for i in word_list2:
 
 #Stopword removal
 stop_words = set(stopwords.words('english'))
+stop_words.add('nt')
+stop_words.add('ca')
+stop_words.add('wo')
 word_list4=list()
 for i in word_list3:
     tokens_without_sw = [word for word in i if not word in stop_words]
@@ -61,7 +64,10 @@ for i in word_list4:
     out_list5=[lemmatizer.lemmatize(j) for j in i]
     word_list5.append(out_list5)
 
-print(len(word_list5))
+print(word_list5)
+
+df = pd.DataFrame(word_list5)
+print(df)
 
 
 # Word_list = tokanized list of sentences
