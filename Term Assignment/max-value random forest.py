@@ -110,11 +110,14 @@ def evaluate(model, test_features, test_labels):
     #calculate performance measures
     mse = mean_squared_error(test_labels, predictions)
     rmse = mean_squared_error(test_labels, predictions, squared=False)
+    r_squared = r2_score(test_labels, predictions)
+    adj_r_squared = 1 - (1-r_squared)*(len(test_labels)-1)/(len(test_labels)-test_features.shape[1]-1)
 
     print(predictions_df)
     print('Model Performance')
     print('mean squared error', mse)
     print('root mean squared error', rmse)
+    print('adjusted r squared value', adj_r_squared)
     return predictions_df
 
 
@@ -123,7 +126,7 @@ best_model = rf_random.best_estimator_
 random_mse = evaluate(best_model, train_x, train_y)
 
 # give the parameters which are used in the preliminary model
-print(rf_random.best_params_)
+print("optimal parameters which are used in the preliminary model", rf_random.best_params_)
 
 #retrieve best parameters of search conducted above and create parameters similar to these for new hyperparameter tuning
 n_estimators_start=int(round(rf_random.best_params_.get('n_estimators')*0.8,0))
@@ -193,6 +196,6 @@ best_model = rf_random.best_estimator_
 random_mse = evaluate(best_model, test_x, test_y)
 
 # give the parameters which are used in the final optimal model
-print(rf_random.best_params_)
+print("optimal parameters which are used in the final model", rf_random.best_params_)
 
 

@@ -85,7 +85,7 @@ max_performance_score = cv_results['mean_train_score'].max()
 max_performance_feature=cv_results.iloc[cv_results['mean_train_score'].idxmax()]['param_n_features_to_select']
 n_features_optimal = max_performance_feature
 
-# determine lowest amount of features that doesn't deviate more than 6% of the best score
+# determine lowest amount of features that doesn't deviate more than 5% of the best score
 for i, score in list(enumerate(cv_results["mean_train_score"])):
     max_diff_percentage = (score / max_performance_score * 100) - 100
     if max_diff_percentage < 5:
@@ -133,6 +133,7 @@ def evaluate(model, test_features, test_labels):
     print('mean squared error', mse)
     print('root mean squared error', rmse)
     print('adjusted r squared value', adj_r_squared)
+    print('based on this number of features:', n_features_optimal)
     return predictions_df
 
 # make final prediction and evaluate the performance by calling the evaluation function
