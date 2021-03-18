@@ -400,12 +400,12 @@ for i, score in list(enumerate(cv_results["mean_train_score"])):
         break
 
 
-# plotting the results to see which number of parameters is optimal while not overfitting based on r_squared value
+# plotting the results to see which number of parameters is optimal while not overfitting based the mean squared error value
 plt.figure(figsize=(16,6))
 plt.plot(cv_results["param_n_features_to_select"], cv_results["mean_test_score"])
 plt.plot(cv_results["param_n_features_to_select"], cv_results["mean_train_score"])
 plt.xlabel('number of features')
-plt.ylabel('r-squared')
+plt.ylabel('negative mean squared error')
 plt.title("Optimal Number of Features")
 plt.legend(['test score', 'train score'], loc='lower right')
 plt.axvline(x=n_features_optimal)
