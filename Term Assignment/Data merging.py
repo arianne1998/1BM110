@@ -1,6 +1,6 @@
 import pandas as pd
 
-# start with average temperatur
+# start with average temperature
 # read csv file
 weather_avg = pd.read_csv("Datasets/weather_avg.csv")
 
