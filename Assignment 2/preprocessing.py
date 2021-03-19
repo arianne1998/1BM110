@@ -64,14 +64,23 @@ for i in word_list4:
     out_list5=[lemmatizer.lemmatize(j) for j in i]
     word_list5.append(out_list5)
 
-print(word_list5)
-
-df = pd.DataFrame(word_list5)
-print(df)
-
+processed_text = word_list5
 
 # Word_list = tokanized list of sentences
 # Word_list2 = punctuation and special character removal
 # Word_list3 = all letters lower case
 # Word_list4 = stopwords removed
 # Word_list5 = lemmatized words
+
+########################################################################################################################
+
+DF = {}
+for i in range(len(processed_text)):
+    tokens = processed_text[i]
+    for w in tokens:
+        try:
+            DF[w].add(i)
+        except:
+            DF[w]={i}
+
+print(len(DF))
