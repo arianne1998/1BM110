@@ -60,7 +60,7 @@ test_y=np.ravel(test_y)
 #####################################################################################################
 # create grid for hyperparameter tuning, values are somewhat randomly sampled to make a first estimation
 # Number of trees in random forest
-n_estimators = [int(x) for x in np.linspace(start=100, stop=1200, num=25)]
+n_estimators = [int(x) for x in np.linspace(start=100, stop=1200, num=20)]
 
 # Number of features to consider at every split
 max_features = ['sqrt']
@@ -90,8 +90,8 @@ random_grid = {'n_estimators': n_estimators,
 # Create  base model to tune
 rf = RandomForestRegressor()
 
-# search of parameters using 5 fold cross validation (5 is used here instead of 10 to reduce required computation time)
-rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=400, cv=5, verbose=2,
+# search of parameters using 3 fold cross validation (3 is used here instead of 10 to reduce required computation time)
+rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=600, cv=5, verbose=2,
                                random_state=42, n_jobs=-1)
 # Fit the search model
 rf_random.fit(train_x, train_y)
@@ -134,15 +134,13 @@ max_depth_start=int(round(rf_random.best_params_.get('max_depth')*0.8,0))
 max_depth_stop=int(round(rf_random.best_params_.get('max_depth')*1.2,0))
 
 min_samples_split_1=int(round(rf_random.best_params_.get('min_samples_split')*0.8,0))
-min_samples_split_2=int(round(rf_random.best_params_.get('min_samples_split')*0.9,0))
-min_samples_split_3=int(round(rf_random.best_params_.get('min_samples_split'),0))
-min_samples_split_4=int(round(rf_random.best_params_.get('min_samples_split')*1.1,0))
+min_samples_split_2=int(round(rf_random.best_params_.get('min_samples_split')*0.95,0))
+min_samples_split_4=int(round(rf_random.best_params_.get('min_samples_split')*1.05,0))
 min_samples_split_5=int(round(rf_random.best_params_.get('min_samples_split')*1.2,0))
 
 min_samples_leaf_1=int(round(rf_random.best_params_.get('min_samples_leaf')*0.8,0))
-min_samples_leaf_2=int(round(rf_random.best_params_.get('min_samples_leaf')*0.9,0))
-min_samples_leaf_3=int(round(rf_random.best_params_.get('min_samples_leaf'),0))
-min_samples_leaf_4=int(round(rf_random.best_params_.get('min_samples_leaf')*1.1,0))
+min_samples_leaf_2=int(round(rf_random.best_params_.get('min_samples_leaf')*0.95,0))
+min_samples_leaf_4=int(round(rf_random.best_params_.get('min_samples_leaf')*1.05,0))
 min_samples_leaf_5=int(round(rf_random.best_params_.get('min_samples_leaf')*1.2,0))
 
 bootstrap_choice=rf_random.best_params_.get('bootstrap')
@@ -151,7 +149,7 @@ bootstrap_choice=rf_random.best_params_.get('bootstrap')
 #####################################################################################################
 # refine the search by making a new grid with parameters around the best parameters found above
 # Number of trees in random forest
-n_estimators = [int(x) for x in np.linspace(start=n_estimators_start, stop=n_estimators_stop, num=25)]
+n_estimators = [int(x) for x in np.linspace(start=n_estimators_start, stop=n_estimators_stop, num=10)]
 
 # Number of features to consider at every split
 max_features = ['sqrt']
@@ -161,16 +159,16 @@ max_depth = [int(x) for x in np.linspace(max_depth_start, max_depth_stop, num=10
 max_depth.append(None)
 
 # Minimum number of samples required to split a node
-min_samples_split = [min_samples_split_1, min_samples_split_2, min_samples_split_3, min_samples_split_4, min_samples_split_5]
+min_samples_split = [min_samples_split_1, min_samples_split_2, min_samples_split_4, min_samples_split_5]
 
 # Minimum number of samples required at each leaf node
-min_samples_leaf = [min_samples_leaf_1, min_samples_leaf_2, min_samples_leaf_3, min_samples_leaf_4, min_samples_leaf_5]
+min_samples_leaf = [min_samples_leaf_1, min_samples_leaf_2, min_samples_leaf_4, min_samples_leaf_5]
 
 # Method of selecting samples for training each tree
 bootstrap = [bootstrap_choice]
 
 # Create the random grid so it can be called upon later
-random_grid = {'n_estimators': n_estimators,
+param_grid = {'n_estimators': n_estimators,
                'max_features': max_features,
                'max_depth': max_depth,
                'min_samples_split': min_samples_split,
@@ -182,18 +180,17 @@ random_grid = {'n_estimators': n_estimators,
 # Create  base model to tune
 rf = RandomForestRegressor()
 
-# search of parameters using 5 fold cross validation (5 is used here instead of 10 to reduce required computation time)
-rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=400, cv=5, verbose=2,
-                               random_state=42, n_jobs=-1)
+# define search of parameters using 5 fold cross validation
+grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, verbose=2, n_jobs=-1)
 
 # Fit the search model
-rf_random.fit(train_x, train_y)
+grid_search.fit(train_x, train_y)
 
 # make final prediction and evaluate the performance by calling the evaluation function
-best_model = rf_random.best_estimator_
+best_model = grid_search.best_estimator_
 random_mse = evaluate(best_model, test_x, test_y)
 
 # give the parameters which are used in the final optimal model
-print("optimal parameters which are used in the final model", rf_random.best_params_)
+print("optimal parameters which are used in the final model", grid_search.best_params_)
 
 
