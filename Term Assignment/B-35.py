@@ -466,8 +466,8 @@ base = evaluate(rfe, test_x, test_y)
 #CREATE RANDOM FOREST MODEL
 
 # Read final dataset twice
-final_df_RF = pd.read_csv('Datasets/final_dataset.csv')
-final_df2_RF = pd.read_csv('Datasets/final_dataset.csv')
+final_df = pd.read_csv('Datasets/final_dataset.csv')
+final_df2 = pd.read_csv('Datasets/final_dataset.csv')
 
 # Variables, specify which variables are not needed for prediction(ignore) and which variables will be predicted(label)
 ignore_columns = ["datetime", "meter_num_id", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
@@ -481,7 +481,7 @@ all_columns = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11
                  "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
                  "T45", "T46", "T47", "T48"]
 
-final_df['max value'] = final_df_RF[["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
+final_df['max value'] = final_df[["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16",
                                      "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30",
                                      "T31", "T32", "T33", "T34", "T35", "T36", "T37", "T38", "T39", "T40", "T41", "T42", "T43", "T44",
                                      "T45", "T46", "T47", "T48"]].max(axis=1)
@@ -490,19 +490,18 @@ label_columns = ["max value"]
 
 
 # Remove columns which should be ignored
-final_df = final_df_RF.drop(columns=ignore_columns)
+final_df = final_df.drop(columns=ignore_columns)
 
 # Split x (features) and y (labels) in separate dataframes
-final_x = final_df_RF.copy()
+final_x = final_df.copy()
 final_x = final_x.drop(columns=label_columns)
-final_y = final_df_RF.copy()[label_columns]
+final_y = final_df.copy()[label_columns]
 
 # Split dataframes into test and train with a ratio of 30% - 70%
 train_x, test_x, train_y, test_y = train_test_split(final_x, final_y, test_size=.3, random_state=42)
 
 train_y=np.ravel(train_y)
 test_y=np.ravel(test_y)
-
 
 # create grid for hyperparameter tuning, values are estimated based on the data to make a first estimation
 # Number of trees in random forest
@@ -536,22 +535,22 @@ random_grid = {'n_estimators': n_estimators,
 # Create  base model to tune
 rf = RandomForestRegressor()
 
-# search of parameters using 5 fold cross validation (5 is used here instead of 10 to reduce required computation time) and 400 iterations
+# search of parameters using 5 fold cross validation (5 is used here instead of 10 to reduce required computation time)
 rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=400, cv=5, verbose=2,
                                random_state=42, n_jobs=-1)
 # Fit the search model
 rf_random.fit(train_x, train_y)
 
-#define evaluation and prediction
+#define evaluation and prediction for preliminary test
 def evaluate(model, test_features, test_labels):
     predictions = model.predict(test_features)
     predictions=np.ravel(predictions)
     predictions=predictions.tolist()
     predictions_df=pd.DataFrame({'predictions':predictions})
 
-    predictions_df.insert(0, "datetime", final_df2_RF['datetime'])
-    predictions_df.insert(0, "meter_num_id", final_df2_RF['meter_num_id'])
-    predictions_df.insert(3, "max value", final_df_RF['max value'])
+    predictions_df.insert(0, "datetime", final_df2['datetime'])
+    predictions_df.insert(0, "meter_num_id", final_df2['meter_num_id'])
+    predictions_df.insert(3, "max value", final_df['max value'])
 
     #calculate performance measures
     mse = mean_squared_error(test_labels, predictions)
@@ -572,7 +571,7 @@ best_model = rf_random.best_estimator_
 random_mse = evaluate(best_model, train_x, train_y)
 
 
-#retrieve best parameters of search conducted above and create parameters similar to these for second round of hyperparameter tuning
+#retrieve best parameters of search conducted above and create parameters similar to these for new hyperparameter tuning
 n_estimators_start=int(round(rf_random.best_params_.get('n_estimators')*0.8,0))
 n_estimators_stop=int(round(rf_random.best_params_.get('n_estimators')*1.2,0))
 
@@ -622,11 +621,12 @@ random_grid = {'n_estimators': n_estimators,
                'min_samples_leaf': min_samples_leaf,
                'bootstrap': bootstrap}
 
+
 # Use the grid to search for the optimal parameters
 # Create  base model to tune
 rf = RandomForestRegressor()
 
-# search of parameters using 5 fold cross validation (5 is used here instead of 10 to reduce required computation time) and 400 iterations
+# search of parameters using 5 fold cross validation (5 is used here instead of 10 to reduce required computation time)
 rf_random = RandomizedSearchCV(estimator=rf, param_distributions=random_grid, n_iter=400, cv=5, verbose=2,
                                random_state=42, n_jobs=-1)
 
