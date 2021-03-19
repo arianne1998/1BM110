@@ -5,6 +5,10 @@ from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 import pandas as pd
 from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+import numpy as np
+from scipy.sparse import coo_matrix
+import math
 
 #Clear text files for future saving
 open('Data/filteredtext.txt','w').close()
@@ -74,6 +78,17 @@ processed_text = word_list5
 
 ########################################################################################################################
 
+# Create dictionary with question phrase numbers and the words
+processed_textDict = {}
+for i in range(len(processed_text)):
+    processed_textDict[i] = processed_text[i]
+
+# Create dictionary with number of words per question
+numberofwordsDict = {}
+for i in range(len(processed_text)):
+    numberofwordsDict[i] = len(processed_text[i])
+
+# Create dictionary containing unique words and counts
 DF = {}
 for i in range(len(processed_text)):
     tokens = processed_text[i]
@@ -83,4 +98,94 @@ for i in range(len(processed_text)):
         except:
             DF[w]={i}
 
-print(len(DF))
+# Count how many times a word occurs
+for i in DF:
+    DF[i] = len(DF[i])
+
+# Create list of all unique words
+total_vocab = [x for x in DF]
+
+
+#############################################
+# Probeersels om TF en IDF te berekenen maar nog niet gelukt
+
+def computeTF(wordDict,bagOfWords):
+    tfDict = {}
+    bagOfWordsCount = len(bagOfWords)
+    for word, count in wordDict.items():
+        tfDict [word] = count/float(bagOfWordsCount)
+    return tfDict
+
+def computeIDF(documents):
+    N = len(documents)
+    idfDict = dict.fromkeys(documents.keys(),0)
+    for document in documents:
+        for word, val in document.items():
+            if val>0:
+                idfDict[word] +=1
+    for word,val in idfDict.items():
+        idfDict[word] = math.log(N/float(val))
+    return idfDict
+
+idfs = computeIDF(DF)
+
+print(idfs)
+# total_vocab[i] = bagOfWordsi
+# numOfWordsi = len(processed_text[i])
+
+
+
+
+############################################
+# Create sparse matrix of text
+
+# # Create set with all unique words
+# vocab = set()
+# n_nonzero = 0
+# for questionterms in processed_textDict.values():
+#     unique_terms = set(questionterms)
+#     vocab |= unique_terms
+#     n_nonzero += len(unique_terms)
+
+# # make list of question phrase numbers
+# questionnames = list(processed_textDict.keys())
+#
+# # Convert to numpy arrays and set dimensions to variable
+# questionnames = np.array(questionnames)
+# vocab = np.array(list(vocab))
+# vocab_sorter = np.argsort(vocab)
+# nquestions = len(questionnames)
+# nvocab = len(vocab)
+#
+# # Create empty numpy arrays of 32 bits
+# data = np.empty(n_nonzero,dtype=np.intc)
+# rows = np.empty(n_nonzero,dtype=np.intc)
+# cols = np.empty(n_nonzero,dtype=np.intc)
+#
+# ind = 0
+# # Go through all questions and question terms
+# for questionname, terms in processed_textDict.items():
+#     # find indices
+#     term_indices = vocab_sorter[np.searchsorted(vocab,terms,sorter=vocab_sorter)]
+#     # count the unique terms and get their vocabulary indices
+#     uniq_indices,counts = np.unique(term_indices,return_counts = True)
+#     # number of unique terms
+#     n_vals = len(uniq_indices)
+#     # fill slice with data
+#     ind_end = ind+n_vals
+#     # save counts
+#     data[ind:ind_end] = counts
+#     # save column index
+#     cols[ind:ind_end] = uniq_indices
+#     # get index of question in total file
+#     doc_idx = np.where(questionnames == questionname)
+#     # save as a repeated value
+#     rows[ind:ind_end] = np.repeat(doc_idx,n_vals)
+#     ind = ind_end
+#
+# # Create sparse matrix
+# dtm = coo_matrix((data, (rows,cols)),shape = (nquestions,nvocab),dtype=np.intc)
+# dtm1 = dtm.tocsr()
+
+
+
