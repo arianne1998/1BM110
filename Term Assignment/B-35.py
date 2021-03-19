@@ -625,7 +625,7 @@ param_grid = {'n_estimators': n_estimators,
 # Create  base model to tune
 rf = RandomForestRegressor()
 
-# define search of parameters using 5 fold cross validation
+# define gridsearch of parameters using 5 fold cross validation
 grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, verbose=2, n_jobs=-1)
 
 # Fit the search model
