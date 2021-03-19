@@ -47,22 +47,22 @@ for i in word_list2:
     out_list4 = [x for x in out_list3 if x]
     word_list3.append(out_list4)
 
-# Lemmatizing words
-lemmatizer=WordNetLemmatizer()
-word_list4=list()
-for i in word_list3:
-    out_list5=[lemmatizer.lemmatize(j) for j in i]
-    word_list4.append(out_list5)
-
 #Stopword removal
 stop_words = set(stopwords.words('english'))
 stop_words.add('nt')
 stop_words.add('ca')
 stop_words.add('wo')
+word_list4=list()
+for i in word_list3:
+    tokens_without_sw = [word for word in i if not word in stop_words]
+    word_list4.append(tokens_without_sw)
+
+# Lemmatizing words
+lemmatizer=WordNetLemmatizer()
 word_list5=list()
 for i in word_list4:
-    tokens_without_sw = [word for word in i if not word in stop_words]
-    word_list5.append(tokens_without_sw)
+    out_list5=[lemmatizer.lemmatize(j) for j in i]
+    word_list5.append(out_list5)
 
 print(word_list5)
 
