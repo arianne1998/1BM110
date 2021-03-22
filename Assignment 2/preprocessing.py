@@ -9,6 +9,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 from scipy.sparse import coo_matrix
 import math
+# import fastText
+# import fastText.util
 
 #Clear text files for future saving
 open('Data/filteredtext.txt','w').close()
@@ -70,6 +72,8 @@ for i in word_list4:
 
 processed_text = word_list5
 
+df = pd.DataFrame(word_list5)
+
 # Word_list = tokanized list of sentences
 # Word_list2 = punctuation and special character removal
 # Word_list3 = all letters lower case
@@ -78,35 +82,45 @@ processed_text = word_list5
 
 ########################################################################################################################
 
-# Create dictionary with question phrase numbers and the words
-processed_textDict = {}
-for i in range(len(processed_text)):
-    processed_textDict[i] = processed_text[i]
-
-# Create dictionary with number of words per question
-numberofwordsDict = {}
-for i in range(len(processed_text)):
-    numberofwordsDict[i] = len(processed_text[i])
-
-# Create dictionary containing unique words and counts
-DF = {}
-for i in range(len(processed_text)):
-    tokens = processed_text[i]
-    for w in tokens:
-        try:
-            DF[w].add(i)
-        except:
-            DF[w]={i}
-
-# Count how many times a word occurs
-for i in DF:
-    DF[i] = len(DF[i])
-
-# Create list of all unique words
-total_vocab = [x for x in DF]
-
+# # Create dictionary with question phrase numbers and the words
+# processed_textDict = {}
+# for i in range(len(processed_text)):
+#     processed_textDict[i] = processed_text[i]
+#
+# # Create dictionary with number of words per question
+# numberofwordsDict = {}
+# for i in range(len(processed_text)):
+#     numberofwordsDict[i] = len(processed_text[i])
+#
+# # Create dictionary containing unique words and counts
+# DF = {}
+# for i in range(len(processed_text)):
+#     tokens = processed_text[i]
+#     for w in tokens:
+#         try:
+#             DF[w].add(i)
+#         except:
+#             DF[w]={i}
+#
+# # Count how many times a word occurs
+# for i in DF:
+#     DF[i] = len(DF[i])
+#
+# # Create list of all unique words
+# total_vocab = [x for x in DF]
 
 #############################################
+# TF/IDF vectorizer working
+tfidf_vectorizer = TfidfVectorizer()
+word_list5_corrected = [" ".join(x) for x in word_list5]
+
+tfidf = tfidf_vectorizer.fit_transform(word_list5_corrected)
+
+
+
+
+
+#######################################################################
 # Probeersels om TF en IDF te berekenen maar nog niet gelukt
 
 def computeTF(wordDict,bagOfWords):
@@ -127,9 +141,9 @@ def computeIDF(documents):
         idfDict[word] = math.log(N/float(val))
     return idfDict
 
-idfs = computeIDF(DF)
+#idfs = computeIDF(DF)
 
-print(idfs)
+#print(idfs)
 # total_vocab[i] = bagOfWordsi
 # numOfWordsi = len(processed_text[i])
 
@@ -137,8 +151,8 @@ print(idfs)
 
 
 ############################################
-# Create sparse matrix of text
-
+# # Create sparse matrix of text
+#
 # # Create set with all unique words
 # vocab = set()
 # n_nonzero = 0
@@ -146,7 +160,7 @@ print(idfs)
 #     unique_terms = set(questionterms)
 #     vocab |= unique_terms
 #     n_nonzero += len(unique_terms)
-
+#
 # # make list of question phrase numbers
 # questionnames = list(processed_textDict.keys())
 #
@@ -186,6 +200,8 @@ print(idfs)
 # # Create sparse matrix
 # dtm = coo_matrix((data, (rows,cols)),shape = (nquestions,nvocab),dtype=np.intc)
 # dtm1 = dtm.tocsr()
+#
+# print(dtm)
 
 
 
