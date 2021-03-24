@@ -1,5 +1,6 @@
 import io
 
+# Requires: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 import fasttext.util
 
 fasttext.util.download_model('en', if_exists='ignore')
