@@ -3,6 +3,7 @@ import io
 # Requires: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 import fasttext.util
 from numpy.random import random
+import random
 from sklearn.metrics.pairwise import cosine_similarity
 
 fasttext.util.download_model('en', if_exists='ignore')
@@ -32,14 +33,14 @@ for i in range(0, 3):
     print(model.get_sentence_vector(question))
     print("\n")
 
-
 # Get random question from the data
-random_question_vector = model.get_sentence_vector(random.choice(questions))
+random_question_vector_ft = ft.get_sentence_vector(choice(questions))
+random_question_vector_model = model.get_sentence_vector(choice(questions))
 
 # Cosine similarity matrix for pre-trained
 vectors = [ft.get_sentence_vector(question) for question in questions]
-sim_matrix_pre = cosine_similarity(random_question_vector.reshape(1, -1), vectors)
+sim_matrix_pre = cosine_similarity(random_question_vector_ft.reshape(1, -1), vectors)
 
 # Cosine similarity matrix for self trained model
 vectors = [model.get_sentence_vector(question) for question in questions]
-sim_matrix_self = cosine_similarity(random_question_vector.reshape(1, -1), vectors)
+sim_matrix_self = cosine_similarity(random_question_vector_model.reshape(1, -1), vectors)
