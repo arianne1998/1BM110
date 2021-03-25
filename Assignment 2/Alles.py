@@ -81,7 +81,7 @@ processed_text = word_list5
 
 df = pd.DataFrame(word_list5)
 
-
+#################################################################### part B and C WITH FULL PREPROCESSING
 ####################################################################
 #text representation and matrix creation TF/IDF (so part B and C)
 # TF/IDF vectorizer working
@@ -90,17 +90,17 @@ word_list5_corrected = [" ".join(x) for x in word_list5]
 
 #vectorize sentence list
 vect = TfidfVectorizer(min_df=1, stop_words="english")
-tfidf = vect.fit_transform(word_list5_corrected)
+tfidf_full = vect.fit_transform(word_list5_corrected)
 
 #create similarity matrix which shows pairwise similarity, #rows/columns == #sentences
-pairwise_similarity = tfidf * tfidf.T
-TFIDF_array=pairwise_similarity.toarray()
+pairwise_similarity = tfidf_full * tfidf_full.T
+TFIDF_array_full=pairwise_similarity.toarray()
 
 #fill up diagonal where values are 1
-np.fill_diagonal(TFIDF_array, np.nan)
+np.fill_diagonal(TFIDF_array_full, np.nan)
 
-print(TFIDF_array)
-print(len(TFIDF_array))
+print(TFIDF_array_full)
+
 
 ####################################################################
 #data preparation for other 2 models
@@ -123,16 +123,16 @@ ft = fasttext.load_model('cc.en.300.bin')
 #print all vectors##############################
 for i in range(0, len(questions)):
     question = questions[i]
-    a=ft.get_sentence_vector(question)
+    a_full=ft.get_sentence_vector(question)
 
 # Cosine similarity matrix for pre-trained
 vectors = [ft.get_sentence_vector(question) for question in questions]
-sim_matrix_pre = cosine_similarity(vectors, vectors)
+sim_matrix_pre_full = cosine_similarity(vectors, vectors)
 
 #fill up diagonal where values are 1
-np.fill_diagonal(sim_matrix_pre, np.nan)
+np.fill_diagonal(sim_matrix_pre_full, np.nan)
 
-print(sim_matrix_pre)
+print(sim_matrix_pre_full)
 
 ##################################################################
 #text representation and matrix creation self trained model (so part B and C)
@@ -142,14 +142,85 @@ model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
 #print all vectors##############################
 for i in range(0, len(questions)):
     question = questions[i]
-    a=model.get_sentence_vector(question)
+    a_full=model.get_sentence_vector(question)
 
 # Cosine similarity matrix for pre-trained
 vectors = [model.get_sentence_vector(question) for question in questions]
-sim_matrix_self = cosine_similarity(vectors, vectors)
+sim_matrix_self_full = cosine_similarity(vectors, vectors)
 
 #fill up diagonal where values are 1
-np.fill_diagonal(sim_matrix_self, np.nan)
+np.fill_diagonal(sim_matrix_self_full, np.nan)
 
-print(sim_matrix_self)
+print(sim_matrix_self_full)
 
+#################################################################### part B and C WITHOUT STOPWORD REMOVAL
+####################################################################
+#text representation and matrix creation TF/IDF (so part B and C)
+# TF/IDF vectorizer working
+tfidf_vectorizer = TfidfVectorizer()
+word_list4_corrected = [" ".join(x) for x in word_list4]
+
+#vectorize sentence list
+vect = TfidfVectorizer(min_df=1, stop_words="english")
+tfidf_nostop = vect.fit_transform(word_list4_corrected)
+
+#create similarity matrix which shows pairwise similarity, #rows/columns == #sentences
+pairwise_similarity = tfidf_nostop * tfidf_nostop.T
+TFIDF_array_nostop=pairwise_similarity.toarray()
+
+#fill up diagonal where values are 1
+np.fill_diagonal(TFIDF_array_full, np.nan)
+
+print(TFIDF_array_nostop)
+
+
+####################################################################
+#data preparation for other 2 models
+with open('Data/cleaned_4.txt', 'w') as f:
+    for item in word_list4:
+        f.write("%s\n" % item)
+
+data = io.open('Data/cleaned_4.txt', encoding='utf-8')
+lines = data.read().splitlines()
+questions = []
+for line in lines:
+    line = line.strip()
+    questions.append(line)
+
+#text representation and matrix creation pre trained model (so part B and C)
+fasttext.util.download_model('en', if_exists='ignore')
+ft = fasttext.load_model('cc.en.300.bin')
+
+# Get sentence vectors for first 3 questions
+#print all vectors##############################
+for i in range(0, len(questions)):
+    question = questions[i]
+    a_nostop=ft.get_sentence_vector(question)
+
+# Cosine similarity matrix for pre-trained
+vectors = [ft.get_sentence_vector(question) for question in questions]
+sim_matrix_pre_nostop = cosine_similarity(vectors, vectors)
+
+#fill up diagonal where values are 1
+np.fill_diagonal(sim_matrix_pre_nostop, np.nan)
+
+print(sim_matrix_pre_nostop)
+
+##################################################################
+#text representation and matrix creation self trained model (so part B and C)
+model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
+
+# Get sentence vectors for first 3 questions
+#print all vectors##############################
+for i in range(0, len(questions)):
+    question = questions[i]
+    a_nostop=model.get_sentence_vector(question)
+
+# Cosine similarity matrix for pre-trained
+vectors = [model.get_sentence_vector(question) for question in questions]
+sim_matrix_self_nostop = cosine_similarity(vectors, vectors)
+
+#fill up diagonal where values are 1
+np.fill_diagonal(sim_matrix_self_nostop, np.nan)
+
+print(sim_matrix_self_nostop)
