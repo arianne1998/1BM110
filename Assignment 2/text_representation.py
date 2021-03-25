@@ -2,8 +2,7 @@ import io
 
 # Requires: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 import fasttext.util
-#from numpy.random import random
-import random
+from numpy.random import random
 import random
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -40,12 +39,11 @@ random_question_vector_model = model.get_sentence_vector(random.choice(questions
 
 # Cosine similarity matrix for pre-trained
 vectors = [ft.get_sentence_vector(question) for question in questions]
-sim_matrix_pre = cosine_similarity(random_question_vector_ft.reshape(1, -1), vectors)
-print(sim_matrix_pre)
-print(len(sim_matrix_pre[0]))
+sim_matrix_pre = cosine_similarity(vectors, vectors)
 
 # Cosine similarity matrix for self trained model
 vectors = [model.get_sentence_vector(question) for question in questions]
-sim_matrix_self = cosine_similarity(random_question_vector_model.reshape(1, -1), vectors)
+sim_matrix_self = cosine_similarity(vectors, vectors)
+
+
 print(sim_matrix_self)
-print(len(sim_matrix_self[0]))
