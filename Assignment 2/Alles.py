@@ -12,6 +12,7 @@ import math
 import fasttext
 import fasttext.util
 import io
+from sklearn.metrics.pairwise import cosine_similarity
 
 #####################################################################
 #cleaning
@@ -28,16 +29,18 @@ for phrases in roots.iter('rephr'):
     appendFile.write(" " + phrases.text)
     appendFile.close()
 
-# open textfile and read for future processing
-file1 = open('Data/filteredtext.txt')
-text = file1.read()
-
-# tokenize text file into sentences
-sentence_list = sent_tokenize(text)
+# open textfile, delete * values and tokenize text file into sentences
+data = io.open('Data/filteredtext.txt', encoding='utf-8')
+lines = data.read().splitlines()
+questions = []
+for line in lines:
+    line = line.strip()
+    if line and line != "*":
+        questions.append(line)
 
 #tokenize sentences into words
 word_list = list()
-for i in sentence_list:
+for i in questions:
     word_list.append(word_tokenize(i))
 
 # Normalization
@@ -63,38 +66,31 @@ for i in word_list3:
     out_list5=[lemmatizer.lemmatize(j) for j in i]
     word_list4.append(out_list5)
 
-#remove *'s from dataset
-lines = word_list4
-word_list5 = []
-for line in lines:
-    if line and line != "*":
-        word_list5.append(line)
-
 #Stopword removal
 stop_words = set(stopwords.words('english'))
 stop_words.add('nt')
 stop_words.add('ca')
 stop_words.add('wo')
-word_list6=list()
-for i in word_list5:
+word_list5=list()
+for i in word_list4:
     tokens_without_sw = [word for word in i if not word in stop_words]
-    word_list6.append(tokens_without_sw)
+    word_list5.append(tokens_without_sw)
 
 
-processed_text = word_list6
+processed_text = word_list5
 
-df = pd.DataFrame(word_list6)
+df = pd.DataFrame(word_list5)
 
 
 ####################################################################
 #text representation and matrix creation TF/IDF
 # TF/IDF vectorizer working
 tfidf_vectorizer = TfidfVectorizer()
-word_list6_corrected = [" ".join(x) for x in word_list6]
+word_list5_corrected = [" ".join(x) for x in word_list5]
 
 #vectorize sentence list
 vect = TfidfVectorizer(min_df=1, stop_words="english")
-tfidf = vect.fit_transform(word_list6_corrected)
+tfidf = vect.fit_transform(word_list5_corrected)
 
 #create similarity matrix which shows pairwise similarity, #rows/columns == #sentences
 pairwise_similarity = tfidf * tfidf.T
@@ -104,5 +100,56 @@ TFIDF_array=pairwise_similarity.toarray()
 np.fill_diagonal(TFIDF_array, np.nan)
 
 print(TFIDF_array)
+print(len(TFIDF_array))
 
+####################################################################
+#data preparation for other 2 models
+with open('Data/cleaned_5.txt', 'w') as f:
+    for item in word_list5:
+        f.write("%s\n" % item)
+
+data = io.open('Data/cleaned_5.txt', encoding='utf-8')
+lines = data.read().splitlines()
+questions = []
+for line in lines:
+    line = line.strip()
+    questions.append(line)
+
+#pre trained model
+fasttext.util.download_model('en', if_exists='ignore')
+ft = fasttext.load_model('cc.en.300.bin')
+
+# Get sentence vectors for first 3 questions
+#print all vectors##############################
+for i in range(0, len(questions)):
+    question = questions[i]
+    a=ft.get_sentence_vector(question)
+
+# Cosine similarity matrix for pre-trained
+vectors = [ft.get_sentence_vector(question) for question in questions]
+sim_matrix_pre = cosine_similarity(vectors, vectors)
+
+#fill up diagonal where values are 1
+np.fill_diagonal(sim_matrix_pre, np.nan)
+
+print(sim_matrix_pre)
+
+##################################################################
+#self trained model
+model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
+
+# Get sentence vectors for first 3 questions
+#print all vectors##############################
+for i in range(0, len(questions)):
+    question = questions[i]
+    a=model.get_sentence_vector(question)
+
+# Cosine similarity matrix for pre-trained
+vectors = [model.get_sentence_vector(question) for question in questions]
+sim_matrix_self = cosine_similarity(vectors, vectors)
+
+#fill up diagonal where values are 1
+np.fill_diagonal(sim_matrix_self, np.nan)
+
+print(sim_matrix_self)
 

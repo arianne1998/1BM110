@@ -39,6 +39,7 @@ word_list = list()
 for i in sentence_list:
     word_list.append(word_tokenize(i))
 
+
 # Normalization
 #removing punctuation and special characters
 word_list2 = list()

@@ -17,6 +17,11 @@ for line in lines:
     if line and line != "*":
         questions.append(line)
 
+
+print(questions)
+print(type(questions))
+
+
 # Get sentence vectors for first 3 questions
 for i in range(0, 3):
     question = questions[i]
