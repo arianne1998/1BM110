@@ -83,7 +83,7 @@ df = pd.DataFrame(word_list5)
 
 
 ####################################################################
-#text representation and matrix creation TF/IDF
+#text representation and matrix creation TF/IDF (so part B and C)
 # TF/IDF vectorizer working
 tfidf_vectorizer = TfidfVectorizer()
 word_list5_corrected = [" ".join(x) for x in word_list5]
@@ -115,7 +115,7 @@ for line in lines:
     line = line.strip()
     questions.append(line)
 
-#pre trained model
+#text representation and matrix creation pre trained model (so part B and C)
 fasttext.util.download_model('en', if_exists='ignore')
 ft = fasttext.load_model('cc.en.300.bin')
 
@@ -135,7 +135,7 @@ np.fill_diagonal(sim_matrix_pre, np.nan)
 print(sim_matrix_pre)
 
 ##################################################################
-#self trained model
+#text representation and matrix creation self trained model (so part B and C)
 model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
 
 # Get sentence vectors for first 3 questions
