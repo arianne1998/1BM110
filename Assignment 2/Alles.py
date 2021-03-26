@@ -1,5 +1,5 @@
 from xml.dom import minidom
-from xml.etree import cElementTree as ET
+from xml.etree import cElementTree as et
 
 import nltk
 from nltk.corpus import stopwords
@@ -20,13 +20,13 @@ nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('stopwords')
 
-#####################################################################
+
 #cleaning
 #Clear text files for future saving
 open('Data/filteredtext.txt','w').close()
 
 # import xml file and retrieve roots
-tree = ET.parse('Data/stackExchange-FAQ.xml')
+tree = et.parse('Data/stackExchange-FAQ.xml')
 roots = tree.getroot()
 
 # save xml phrases to text file
@@ -81,7 +81,6 @@ word_list5=list()
 for i in word_list4:
     tokens_without_sw = [word for word in i if not word in stop_words]
     word_list5.append(tokens_without_sw)
-
 
 processed_text = word_list5
 
@@ -222,11 +221,14 @@ vectors = [model.get_sentence_vector(question) for question in questions]
 sim_matrix_self_nostop = cosine_similarity(vectors, vectors)
 
 #fill up diagonal where values are 1
-np.fill_diagonal(sim_matrix_self_nostop, 0)
-
-for n in [1,3,5]:
-    for question in questions:
-        model.test(question, k=n)
+np.fill_diagonal(sim_matrix_self_nostop, np.nan)
 
 
-print(sim_matrix_self_nostop)
+
+
+print(type(sim_matrix_self_nostop))
+
+################################################################# part D
+
+a=np.matrix(sim_matrix_self_nostop)
+
