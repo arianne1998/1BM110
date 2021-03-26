@@ -38,9 +38,7 @@ for i in range(0, 3):
     print(model.get_sentence_vector(question))
     print("\n")
 
-# Get random question from the data
-random_question_vector_ft = ft.get_sentence_vector(random.choice(questions))
-random_question_vector_model = model.get_sentence_vector(random.choice(questions))
+
 
 # Cosine similarity matrix for pre-trained
 vectors = [ft.get_sentence_vector(question) for question in questions]

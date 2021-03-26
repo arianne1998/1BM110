@@ -1,5 +1,7 @@
 from xml.dom import minidom
 from xml.etree import cElementTree as ET
+
+import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
@@ -13,6 +15,10 @@ import fasttext
 import fasttext.util
 import io
 from sklearn.metrics.pairwise import cosine_similarity
+
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
 
 #####################################################################
 #cleaning
@@ -187,10 +193,6 @@ for line in lines:
     line = line.strip()
     questions.append(line)
 
-#text representation and matrix creation pre trained model (so part B and C)
-fasttext.util.download_model('en', if_exists='ignore')
-ft = fasttext.load_model('cc.en.300.bin')
-
 # Get sentence vectors for first 3 questions
 #print all vectors##############################
 for i in range(0, len(questions)):
@@ -212,8 +214,7 @@ model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
 
 # Get sentence vectors for first 3 questions
 #print all vectors##############################
-for i in range(0, len(questions)):
-    question = questions[i]
+for question in questions:
     a_nostop=model.get_sentence_vector(question)
 
 # Cosine similarity matrix for pre-trained
@@ -221,6 +222,11 @@ vectors = [model.get_sentence_vector(question) for question in questions]
 sim_matrix_self_nostop = cosine_similarity(vectors, vectors)
 
 #fill up diagonal where values are 1
-np.fill_diagonal(sim_matrix_self_nostop, np.nan)
+np.fill_diagonal(sim_matrix_self_nostop, 0)
+
+for n in [1,3,5]:
+    for question in questions:
+        model.test(question, k=n)
+
 
 print(sim_matrix_self_nostop)
