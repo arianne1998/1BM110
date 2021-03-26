@@ -12,7 +12,6 @@ import math
 import fasttext
 import fasttext.util
 
-
 #Clear text files for future saving
 open('Data/filteredtext.txt','w').close()
 
@@ -116,13 +115,6 @@ tfidf_vectorizer = TfidfVectorizer()
 word_list5_corrected = [" ".join(x) for x in word_list5]
 
 tfidf = tfidf_vectorizer.fit_transform(word_list5_corrected)
-
-
-
-# fasttext.util.download_model('en', if_exists='ignore')  # English
-# model = fasttext.load_model('cc.en.300.bin')
-
-
 
 
 
