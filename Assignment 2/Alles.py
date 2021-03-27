@@ -1,6 +1,6 @@
 from xml.dom import minidom
 from xml.etree import cElementTree as et
-
+import heapq
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize
@@ -20,6 +20,11 @@ nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('stopwords')
 
+# #testje
+# df1=pd.read_csv("Data/xml file to csv.csv")
+# questions=df1.iloc[:,0].tolist()
+# print(questions)
+# print(len(questions))
 
 #cleaning
 #Clear text files for future saving
@@ -38,6 +43,7 @@ for phrases in roots.iter('rephr'):
 # open textfile, delete * values and tokenize text file into sentences
 data = io.open('Data/filteredtext.txt', encoding='utf-8')
 lines = data.read().splitlines()
+
 questions = []
 for line in lines:
     line = line.strip()
@@ -83,7 +89,7 @@ for i in word_list4:
     word_list5.append(tokens_without_sw)
 
 processed_text = word_list5
-
+print(len(word_list5))
 df = pd.DataFrame(word_list5)
 
 #################################################################### part B and C WITH FULL PREPROCESSING
@@ -102,9 +108,8 @@ pairwise_similarity = tfidf_full * tfidf_full.T
 TFIDF_array_full=pairwise_similarity.toarray()
 
 #fill up diagonal where values are 1
-np.fill_diagonal(TFIDF_array_full, np.nan)
+np.fill_diagonal(TFIDF_array_full, 0)
 
-print(TFIDF_array_full)
 
 
 ####################################################################
@@ -135,9 +140,9 @@ vectors = [ft.get_sentence_vector(question) for question in questions]
 sim_matrix_pre_full = cosine_similarity(vectors, vectors)
 
 #fill up diagonal where values are 1
-np.fill_diagonal(sim_matrix_pre_full, np.nan)
+np.fill_diagonal(sim_matrix_pre_full, 0)
 
-print(sim_matrix_pre_full)
+
 
 ##################################################################
 #text representation and matrix creation self trained model (so part B and C)
@@ -149,14 +154,13 @@ for i in range(0, len(questions)):
     question = questions[i]
     a_full=model.get_sentence_vector(question)
 
-# Cosine similarity matrix for pre-trained
+# Cosine similarity matrix for self trained
 vectors = [model.get_sentence_vector(question) for question in questions]
 sim_matrix_self_full = cosine_similarity(vectors, vectors)
 
 #fill up diagonal where values are 1
-np.fill_diagonal(sim_matrix_self_full, np.nan)
+np.fill_diagonal(sim_matrix_self_full, 0)
 
-print(sim_matrix_self_full)
 
 #################################################################### part B and C WITHOUT STOPWORD REMOVAL
 ####################################################################
@@ -174,9 +178,8 @@ pairwise_similarity = tfidf_nostop * tfidf_nostop.T
 TFIDF_array_nostop=pairwise_similarity.toarray()
 
 #fill up diagonal where values are 1
-np.fill_diagonal(TFIDF_array_full, np.nan)
+np.fill_diagonal(TFIDF_array_nostop, 0)
 
-print(TFIDF_array_nostop)
 
 
 ####################################################################
@@ -192,7 +195,7 @@ for line in lines:
     line = line.strip()
     questions.append(line)
 
-# Get sentence vectors for first 3 questions
+# Get sentence vectors for questions
 #print all vectors##############################
 for i in range(0, len(questions)):
     question = questions[i]
@@ -203,32 +206,111 @@ vectors = [ft.get_sentence_vector(question) for question in questions]
 sim_matrix_pre_nostop = cosine_similarity(vectors, vectors)
 
 #fill up diagonal where values are 1
-np.fill_diagonal(sim_matrix_pre_nostop, np.nan)
+np.fill_diagonal(sim_matrix_pre_nostop, 0)
 
-print(sim_matrix_pre_nostop)
 
 ##################################################################
 #text representation and matrix creation self trained model (so part B and C)
 model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
 
-# Get sentence vectors for first 3 questions
+# Get sentence vectors questions
 #print all vectors##############################
 for question in questions:
     a_nostop=model.get_sentence_vector(question)
 
-# Cosine similarity matrix for pre-trained
+# Cosine similarity matrix for self trained
 vectors = [model.get_sentence_vector(question) for question in questions]
 sim_matrix_self_nostop = cosine_similarity(vectors, vectors)
 
 #fill up diagonal where values are 1
-np.fill_diagonal(sim_matrix_self_nostop, np.nan)
+np.fill_diagonal(sim_matrix_self_nostop, 0)
 
-
-
-
-print(type(sim_matrix_self_nostop))
 
 ################################################################# part D
+#create dataframe of questions with their qapair
+df=pd.read_csv("Data/qapairs to csv.csv")
+list1=df.iloc[:,0].tolist()
+list2=list(range(0,1249))
+dict={'qapair':list1,'question':list2}
+qapair_df=pd.DataFrame(dict)
 
-a=np.matrix(sim_matrix_self_nostop)
 
+
+#define functions to calculate precision based on top N
+def precision_top5(array):
+    #make upper triangular part of array 0 to remove duplicates
+    array=np.tril(array)
+    #find indices of questions with highest similarity
+    N=5
+    a_1d = array.flatten()
+    idx_1d = a_1d.argsort()[-N:]
+    x_idx, y_idx = np.unravel_index(idx_1d, array.shape)
+    #determine precision
+    a = 0
+    for i in range(0, N):
+        if qapair_df[qapair_df['question'] == x_idx[i]]['qapair'].values == qapair_df[qapair_df['question'] == y_idx[i]]['qapair'].values:
+            a = a + 1
+    precision=a/N
+    print(precision)
+
+def precision_top3(array):
+    #make upper triangular part of array 0 to remove duplicates
+    array=np.tril(array)
+    #find indices of questions with highest similarity
+    N=3
+    a_1d = array.flatten()
+    idx_1d = a_1d.argsort()[-N:]
+    x_idx, y_idx = np.unravel_index(idx_1d, array.shape)
+    #determine precision
+    a = 0
+    for i in range(0, N):
+        if qapair_df[qapair_df['question'] == x_idx[i]]['qapair'].values == qapair_df[qapair_df['question'] == y_idx[i]]['qapair'].values:
+            a = a + 1
+    precision=a/N
+    print(precision)
+
+def precision_top1(array):
+    #make upper triangular part of array 0 to remove duplicates
+    array=np.tril(array)
+    #find index of questions with highest similarity
+    N=1
+    a_1d = array.flatten()
+    idx_1d = a_1d.argsort()[-N:]
+    x_idx, y_idx = np.unravel_index(idx_1d, array.shape)
+    #determine precision
+    a = 0
+    for i in range(0, N):
+        if qapair_df[qapair_df['question'] == x_idx[i]]['qapair'].values == qapair_df[qapair_df['question'] == y_idx[i]]['qapair'].values:
+            a = a + 1
+    precision=a/N
+    print(precision)
+
+print('precision for fully preprocessed TF/IDF top 5, 3 and 1 respectively are: ')
+precision_top5(TFIDF_array_full)
+precision_top3(TFIDF_array_full)
+precision_top1(TFIDF_array_full)
+
+print('precision for fully preprocessed pretrained using fasttext top 5, 3 and 1 respectively are: ')
+precision_top5(sim_matrix_pre_full)
+precision_top3(sim_matrix_pre_full)
+precision_top1(sim_matrix_pre_full)
+
+print('precision for fully preprocessed self trained using fasttext top 5, 3 and 1 respectively are: ')
+precision_top5(sim_matrix_self_full)
+precision_top3(sim_matrix_self_full)
+precision_top1(sim_matrix_self_full)
+
+print('precision for data without stopword removal TF/IDF top 5, 3 and 1 respectively are: ')
+precision_top5(TFIDF_array_nostop)
+precision_top3(TFIDF_array_nostop)
+precision_top1(TFIDF_array_nostop)
+
+print('precision for data without stopword removal on pretrained using fasttext top 5, 3 and 1 respectively are: ')
+precision_top5(sim_matrix_pre_nostop)
+precision_top3(sim_matrix_pre_nostop)
+precision_top1(sim_matrix_pre_nostop)
+
+print('precision for data without stopword removal on self trained using fasttext top 5, 3 and 1 respectively are: ')
+precision_top5(sim_matrix_self_nostop)
+precision_top3(sim_matrix_self_nostop)
+precision_top1(sim_matrix_self_nostop)

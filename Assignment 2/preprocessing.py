@@ -71,7 +71,7 @@ for i in word_list4:
     word_list5.append(out_list5)
 
 processed_text = word_list5
-
+print(len(word_list5))
 df = pd.DataFrame(word_list5)
 
 # Word_list = tokanized list of sentences
