@@ -235,13 +235,12 @@ dict={'qapair':list1,'question':list2}
 qapair_df=pd.DataFrame(dict)
 
 
-
 #define functions to calculate precision based on top N
-def precision_top5(array):
+def precision_top(array, n):
     #make upper triangular part of array 0 to remove duplicates
     array=np.tril(array)
     #find indices of questions with highest similarity
-    N=5
+    N=n
     a_1d = array.flatten()
     idx_1d = a_1d.argsort()[-N:]
     x_idx, y_idx = np.unravel_index(idx_1d, array.shape)
@@ -251,66 +250,35 @@ def precision_top5(array):
         if qapair_df[qapair_df['question'] == x_idx[i]]['qapair'].values == qapair_df[qapair_df['question'] == y_idx[i]]['qapair'].values:
             a = a + 1
     precision=a/N
-    print(precision)
+    print("top", N, "precision is:", precision)
 
-def precision_top3(array):
-    #make upper triangular part of array 0 to remove duplicates
-    array=np.tril(array)
-    #find indices of questions with highest similarity
-    N=3
-    a_1d = array.flatten()
-    idx_1d = a_1d.argsort()[-N:]
-    x_idx, y_idx = np.unravel_index(idx_1d, array.shape)
-    #determine precision
-    a = 0
-    for i in range(0, N):
-        if qapair_df[qapair_df['question'] == x_idx[i]]['qapair'].values == qapair_df[qapair_df['question'] == y_idx[i]]['qapair'].values:
-            a = a + 1
-    precision=a/N
-    print(precision)
-
-def precision_top1(array):
-    #make upper triangular part of array 0 to remove duplicates
-    array=np.tril(array)
-    #find index of questions with highest similarity
-    N=1
-    a_1d = array.flatten()
-    idx_1d = a_1d.argsort()[-N:]
-    x_idx, y_idx = np.unravel_index(idx_1d, array.shape)
-    #determine precision
-    a = 0
-    for i in range(0, N):
-        if qapair_df[qapair_df['question'] == x_idx[i]]['qapair'].values == qapair_df[qapair_df['question'] == y_idx[i]]['qapair'].values:
-            a = a + 1
-    precision=a/N
-    print(precision)
 
 print('precision for fully preprocessed TF/IDF top 5, 3 and 1 respectively are: ')
-precision_top5(TFIDF_array_full)
-precision_top3(TFIDF_array_full)
-precision_top1(TFIDF_array_full)
+precision_top(TFIDF_array_full, 5)
+precision_top(TFIDF_array_full, 3)
+precision_top(TFIDF_array_full, 1)
 
 print('precision for fully preprocessed pretrained using fasttext top 5, 3 and 1 respectively are: ')
-precision_top5(sim_matrix_pre_full)
-precision_top3(sim_matrix_pre_full)
-precision_top1(sim_matrix_pre_full)
+precision_top(sim_matrix_pre_full, 5)
+precision_top(sim_matrix_pre_full, 3)
+precision_top(sim_matrix_pre_full, 1)
 
 print('precision for fully preprocessed self trained using fasttext top 5, 3 and 1 respectively are: ')
-precision_top5(sim_matrix_self_full)
-precision_top3(sim_matrix_self_full)
-precision_top1(sim_matrix_self_full)
+precision_top(sim_matrix_self_full, 5)
+precision_top(sim_matrix_self_full, 3)
+precision_top(sim_matrix_self_full, 1)
 
 print('precision for data without stopword removal TF/IDF top 5, 3 and 1 respectively are: ')
-precision_top5(TFIDF_array_nostop)
-precision_top3(TFIDF_array_nostop)
-precision_top1(TFIDF_array_nostop)
+precision_top(TFIDF_array_nostop, 5)
+precision_top(TFIDF_array_nostop, 3)
+precision_top(TFIDF_array_nostop, 1)
 
 print('precision for data without stopword removal on pretrained using fasttext top 5, 3 and 1 respectively are: ')
-precision_top5(sim_matrix_pre_nostop)
-precision_top3(sim_matrix_pre_nostop)
-precision_top1(sim_matrix_pre_nostop)
+precision_top(sim_matrix_pre_nostop, 5)
+precision_top(sim_matrix_pre_nostop, 3)
+precision_top(sim_matrix_pre_nostop, 1)
 
 print('precision for data without stopword removal on self trained using fasttext top 5, 3 and 1 respectively are: ')
-precision_top5(sim_matrix_self_nostop)
-precision_top3(sim_matrix_self_nostop)
-precision_top1(sim_matrix_self_nostop)
+precision_top(sim_matrix_self_nostop, 5)
+precision_top(sim_matrix_self_nostop, 3)
+precision_top(sim_matrix_self_nostop, 1)
