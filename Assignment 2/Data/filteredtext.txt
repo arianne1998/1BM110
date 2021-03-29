@@ -507,8 +507,7 @@
          
             How can I force google to use the exact words I type in.
          
-            I'm sure the text I write into google is what I want word for word, how can I disable google interpreting it
-            differently.
+            I'm sure the text I write into google is what I want word for word, how can I disable google interpreting it differently.
          
             Is there a way to disable the "did you mean" feature and have google interpret my query literally.
          
@@ -624,8 +623,7 @@
          
             Can I list and view all videos from the same person on youtube.
          
-            I'd like to view videos from the same youtuber. I could use a playlist but surely there must be a faster
-            way.
+            I'd like to view videos from the same youtuber. I could use a playlist but surely there must be a faster way.
          
             *
          
@@ -747,8 +745,7 @@
          
             How could I share the unchanged results of my google query with other people.
          
-            I'd like to share my google results but the results change on other people's computers, is there a way
-            around this?
+            I'd like to share my google results but the results change on other people's computers, is there a way around this?
          
             How can I find out who unfriended me on fb.
          
@@ -862,8 +859,7 @@
          
             Is it possible to link to a specific point in a youtube video.
          
-            I found an epic moment in a clip on youtube, can I specify this moment as the start point when sending a
-            link to people?
+            I found an epic moment in a clip on youtube, can I specify this moment as the start point when sending a link to people?
          
             Can I incorporate information about where in the video to start when sending youtube links to friends.
          
@@ -889,8 +885,7 @@
          
             What's the easiest way to get the name of the directory where a particular google document is located.
          
-            I got a direct link to a google spreadsheet but I need the name of the folder where it's located, how can I
-            get this quickly?
+            I got a direct link to a google spreadsheet but I need the name of the folder where it's located, how can I get this quickly?
          
             Is there an efficient way to get the name of the parent directory for a file on google drive.
          
@@ -1133,8 +1128,7 @@
          
             Can I somehow mask an exe file so that gmail doesn't remove it from my mail.
          
-            I'd like to send a windows program as a gmail attachment but I can't because I keep getting an error
-            message.
+            I'd like to send a windows program as a gmail attachment but I can't because I keep getting an error message.
          
             How could I send a windows exe over gmail?
          
@@ -2072,8 +2066,6 @@
          
             Determine the time of when I commited something to a github repo.
          
-
-         
             Can I make gmail separate calendar notifications into a different group?
          
             I'm getting spammed by all the notices I'm getting from google calendar, is it possible to filter then out into their own group?
@@ -2435,6 +2427,8 @@
             Is it possible to remove the sound that google hangouts produces when you get notifications?
          
             I'd like my notifications on google hangousts to be silent, where is the option for this?
+         
+            *
          
             *
          
