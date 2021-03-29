@@ -227,6 +227,69 @@ sim_matrix_self_nostop = cosine_similarity(vectors, vectors)
 #fill up diagonal where values are 1
 np.fill_diagonal(sim_matrix_self_nostop, 0)
 
+#################################################################### part B and C WITHOUT LEMMATISATION
+####################################################################
+#text representation and matrix creation TF/IDF (so part B and C)
+# TF/IDF vectorizer working
+tfidf_vectorizer = TfidfVectorizer()
+word_list3_corrected = [" ".join(x) for x in word_list3]
+
+#vectorize sentence list
+vect = TfidfVectorizer(min_df=1, stop_words="english")
+tfidf_nolem = vect.fit_transform(word_list3_corrected)
+
+#create similarity matrix which shows pairwise similarity, #rows/columns == #sentences
+pairwise_similarity = tfidf_nolem * tfidf_nolem.T
+TFIDF_array_nolem=pairwise_similarity.toarray()
+
+#fill up diagonal where values are 1
+np.fill_diagonal(TFIDF_array_nolem, 0)
+
+
+
+####################################################################
+#data preparation for other 2 models
+with open('Data/cleaned_3.txt', 'w') as f:
+    for item in word_list3:
+        f.write("%s\n" % item)
+
+data = io.open('Data/cleaned_3.txt', encoding='utf-8')
+lines = data.read().splitlines()
+questions = []
+for line in lines:
+    line = line.strip()
+    questions.append(line)
+
+# Get sentence vectors for questions
+#print all vectors##############################
+for i in range(0, len(questions)):
+    question = questions[i]
+    a_nostop=ft.get_sentence_vector(question)
+
+# Cosine similarity matrix for pre-trained
+vectors = [ft.get_sentence_vector(question) for question in questions]
+sim_matrix_pre_nolem = cosine_similarity(vectors, vectors)
+
+#fill up diagonal where values are 1
+np.fill_diagonal(sim_matrix_pre_nolem, 0)
+
+
+##################################################################
+#text representation and matrix creation self trained model (so part B and C)
+model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
+
+# Get sentence vectors questions
+#print all vectors##############################
+for question in questions:
+    a_nostop=model.get_sentence_vector(question)
+
+# Cosine similarity matrix for self trained
+vectors = [model.get_sentence_vector(question) for question in questions]
+sim_matrix_self_nolem = cosine_similarity(vectors, vectors)
+
+#fill up diagonal where values are 1
+np.fill_diagonal(sim_matrix_self_nolem, 0)
+
 
 ################################################################# part D
 #create dataframe of questions with their qapair
@@ -235,7 +298,7 @@ list1=df.iloc[:,0].tolist()
 list2=list(range(0,1249))
 dict={'qapair':list1,'question':list2}
 qapair_df=pd.DataFrame(dict)
-
+print(qapair_df)
 
 #define functions to calculate precision based on top N
 def precision_top(array, n):
@@ -269,6 +332,7 @@ print('precision for fully preprocessed self trained using fasttext top 5, 3 and
 precision_top(sim_matrix_self_full, 5)
 precision_top(sim_matrix_self_full, 3)
 precision_top(sim_matrix_self_full, 1)
+print("\n")
 
 print('precision for data without stopword removal TF/IDF top 5, 3 and 1 respectively are: ')
 precision_top(TFIDF_array_nostop, 5)
@@ -284,3 +348,19 @@ print('precision for data without stopword removal on self trained using fasttex
 precision_top(sim_matrix_self_nostop, 5)
 precision_top(sim_matrix_self_nostop, 3)
 precision_top(sim_matrix_self_nostop, 1)
+print("\n")
+
+print('precision for data without stopword removal and lemmatisation TF/IDF top 5, 3 and 1 respectively are: ')
+precision_top(TFIDF_array_nolem, 5)
+precision_top(TFIDF_array_nolem, 3)
+precision_top(TFIDF_array_nolem, 1)
+
+print('precision for data without stopword removal and lemmatisation on pretrained using fasttext top 5, 3 and 1 respectively are: ')
+precision_top(sim_matrix_pre_nolem, 5)
+precision_top(sim_matrix_pre_nolem, 3)
+precision_top(sim_matrix_pre_nolem, 1)
+
+print('precision for data without stopword removal and lemmatisation on self trained using fasttext top 5, 3 and 1 respectively are: ')
+precision_top(sim_matrix_self_nolem, 5)
+precision_top(sim_matrix_self_nolem, 3)
+precision_top(sim_matrix_self_nolem, 1)
