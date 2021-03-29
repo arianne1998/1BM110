@@ -55,6 +55,8 @@ word_list = list()
 for i in questions:
     word_list.append(word_tokenize(i))
 
+print(len(word_list))
+
 # Normalization
 #removing punctuation and special characters
 word_list2 = list()

@@ -7,15 +7,29 @@ root=tree.getroot()
 qapair=[]
 questions=[]
 
+questions2=[]
+# for child in root:
+#     print(child.tag, child.attrib)
+#     #questions2.append(question.text)
+
+test=[]
 
 for x in root.iter('qapair'):
     root1=et.Element('root')
     root1=x
-    for question in root1.iter('rephr'):
-        root2=et.Element('root')
-        root2=(question)
-        qapair.append(x)
-        questions.append(question.text)
+    for child in root1:
+        test.append('yes')
+        if child.tag == 'rephr':
+            questions2.append('yes')
+        #print(child.tag, child.attrib)
+    # for question in root1.iter('rephr'):
+    #     root2=et.Element('root')
+    #     root2=(question)
+    #     qapair.append(x)
+    #     questions.append(question.text)
+
+print(len(test))
+print(len(questions2))
 
 qapair_set = set(qapair)
 qapair_list = list(qapair_set)
@@ -44,6 +58,6 @@ for pair in list1:
         questions.remove(question)
         break
 
-print(dict_qapair)
+#print(dict_qapair)
 
 

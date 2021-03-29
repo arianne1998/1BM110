@@ -40,8 +40,7 @@
             Use ~~tildes around the words~~.
         </answer>
         <answer>
-            I just used the following syntax &lt;del&gt; ... &lt;/del&gt; successfully on GitHub in an issue
-            description.
+            I just used the following syntax &lt;del&gt; ... &lt;/del&gt; successfully on GitHub in an issue description.
         </answer>
     </qapair>
     <qapair>
@@ -82,27 +81,16 @@
             How do I delete my Facebook account?
         </question>
         <answer>
-            from here : Go here: http://www.facebook.com/help/delete_account Click "Submit" and follow the instructions.
-            Your account will be deactivated for two weeks, and if you DO NOT USE FACEBOOK IN ANY WAY during that
-            period, your account is permanently deleted.
+            from here : Go here: http://www.facebook.com/help/delete_account Click "Submit" and follow the instructions. Your account will be deactivated for two weeks, and if you DO NOT USE FACEBOOK IN ANY WAY during that period, your account is permanently deleted.
         </answer>
         <answer>
-            Go to "Your Account". Go to "Deactivate Account". Facebook is a megalomaniac. It will never ever ever EVER
-            delete your profile. If you decide ten years later to sign in, then it will still be there. I'd erase my
-            pictures from the site before deleting my account. Actually, I just did last week.
+            Go to "Your Account". Go to "Deactivate Account". Facebook is a megalomaniac. It will never ever ever EVER delete your profile. If you decide ten years later to sign in, then it will still be there. I'd erase my pictures from the site before deleting my account. Actually, I just did last week.
         </answer>
         <answer>
-            It is not neccessary to go through the deactivation 2 week wait, you can delete your account directly at:
-            www.facebook.com/help/delete_account If you do not think you will use Facebook again and would like your
-            account deleted, we can take care of this for you. Keep in mind that you will not be able to reactivate your
-            account or retrieve any of the content or information you have added.
+            It is not neccessary to go through the deactivation 2 week wait, you can delete your account directly at: www.facebook.com/help/delete_account If you do not think you will use Facebook again and would like your account deleted, we can take care of this for you. Keep in mind that you will not be able to reactivate your account or retrieve any of the content or information you have added.
         </answer>
         <answer>
-            There's a step by step YouTube guide on how to delete a Facebook account. There's also this blog article
-            guiding you through the process. Note that deactivating your Facebook account only makes Facebook
-            temporarily unavailable; it will be reactivated once you login again to your account. So if you are 100%
-            sure you want to delete your account account, only then go for the delete option. It may take 15 days to
-            completely delete your Facebook account.
+            There's a step by step YouTube guide on how to delete a Facebook account. There's also this blog article guiding you through the process. Note that deactivating your Facebook account only makes Facebook temporarily unavailable; it will be reactivated once you login again to your account. So if you are 100% sure you want to delete your account account, only then go for the delete option. It may take 15 days to completely delete your Facebook account.
         </answer>
     </qapair>
     <qapair>
@@ -143,35 +131,16 @@
             How do I add new styles to Google docs?
         </question>
         <answer>
-            Right now it's not possible to add more styles or rename the existed ones, but you can modify them to match
-            your needs. For example you could style your code as you wish and then by selecting one of the headers and
-            choosing the Update Heading # to match selection , that particular style could become your new "Code" style.
-            Then select something else and apply that heading and you're done.
+            Right now it's not possible to add more styles or rename the existed ones, but you can modify them to match your needs. For example you could style your code as you wish and then by selecting one of the headers and choosing the Update Heading # to match selection , that particular style could become your new "Code" style. Then select something else and apply that heading and you're done.
         </answer>
         <answer>
-            As Lipis poins out, you still cannot create your own styles. So, you are left to repurpose an existing one.
-            The downside to using Heading is this will result in "code" in my TOC. :/ I found that using Subtitle style
-            for code prevents it from showing in TOC.
+            As Lipis poins out, you still cannot create your own styles. So, you are left to repurpose an existing one. The downside to using Heading is this will result in "code" in my TOC. :/ I found that using Subtitle style for code prevents it from showing in TOC.
         </answer>
         <answer>
-            Until recently, it was possible to edit the CSS (stylesheet) and HTML source of a document. It took some
-            work, but if you knew HTML and CSS you could add a CSS class to your doc, and then edit the HTML to use it,
-            e.g. in the HTML &lt;span class='booktitle'&gt;Infinite Jest&lt;/span&gt; and in the CSS .booktitle {
-            font-style:italic; } Google has more or less phased out this capability with their new format, forcing old
-            docs to the new format. But, I've heard there are ways to keep docs in the old format, so there may be some
-            hope.
+            Until recently, it was possible to edit the CSS (stylesheet) and HTML source of a document. It took some work, but if you knew HTML and CSS you could add a CSS class to your doc, and then edit the HTML to use it, e.g. in the HTML &lt;span class='booktitle'&gt;Infinite Jest&lt;/span&gt; and in the CSS .booktitle { font-style:italic; } Google has more or less phased out this capability with their new format, forcing old docs to the new format. But, I've heard there are ways to keep docs in the old format, so there may be some hope.
         </answer>
         <answer>
-            The gratis Google Docs extension Paragraph Styles+ allows to create custom paragraph styles (plus decimal
-            system outline numbering for headings and a table of contents with page numbering). I just tested it, and
-            here's my first impression: Good start. For small-ish documents, it should be good to use :-) However it
-            runs quite slow, even though recent versions improved on the performance already. The UI does not integrate
-            with the Google Docs style UI. Probably not possible otherwise in the Google Docs API. The original Google
-            Docs style feature does not know about custom styles, considering all text with custom styles as having the
-            "Normal text" format. You can use both in parallel, but note that the "Clear formatting" button (looks like
-            " T x ") will remove custom style formatting from selected text. It seems to store your character styles on
-            an external web service, means you have to entrust them access to your documents the way you entrust them to
-            Google now … Source: Acknowledging the comment by Chris Moschini above, who mentioned it first.
+            The gratis Google Docs extension Paragraph Styles+ allows to create custom paragraph styles (plus decimal system outline numbering for headings and a table of contents with page numbering). I just tested it, and here's my first impression: Good start. For small-ish documents, it should be good to use :-) However it runs quite slow, even though recent versions improved on the performance already. The UI does not integrate with the Google Docs style UI. Probably not possible otherwise in the Google Docs API. The original Google Docs style feature does not know about custom styles, considering all text with custom styles as having the "Normal text" format. You can use both in parallel, but note that the "Clear formatting" button (looks like " T x ") will remove custom style formatting from selected text. It seems to store your character styles on an external web service, means you have to entrust them access to your documents the way you entrust them to Google now … Source: Acknowledging the comment by Chris Moschini above, who mentioned it first.
         </answer>
     </qapair>
     <qapair>
@@ -185,8 +154,7 @@
             Using a strike through font in gmail.
         </rephr>
         <rephr>
-            Gmail provides bold, italic and underline options for text formatting but I can't find how to make it
-            strikethrough.
+            Gmail provides bold, italic and underline options for text formatting but I can't find how to make it strikethrough.
         </rephr>
         <rephr>
             Getting letters in gmail mails to be strikethrough.
@@ -216,23 +184,16 @@
             Ok, I have discovered a simple way. Copy this text and paste into your e-mail. Edit the text. Voila!
         </answer>
         <answer>
-            This may not be for everyone (I work in web development), and it's slow, but if you use Chrome or Chromium
-            you can edit the HTML directly and it works fine. Right-click on the text you want to strike out Choose
-            'inspect element' The inspector will bring up that text - right click on it and choose 'edit html' Wrap the
-            text you want to strike out with &lt;strike&gt;text&lt;/strike&gt;
+            This may not be for everyone (I work in web development), and it's slow, but if you use Chrome or Chromium you can edit the HTML directly and it works fine. Right-click on the text you want to strike out Choose 'inspect element' The inspector will bring up that text - right click on it and choose 'edit html' Wrap the text you want to strike out with &lt;strike&gt;text&lt;/strike&gt;
         </answer>
         <answer>
-            There is a Google Chrome extension called strikethrough that will add a strikethrough button: The current
-            version of this extension provides the an option to format with strikethrough from both inline replies and
-            pop-out replies.
+            There is a Google Chrome extension called strikethrough that will add a strikethrough button: The current version of this extension provides the an option to format with strikethrough from both inline replies and pop-out replies.
         </answer>
         <answer>
-            There is no native way to do it, so you either do it in Word (or any other text editor that supports it) and
-            then copy/paste the text in the compose window or you install a browser add-on.
+            There is no native way to do it, so you either do it in Word (or any other text editor that supports it) and then copy/paste the text in the compose window or you install a browser add-on.
         </answer>
         <answer>
-            Personally, I type emails that need more formatting options in the CKeditor demo . Then, I copy the final
-            text into Gmail - the formatting is retained.
+            Personally, I type emails that need more formatting options in the CKeditor demo . Then, I copy the final text into Gmail - the formatting is retained.
         </answer>
         <answer>
             This extension works in Firefox!!! strikeThrough
@@ -249,8 +210,7 @@
             Can I link to a particular cell of a google spreadsheet document from a cell in another document?
         </rephr>
         <rephr>
-            Is it possible to insert a link into a google spreadsheet that would lead to a cell in another google
-            spreadsheet?
+            Is it possible to insert a link into a google spreadsheet that would lead to a cell in another google spreadsheet?
         </rephr>
         <rephr>
             How can I link together cells in google spreadsheets documents.
@@ -262,12 +222,10 @@
             How do I link two cells from different google spreadsheet documents.
         </rephr>
         <rephr>
-            I have a cell in a google spreadsheet and I want to link it to another cell from a different google sheet is
-            this possible?
+            I have a cell in a google spreadsheet and I want to link it to another cell from a different google sheet is this possible?
         </rephr>
         <rephr>
-            I need to reference a cell from another google sheets document in a cell in my current document, can this be
-            done?
+            I need to reference a cell from another google sheets document in a cell in my current document, can this be done?
         </rephr>
         <rephr>
             Linking together cells from different google spreadsheet documents.
@@ -279,55 +237,19 @@
             How do I link a cell in Google Spreadsheets to a cell in another document?
         </question>
         <answer>
-            IMPORTRANGE() appears to be the function you want. From the Google spreadsheets function list : Google
-            Spreadsheets lets you reference another workbook in the spreadsheet that you're currently editing by using
-            the ImportRange function. ImportRange lets you pull one or more cell values from one spreadsheet into
-            another. To create your own ImportRange formulas, enter =importRange(spreadsheet-key, range). For languages
-            where comma is used for decimal separation, use a semicolon instead of a comma to separate arguments in your
-            formula. Spreadsheet-key is a STRING which is the key value from the spreadsheet URL. Range is a STRING
-            representing the range of cells you want to import, optionally including the sheet name (defaults to first
-            sheet). You can also use a range name if you prefer. Given that the two arguments are STRINGs, you need to
-            enclose them in quotes or refer to cells which have string values in them. For example:
-            =importrange("abcd123abcd123", "sheet1!A1:C10") "abcd123abcd123" is the value in the "key=" attribute on the
-            URL of the target spreadsheet and "sheet1!A1:C10" is the range which is desired to be imported.
-            =importrange(A1,B1) Cell A1 contains the string ABCD123ABCD123 and cell B1 contains sheet1!A1:C10 Note: In
-            order to use ImportRange, you need to have been added as a viewer or collaborator to the spreadsheet from
-            which ImportRange is pulling the data. Otherwise, you'll get this error: "#REF! error: The requested
-            spreadsheet key, sheet title, or cell range was not found." "key" is of course the string in the URL for the
-            spreadsheet that matches to the key= parameter. I just tested it by creating two spreadsheets. In cell A1 of
-            the first I put a string. In cell A1 of the second I put =importRange("tgR2P4UTz_KT0Lc270Ijb_A","A1") and it
-            displayed the string from the first spreadsheet. (Your key will obviously be different.) (The format of the
-            function may depend on your locale. In France the formula is not valid with a comma, so you'll need to be
-            replace it with a semi-colon: =importRange("tgR2P4UTz_KT0Lc270Ijb_A";"A1") ) NOTES: Google currently sets a
-            hard limit of 50 "cross-workbook reference formulas" per spreadsheet. Source: Google Docs, Sheets, and
-            Slides size limits . (h/t JJ Rohrer ) The "new" Google Spreadsheet (soon to be the standard) removes the 50
-            limit of 50 "cross-workbook reference formulas ( Google Support ) (h/t Jacob Jan Tuinstra ) In the "new"
-            Google Sheets you also use the entire URL as the key ( Google Support ) (h/t Punchlinern )
+            IMPORTRANGE() appears to be the function you want. From the Google spreadsheets function list : Google Spreadsheets lets you reference another workbook in the spreadsheet that you're currently editing by using the ImportRange function. ImportRange lets you pull one or more cell values from one spreadsheet into another. To create your own ImportRange formulas, enter =importRange(spreadsheet-key, range). For languages where comma is used for decimal separation, use a semicolon instead of a comma to separate arguments in your formula. Spreadsheet-key is a STRING which is the key value from the spreadsheet URL. Range is a STRING representing the range of cells you want to import, optionally including the sheet name (defaults to first sheet). You can also use a range name if you prefer. Given that the two arguments are STRINGs, you need to enclose them in quotes or refer to cells which have string values in them. For example: =importrange("abcd123abcd123", "sheet1!A1:C10") "abcd123abcd123" is the value in the "key=" attribute on the URL of the target spreadsheet and "sheet1!A1:C10" is the range which is desired to be imported. =importrange(A1,B1) Cell A1 contains the string ABCD123ABCD123 and cell B1 contains sheet1!A1:C10 Note: In order to use ImportRange, you need to have been added as a viewer or collaborator to the spreadsheet from which ImportRange is pulling the data. Otherwise, you'll get this error: "#REF! error: The requested spreadsheet key, sheet title, or cell range was not found." "key" is of course the string in the URL for the spreadsheet that matches to the key= parameter. I just tested it by creating two spreadsheets. In cell A1 of the first I put a string. In cell A1 of the second I put =importRange("tgR2P4UTz_KT0Lc270Ijb_A","A1") and it displayed the string from the first spreadsheet. (Your key will obviously be different.) (The format of the function may depend on your locale. In France the formula is not valid with a comma, so you'll need to be replace it with a semi-colon: =importRange("tgR2P4UTz_KT0Lc270Ijb_A";"A1") ) NOTES: Google currently sets a hard limit of 50 "cross-workbook reference formulas" per spreadsheet. Source: Google Docs, Sheets, and Slides size limits . (h/t JJ Rohrer ) The "new" Google Spreadsheet (soon to be the standard) removes the 50 limit of 50 "cross-workbook reference formulas ( Google Support ) (h/t Jacob Jan Tuinstra ) In the "new" Google Sheets you also use the entire URL as the key ( Google Support ) (h/t Punchlinern )
         </answer>
         <answer>
-            FYI if you want to reference another sheet within that other spreadsheet, the sheet name should NOT be
-            re-quoted: use =importRange("tgR2P4UTz_KT0Lc270Ijb_A","Sheet Name!A1:A10") instead of
-            =importRange("tgR2P4UTz_KT0Lc270Ijb_A","'Sheet Name'!A1:A10")
+            FYI if you want to reference another sheet within that other spreadsheet, the sheet name should NOT be re-quoted: use =importRange("tgR2P4UTz_KT0Lc270Ijb_A","Sheet Name!A1:A10") instead of =importRange("tgR2P4UTz_KT0Lc270Ijb_A","'Sheet Name'!A1:A10")
         </answer>
         <answer>
-            In the new interface, you should simply be able to type = in the cell, then just go to the other sheet and
-            pick the cell you want. If you want to do it manually, or are using the old interface, you can simply do
-            =Sheet1!A1 , where Sheet1 is the name of the sheet, and A1 is the cell on that sheet you care about. This is
-            identical to Microsoft Excel.
+            In the new interface, you should simply be able to type = in the cell, then just go to the other sheet and pick the cell you want. If you want to do it manually, or are using the old interface, you can simply do =Sheet1!A1 , where Sheet1 is the name of the sheet, and A1 is the cell on that sheet you care about. This is identical to Microsoft Excel.
         </answer>
         <answer>
-            I found this syntax using Insert -&gt; Define new range RANGE FOR REFERENCING OTHER SPREADSHEET: Whole A
-            column: 'Spreadsheet With Spaces in the name'!A:A Whole B column: 'Spreadsheet With Spaces in the name'!B:B
-            etc. Then you can use it as: =COUNTIF('First Page'!B:B, "valueToMatch")
+            I found this syntax using Insert -&gt; Define new range RANGE FOR REFERENCING OTHER SPREADSHEET: Whole A column: 'Spreadsheet With Spaces in the name'!A:A Whole B column: 'Spreadsheet With Spaces in the name'!B:B etc. Then you can use it as: =COUNTIF('First Page'!B:B, "valueToMatch")
         </answer>
         <answer>
-            here is how i did it (reimplemented 'importrange()'): open the script editor ("tools" -&gt; "scripts" -&gt;
-            "script editor") provide a function like this (without any checks, this has to be improved but you get the
-            general idea): function REMOTEDATA(inKey, inRange) { var outData; var ss = SpreadsheetApp.openById(inKey);
-            if (ss) { outData = ss.getRange(inRange).getValues(); } return outData; } use this formula like this in your
-            spreadsheet: =SUM(REMOTEDATA("key", "SheetName!A1:A10")) "key" is the key of the document, you find it in
-            the "key=xyz" parameter of the document url. the documentation for ' spreadsheet services ' provides more
-            information on the topic.
+            here is how i did it (reimplemented 'importrange()'): open the script editor ("tools" -&gt; "scripts" -&gt;"script editor") provide a function like this (without any checks, this has to be improved but you get the general idea): function REMOTEDATA(inKey, inRange) { var outData; var ss = SpreadsheetApp.openById(inKey); if (ss) { outData = ss.getRange(inRange).getValues(); } return outData; } use this formula like this in your spreadsheet: =SUM(REMOTEDATA("key", "SheetName!A1:A10")) "key" is the key of the document, you find it in the "key=xyz" parameter of the document url. the documentation for ' spreadsheet services ' provides more information on the topic.
         </answer>
     </qapair>
     <qapair>
@@ -368,82 +290,31 @@
             How can Google Docs and markdown play nice?
         </question>
         <answer>
-            You can give StackEdit a try. It has a nice integration with Google Drive. Once you import/export a Markdown
-            document from/to Google Drive, you can open it later directly from Google Drive since StackEdit is
-            integrated as a third party editor/viewer application. You can find StackEdit as a Chrome application as
-            well on the Web Store . NOTE: I'm the developer of StackEdit.
+            You can give StackEdit a try. It has a nice integration with Google Drive. Once you import/export a Markdown document from/to Google Drive, you can open it later directly from Google Drive since StackEdit is integrated as a third party editor/viewer application. You can find StackEdit as a Chrome application as well on the Web Store . NOTE: I'm the developer of StackEdit.
         </answer>
         <answer>
-            You say you're a programmer, so this answer assumes you'd be comfortable with a little "roll your own"
-            approach. Google drive supports scripts: http://www.google.com/script/start/ So, you could create a little
-            Showdown viewer that you point to your markdown files (as URLs).
+            You say you're a programmer, so this answer assumes you'd be comfortable with a little "roll your own" approach. Google drive supports scripts: http://www.google.com/script/start/ So, you could create a little Showdown viewer that you point to your markdown files (as URLs).
         </answer>
         <answer>
-            You can convert a Markdown document to HTML, and copy/paste the HTML page (not the source) into a Google
-            Drive document. It will retain most of the formatting including headings, lists, links,
-            bold/italic/underline. The font, margins, and font sizes will not match the Google Drive defaults, and will
-            look "out of place" compared to standard Google Drive documents. Applying a custom CSS file to the HTML
-            document will solve this, making the document look very similar. I'm not sure about the other direction,
-            converting Google Drive documents to Markdown. It may be possible to export to HTML and use an HTML to
-            Markdown converter.
+            You can convert a Markdown document to HTML, and copy/paste the HTML page (not the source) into a Google Drive document. It will retain most of the formatting including headings, lists, links, bold/italic/underline. The font, margins, and font sizes will not match the Google Drive defaults, and will look "out of place" compared to standard Google Drive documents. Applying a custom CSS file to the HTML document will solve this, making the document look very similar. I'm not sure about the other direction, converting Google Drive documents to Markdown. It may be possible to export to HTML and use an HTML to Markdown converter.
         </answer>
         <answer>
-            gdocs2md does a good job of converting Google documents to markdown, retaining headers, lists, tables,
-            italics, bold, links and images. I use it to allow shared editing of documents, then export to markdown.
-            Some care does need to be taken to use formatting in the Google document that maps well to markdown, but
-            this isn't particularly difficult. I've also extended the script to support exporting an entire folder of
-            documents to a new "export" folder on Google Drive, and to slightly improve handling of italic and bold
-            formatting, my fork is here .
+            gdocs2md does a good job of converting Google documents to markdown, retaining headers, lists, tables, italics, bold, links and images. I use it to allow shared editing of documents, then export to markdown. Some care does need to be taken to use formatting in the Google document that maps well to markdown, but this isn't particularly difficult. I've also extended the script to support exporting an entire folder of documents to a new "export" folder on Google Drive, and to slightly improve handling of italic and bold formatting, my fork is here .
         </answer>
         <answer>
-            A Google Docs document encodes everything in 'elements' within the Kix editor that it's all based on (it's
-            closed source as basically this is the big trade secret, with which anyone else could run their own Docs
-            service - which is a shame imo). You can access these elements with Google Apps Script, a variant of
-            Javascript - but writing Markdown from the elements isn't as straightforward as you'd think (you have to
-            essentially implement a markdown parser in Apps Script). When I came to do this earlier in the year there
-            were dozens of forks of Renato Mangini's " gdocs2md " repo, but he seemed to have stopped fielding pull
-            requests, and over the period of a few years forks had appeared that were far better than others. I went
-            through many of these in the tree and put the best into a new package, which also generates HTML mixed with
-            the markdown for elements Google Docs supports such as superscript and subscript elements (which markdown
-            has no way of representing). Even incorporating the best of others' edits, the parsing needed work, and I'm
-            confident that this is the best available for the job at present. Script available on GitHub with
-            installation instructions: lmmx/gdocs2md-html I also worked on adding in the most important feature to such
-            a script - user features - providing the markdown in a pop-up within Google Docs rather than saving to file
-            (I think the original was batch saving for entire folders, which is not suitable for my document-drafting
-            needs, or how I use Google Docs at all). I'd like to suggest it be a single more sophisticated project for
-            interested developers to collaborate on (or at least suggest features for) rather than everyone forking off
-            scripts of various quality, when we're likely working to the same aims. As well as reducing duplication of
-            effort, the Google Docs policy for creation of "add-ons" states that to be published (and therefore
-            'installable' rather than needing to be loaded for each document in a slightly awkward manner) The add-on
-            must be fully functional — it can't be a “work in progress.” The script has been tested with multiple active
-            users. Obviously if you wanted a "pure" markdown then either switch off these features (the code is there to
-            fork) or just don't use sub/superscripts, etc. It wouldn't be too difficult to add personalised settings to
-            such a script if it matures as an add-on, if there's significant interest.
+            A Google Docs document encodes everything in 'elements' within the Kix editor that it's all based on (it's closed source as basically this is the big trade secret, with which anyone else could run their own Docs service - which is a shame imo). You can access these elements with Google Apps Script, a variant of Javascript - but writing Markdown from the elements isn't as straightforward as you'd think (you have to essentially implement a markdown parser in Apps Script). When I came to do this earlier in the year there were dozens of forks of Renato Mangini's " gdocs2md " repo, but he seemed to have stopped fielding pull requests, and over the period of a few years forks had appeared that were far better than others. I went through many of these in the tree and put the best into a new package, which also generates HTML mixed with the markdown for elements Google Docs supports such as superscript and subscript elements (which markdown has no way of representing). Even incorporating the best of others' edits, the parsing needed work, and I'm confident that this is the best available for the job at present. Script available on GitHub with installation instructions: lmmx/gdocs2md-html I also worked on adding in the most important feature to such a script - user features - providing the markdown in a pop-up within Google Docs rather than saving to file (I think the original was batch saving for entire folders, which is not suitable for my document-drafting needs, or how I use Google Docs at all). I'd like to suggest it be a single more sophisticated project for interested developers to collaborate on (or at least suggest features for) rather than everyone forking off scripts of various quality, when we're likely working to the same aims. As well as reducing duplication of effort, the Google Docs policy for creation of "add-ons" states that to be published (and therefore 'installable' rather than needing to be loaded for each document in a slightly awkward manner) The add-on must be fully functional — it can't be a “work in progress.” The script has been tested with multiple active users. Obviously if you wanted a "pure" markdown then either switch off these features (the code is there to fork) or just don't use sub/superscripts, etc. It wouldn't be too difficult to add personalised settings to such a script if it matures as an add-on, if there's significant interest.
         </answer>
         <answer>
-            Download and install the Google Drive software. It's for Windows and Mac at the moment, a version for Linux
-            is in the making. The software will create a folder on your computer that syncs with Google Drive. If you
-            open a file in it, it will be opened in the appropriate installed program. Google Drive documents that you
-            open will open in the browser. This way, you can open/edit markdown files stored on Google Drive in an
-            installed markdown editor.
+            Download and install the Google Drive software. It's for Windows and Mac at the moment, a version for Linux is in the making. The software will create a folder on your computer that syncs with Google Drive. If you open a file in it, it will be opened in the appropriate installed program. Google Drive documents that you open will open in the browser. This way, you can open/edit markdown files stored on Google Drive in an installed markdown editor.
         </answer>
         <answer>
-            Also try Markdown Editor , that supports integration with Google Drive. Disclaimer : I'm the developer of
-            Markdown Editor.
+            Also try Markdown Editor , that supports integration with Google Drive. Disclaimer : I'm the developer of Markdown Editor.
         </answer>
         <answer>
-            Assuming that once you're done making a document in markdown you want to convert it into a true google
-            document (as opposed to being able to preview the document in the google drive web interface and continue
-            editing in markdown syntax) so that others unfamiliar with markdown can collaborate I've found the following
-            fairly quick: Create your mark down wherever's convenient. When done export to the browser Copy the
-            resulting text from the browser Paste into a new Google Doc Google docs is ready to have HTML pasted in so
-            it'll preserve all the headings, spacing, lists, and other formats. Of course this only makes sense if you
-            just want to personally work in markdown, but collaborate with others in a regular google doc.
+            Assuming that once you're done making a document in markdown you want to convert it into a true google document (as opposed to being able to preview the document in the google drive web interface and continue editing in markdown syntax) so that others unfamiliar with markdown can collaborate I've found the following fairly quick: Create your mark down wherever's convenient. When done export to the browser Copy the resulting text from the browser Paste into a new Google Doc Google docs is ready to have HTML pasted in so it'll preserve all the headings, spacing, lists, and other formats. Of course this only makes sense if you just want to personally work in markdown, but collaborate with others in a regular google doc.
         </answer>
         <answer>
-            I recommend Markdown Preview Is a simple Add-on that (just) makes previews of the markdown document you are
-            creating. As far I understand, the main request is to preview it, so I think this is what you are searching
-            for.
+            I recommend Markdown Preview Is a simple Add-on that (just) makes previews of the markdown document you are creating. As far I understand, the main request is to preview it, so I think this is what you are searching for.
         </answer>
     </qapair>
     <qapair>
@@ -484,39 +355,25 @@
             Gmail &amp; Google Docs: Paste just the text, not the formatting (Firefox, Safari)
         </question>
         <answer>
-            It seems that the browser must enable this feature. Chrome, PC: Ctrl + Shift + V Chrome, Mac: Command ⌘ +
-            Shift ⇧ + V Firefox, PC: Ctrl + Shift + V Firefox, Mac: Command ⌘ + Shift ⇧ + V Safari, Mac: Command ⌘ +
-            Shift ⇧ + Option ⌥ + V
+            It seems that the browser must enable this feature. Chrome, PC: Ctrl + Shift + V Chrome, Mac: Command ⌘ + Shift ⇧ + V Firefox, PC: Ctrl + Shift + V Firefox, Mac: Command ⌘ + Shift ⇧ + V Safari, Mac: Command ⌘ + Shift ⇧ + Option ⌥ + V
         </answer>
         <answer>
-            It's not a webapp answer, but I use a program called PureText . It just sits in your system tray and
-            provides a hotkey (configurable) that will paste the current clipboard contents as plain text. I absolutely
-            love this feature. I have it set to WINDOWS+v
+            It's not a webapp answer, but I use a program called PureText . It just sits in your system tray and provides a hotkey (configurable) that will paste the current clipboard contents as plain text. I absolutely love this feature. I have it set to WINDOWS+v
         </answer>
         <answer>
-            Alas the add-on "Copy Plain Text" by Jeremy Gillick
-            (https://addons.mozilla.org/en-US/firefox/addon/copy-plain-text/) does not do the trick. As the name says,
-            it "Copies text without formatting...". The question here is about pasting. Yes, this is different if your
-            source is not a browser. I did not find a firefox extension to help here. But PureText does it. Thanks to
-            EndangeredMassa for pointing out.
+            Alas the add-on "Copy Plain Text" by Jeremy Gillick (https://addons.mozilla.org/en-US/firefox/addon/copy-plain-text/) does not do the trick. As the name says, it "Copies text without formatting...". The question here is about pasting. Yes, this is different if your source is not a browser. I did not find a firefox extension to help here. But PureText does it. Thanks to EndangeredMassa for pointing out.
         </answer>
         <answer>
-            In the new version of Gmail/Google Docs there is a keyboard shortcut for pasting without source formatting:
-            Ctrl + Shift + V
+            In the new version of Gmail/Google Docs there is a keyboard shortcut for pasting without source formatting: Ctrl + Shift + V
         </answer>
         <answer>
-            As @eagle mentioned, Ctrl + Shift + V will work in Chrome. There is an addon for Firefox that claims it will
-            solve your problem: https://addons.mozilla.org/en-US/firefox/addon/134/
+            As @eagle mentioned, Ctrl + Shift + V will work in Chrome. There is an addon for Firefox that claims it will solve your problem: https://addons.mozilla.org/en-US/firefox/addon/134/
         </answer>
         <answer>
-            If you're the sort of person who always has a terminal window open, and you're on OSX or another OS with
-            shell commands that give you pipe-access to the system clipboard, you can set up something like this: alias
-            stripstyle='pbpaste | pbcopy' Then whenever you want to paste without formatting, just go into your terminal
-            and type stripstyle and voila, whatever's in the clipboard is deformatted.
+            If you're the sort of person who always has a terminal window open, and you're on OSX or another OS with shell commands that give you pipe-access to the system clipboard, you can set up something like this: alias stripstyle='pbpaste | pbcopy' Then whenever you want to paste without formatting, just go into your terminal and type stripstyle and voila, whatever's in the clipboard is deformatted.
         </answer>
         <answer>
-            What I do is to open a tab of Google Translate, paste it there, and cut from there, and then paste to where
-            I need (Gmail, Docs, whatever).
+            What I do is to open a tab of Google Translate, paste it there, and cut from there, and then paste to where I need (Gmail, Docs, whatever).
         </answer>
     </qapair>
     <qapair>
@@ -557,65 +414,34 @@
             How do I download a YouTube video?
         </question>
         <answer>
-            If you're using Firefox as your browser, there are a wealth of addons available for the purpose. Personally
-            I use NetVideoHunter . It suits the way I work. Other options are; Video DownloadHelper 1-Click YouTube
-            Video Download There are plenty of others.. For Google Chrome, you could try: YouTube Downloader - 1.1 Opera
-            has a number of widgets available for the same purpose, but I know nothing about them, like wise
-            Internet Explorer, I haven't used that in years... Alternatively there is a really useful bookmarklet at
-            Clipnabber .
+            If you're using Firefox as your browser, there are a wealth of addons available for the purpose. Personally I use NetVideoHunter . It suits the way I work. Other options are; Video DownloadHelper 1-Click YouTube Video Download There are plenty of others.. For Google Chrome, you could try: YouTube Downloader - 1.1 Opera has a number of widgets available for the same purpose, but I know nothing about them, like wise Internet Explorer, I haven't used that in years... Alternatively there is a really useful bookmarklet at Clipnabber .
         </answer>
         <answer>
-            If you're a little command line oriented like myself, the handy tool youtube-dl I find quite practical.
-            (Edit: youtube-dl has moved to http://rg3.github.com/youtube-dl/ .) youtube-dl -t
-            "http://youtube.com/watch?v=quuxthing" mplayer "This Is What the title looks like but its just an
-            example.flv" youtube-dl will work even if you only give it the video code (usually at the end of the URL,
-            after "v="), like this: youtube-dl -t zJOS0sV2a24 Allegedly supported on Mac/Unix/Win, but I can only speak
-            for Linux.
+            If you're a little command line oriented like myself, the handy tool youtube-dl I find quite practical. (Edit: youtube-dl has moved to http://rg3.github.com/youtube-dl/ .) youtube-dl -t "http://youtube.com/watch?v=quuxthing" mplayer "This Is What the title looks like but its just an example.flv" youtube-dl will work even if you only give it the video code (usually at the end of the URL, after "v="), like this: youtube-dl -t zJOS0sV2a24 Allegedly supported on Mac/Unix/Win, but I can only speak for Linux.
         </answer>
         <answer>
-            JDownloader will really help. If you copy a YouTube link to the clipboard it will give you various options
-            like, download MP3 files download Flash videos download MP4 files download in 320, 460, 720, etc. Moreover,
-            if you copy a YouTube playlist link, it will parse all videos and gives you option to download all the
-            videos in the playlist. Supports/has plugins for more than 200 other sites like ( Hotfile , MediaFire ,
-            ifile.it , etc.) You must give it a try, it will become your all in one download manager . One more thing,
-            it supports multithreaded downloading .
+            JDownloader will really help. If you copy a YouTube link to the clipboard it will give you various options like, download MP3 files download Flash videos download MP4 files download in 320, 460, 720, etc. Moreover, if you copy a YouTube playlist link, it will parse all videos and gives you option to download all the videos in the playlist. Supports/has plugins for more than 200 other sites like ( Hotfile , MediaFire , ifile.it , etc.) You must give it a try, it will become your all in one download manager . One more thing, it supports multithreaded downloading .
         </answer>
         <answer>
-            I use FlashGot addon for Firefox to download Youtube videos. From the FlashGot forum : Q: How can I download
-            video and audio streams with FlashGot? A: Just open the page where the video or audio stream plays, and as
-            soon as it starts you will see a new FlashGot Media status bar icon flashing as a notification: you can
-            either left-click it to download all the streams at once, or right-click to choose among multiple streams,
-            if more than one have been found. Alternatively, you can press ctrl+F7 or select the FlashGot Media command
-            from your context menu.
+            I use FlashGot addon for Firefox to download Youtube videos. From the FlashGot forum : Q: How can I download video and audio streams with FlashGot? A: Just open the page where the video or audio stream plays, and as soon as it starts you will see a new FlashGot Media status bar icon flashing as a notification: you can either left-click it to download all the streams at once, or right-click to choose among multiple streams, if more than one have been found. Alternatively, you can press ctrl+F7 or select the FlashGot Media command from your context menu.
         </answer>
         <answer>
-            RealPlayer integrates a download feature for any flash video on a website even if the video isn't from
-            popular platforms like youtube.
+            RealPlayer integrates a download feature for any flash video on a website even if the video isn't from popular platforms like youtube.
         </answer>
         <answer>
-            Video DownloadHelper - it just works. Note: Quite frequent addon updates can be sometimes annoying,
-            especially if you are not using this addon too often (so you don't appreciate having it up to date).
+            Video DownloadHelper - it just works. Note: Quite frequent addon updates can be sometimes annoying, especially if you are not using this addon too often (so you don't appreciate having it up to date).
         </answer>
         <answer>
-            Some videos (like the Vevo ones) get streamed; I haven't figured out how to save them yet. But for the bulk
-            of videos, they get saved to the computer's temporary folder until the video is navigated away from. On a
-            Linux or Mac OS X computer, it's relatively easy to find and copy the temporary file elsewhere (renaming it
-            to a .flv if it is a Flash video). On Windows, the file's locked, so you need to use something like HoboCopy
-            to copy it, which requires administrator rights and command-line usage. In places where you don't have
-            administrator rights, like a computer lab, I launch a logging proxy ( Fiddler2 's lightweight and easy) to
-            intercept all HTTP traffic, but this slows down all your browsing while it's capturing. Usually, though,
-            sites like KeepVid will work again later if you give them time.
+            Some videos (like the Vevo ones) get streamed; I haven't figured out how to save them yet. But for the bulk of videos, they get saved to the computer's temporary folder until the video is navigated away from. On a Linux or Mac OS X computer, it's relatively easy to find and copy the temporary file elsewhere (renaming it to a .flv if it is a Flash video). On Windows, the file's locked, so you need to use something like HoboCopy to copy it, which requires administrator rights and command-line usage. In places where you don't have administrator rights, like a computer lab, I launch a logging proxy ( Fiddler2 's lightweight and easy) to intercept all HTTP traffic, but this slows down all your browsing while it's capturing. Usually, though, sites like KeepVid will work again later if you give them time.
         </answer>
         <answer>
-            My favorite is prefixing youtube in the URL with "kiss". Like this, www. kiss
-            youtube.com/watch?v=zJOS0sV2a24 Try it.
+            My favorite is prefixing youtube in the URL with "kiss". Like this, www. kiss youtube.com/watch?v=zJOS0sV2a24 Try it.
         </answer>
         <answer>
             Internet Download Manager also supports this (enable "Advanced Browser Integration")
         </answer>
         <answer>
-            There are a lot of software and websites that can download YouTube videos, and I use Leawo Free YouTube
-            Downloader . I have used it for about 1 year without any problems.
+            There are a lot of software and websites that can download YouTube videos, and I use Leawo Free YouTube Downloader . I have used it for about 1 year without any problems.
         </answer>
         <answer>
             I like YouTube Enhancer for greasemonkey. It also supports downloading at higher resolutions and mp4's
@@ -624,63 +450,40 @@
             I use VideoDL . Crazy awesome.
         </answer>
         <answer>
-            I use JDownloader, but sometimes I also use http://savevideo.me because it lets you download the streamed
-            file, it even lets you choose HD, or any resolution the video might had. The good news is that (as
-            JDownloader) there's no conversion process involved, you get the real thing here. FYI, I'm in no way
-            affiliated with SaveVideoME in any way.
+            I use JDownloader, but sometimes I also use http://savevideo.me because it lets you download the streamed file, it even lets you choose HD, or any resolution the video might had. The good news is that (as JDownloader) there's no conversion process involved, you get the real thing here. FYI, I'm in no way affiliated with SaveVideoME in any way.
         </answer>
         <answer>
             If you use Opera you can use this extension(works not just in youtube.com)
         </answer>
         <answer>
-            FastestTube It works really easily as it just adds a download button on the youtube page and has addons for
-            most browsers.
+            FastestTube It works really easily as it just adds a download button on the youtube page and has addons for most browsers.
         </answer>
         <answer>
-            I use Orbit Downloader with Firefox. Downloads flash video from all sorts of sites including YouTube
-            presumably integrating with Flash.
+            I use Orbit Downloader with Firefox. Downloads flash video from all sorts of sites including YouTube presumably integrating with Flash.
         </answer>
         <answer>
-            Another simple site: http://vixy.net/ Also offers conversion to mpeg, audio only and other options. This
-            service allows you convert a Flash Video / FLV file (YouTube's videos,etc) to MPEG4 (AVI/MOV/MP4/MP3/3GP)
-            file online. It is using a compressed domain transcoder technology. It converts FLV to MPEG4 faster and less
-            lossy than a typical transcoder.
+            Another simple site: http://vixy.net/ Also offers conversion to mpeg, audio only and other options. This service allows you convert a Flash Video / FLV file (YouTube's videos,etc) to MPEG4 (AVI/MOV/MP4/MP3/3GP) file online. It is using a compressed domain transcoder technology. It converts FLV to MPEG4 faster and less lossy than a typical transcoder.
         </answer>
         <answer>
             Use the Zamzar bookmarklet to download your favorite videos in a variety of audio &amp; video file formats
         </answer>
         <answer>
-            I just use some Audials Tunebite Youtube Downloader , just got the new version 8 a couple of days ago. It's
-            actually pretty cool since this one besides being able to download and convert youtube videos can also work
-            as a Youtube to mp3 ripper and convert youtube flv to mp3 files I can use on my pc or cell phone.
+            I just use some Audials Tunebite Youtube Downloader , just got the new version 8 a couple of days ago. It's actually pretty cool since this one besides being able to download and convert youtube videos can also work as a Youtube to mp3 ripper and convert youtube flv to mp3 files I can use on my pc or cell phone.
         </answer>
         <answer>
-            There are already a lot of answers but if the others don't meet your taste Freemake also has a free video
-            downloader. Freemake Video Downloader is a great, free Windows application which requires .NET platform to
-            be installed on your system. It supports many video sites (says 40+ on the site), not just only YouTube. It
-            also supports conversion to a large set of video formats.
+            There are already a lot of answers but if the others don't meet your taste Freemake also has a free video downloader. Freemake Video Downloader is a great, free Windows application which requires .NET platform to be installed on your system. It supports many video sites (says 40+ on the site), not just only YouTube. It also supports conversion to a large set of video formats.
         </answer>
         <answer>
-            aTube Catcher is a good one, with lots of options on formats and video quality. You can customize it to
-            batch download a user’s videos. Also, downloading is very fast.
+            aTube Catcher is a good one, with lots of options on formats and video quality. You can customize it to batch download a user’s videos. Also, downloading is very fast.
         </answer>
         <answer>
-            VLC can already do this. From The Best Hidden Features of VLC : Find a video on YouTube and copy the URL
-            from the address bar. In VLC, head to Media &gt; Open Network Stream . Paste the YouTube link in the box and
-            click Play. Under Tools, click Codec Information. In the box that says Location, right-click the block of
-            text and click Select All. Copy this text to your clipboard. Go back to your browser and paste the link in
-            the address bar. This will open the source file directly on YouTube's servers. Right-click the video as it
-            plays and select Save Video As.
+            VLC can already do this. From The Best Hidden Features of VLC : Find a video on YouTube and copy the URL from the address bar. In VLC, head to Media &gt; Open Network Stream . Paste the YouTube link in the box and click Play. Under Tools, click Codec Information. In the box that says Location, right-click the block of text and click Select All. Copy this text to your clipboard. Go back to your browser and paste the link in the address bar. This will open the source file directly on YouTube's servers. Right-click the video as it plays and select Save Video As.
         </answer>
         <answer>
-            There is nice Python script called youtube-dl . Usually you can install it straight via apt-get (on Linux)
-            or brew (on OSX). Or you may try Wondershare AllMyTube which supports video and the whole playlist
-            downloads.
+            There is nice Python script called youtube-dl . Usually you can install it straight via apt-get (on Linux) or brew (on OSX). Or you may try Wondershare AllMyTube which supports video and the whole playlist downloads.
         </answer>
         <answer>
-            ClipGrab : free software for Windows, Mac, Linux supported by developer supports various sites, formats,
-            resolutions grabs links from clipboard supports pausing download and etc. p.s: I hope I won't get banned for
-            second answer about it -_-
+            ClipGrab : free software for Windows, Mac, Linux supported by developer supports various sites, formats, resolutions grabs links from clipboard supports pausing download and etc. p.s: I hope I won't get banned for second answer about it -_-
         </answer>
     </qapair>
     <qapair>
@@ -896,20 +699,16 @@
             How can facebook detect whether or not you are logged in in gmail.
         </rephr>
         <rephr>
-            How is it possible that when resetting password, facebook will detect if you are already logged into your
-            gmail account.
+            How is it possible that when resetting password, facebook will detect if you are already logged into your gmail account.
         </rephr>
         <rephr>
-            What's the deal with facebook knowing when you are logged into google, and even using it when you reset your
-            password.
+            What's the deal with facebook knowing when you are logged into google, and even using it when you reset your password.
         </rephr>
         <rephr>
-            Did you know that FB is aware if you are logged into google or not, and can use this information for it's
-            own authentication purposes.
+            Did you know that FB is aware if you are logged into google or not, and can use this information for it's own authentication purposes.
         </rephr>
         <rephr>
-            Is there a deal between facebook and google, because it seems that when I'm logged into my gmail accounts,
-            facebook can detect this?
+            Is there a deal between facebook and google, because it seems that when I'm logged into my gmail accounts, facebook can detect this?
         </rephr>
         <rephr>
             *
@@ -1143,8 +942,7 @@
             I'd like to forward more than one email simultaneously in gmail, can this be done?
         </rephr>
         <rephr>
-            I often find myself needing to forward mails in a batch in gmail, can forward them all together in a single
-            click?
+            I often find myself needing to forward mails in a batch in gmail, can forward them all together in a single click?
         </rephr>
         <question>
             How to forward multiple emails in Gmail
@@ -1180,8 +978,7 @@
             I'm an admirerer of ascii art, any apps on the internet for exploring/creating this kind of art?
         </rephr>
         <rephr>
-            I have a photo of a friend. He's kind of a geek so I'd like to get an ascii picture version of it. Any sites
-            I could use to do this easily?
+            I have a photo of a friend. He's kind of a geek so I'd like to get an ascii picture version of it. Any sites I could use to do this easily?
         </rephr>
         <rephr>
             Does anyone know of any sites where I could build old MS-DOS style character art from images?
@@ -1259,8 +1056,7 @@
             I'd like to export my trello data, what's the best way to do this.
         </rephr>
         <rephr>
-            In case anything happened to my information on trello I'd be lost, can I somehow download it all for safe
-            keeping.
+            In case anything happened to my information on trello I'd be lost, can I somehow download it all for safe keeping.
         </rephr>
         <rephr>
             I'd like to be sure that my trello cards and boards won't be lost, how can I back them up.
@@ -1371,8 +1167,7 @@
             I'd like to import some data into trello from rather big (text) files, is this doable?
         </rephr>
         <rephr>
-            Can Trello initialize tasks (cards and lists) from a file. My list of tasks is huge and I'd like to generate
-            a file to import into trello.
+            Can Trello initialize tasks (cards and lists) from a file. My list of tasks is huge and I'd like to generate a file to import into trello.
         </rephr>
         <rephr>
             *
@@ -1387,8 +1182,7 @@
             Is there an option in trello to import a large task list from say a csv or something?
         </rephr>
         <rephr>
-            I need to import tasks from a file in trello, the number of tasks is large I cant copy it by hand. Is there
-            an automated way?
+            I need to import tasks from a file in trello, the number of tasks is large I cant copy it by hand. Is there an automated way?
         </rephr>
         <rephr>
             What import options does trello support for lists of tasks?
@@ -1659,19 +1453,16 @@
             Is it possible to split conversations in gmail?
         </rephr>
         <rephr>
-            I'm having a hard time keeping track of who I replied to in a gmail conversation with a lot of people, can I
-            split it?
+            I'm having a hard time keeping track of who I replied to in a gmail conversation with a lot of people, can I split it?
         </rephr>
         <rephr>
             How could I break down a large gmail thread into several smaller ones that would be easier to manage.
         </rephr>
         <rephr>
-            I sent a bcc mail to several people, now gmail has merged all responses, it's confusing! Can I somehow
-            separate these?
+            I sent a bcc mail to several people, now gmail has merged all responses, it's confusing! Can I somehow separate these?
         </rephr>
         <rephr>
-            I'd like to manage a thread of mails that gmail assigned to the same conversation. I'd like to have several
-            separate smaller ones, is this possible?
+            I'd like to manage a thread of mails that gmail assigned to the same conversation. I'd like to have several separate smaller ones, is this possible?
         </rephr>
         <rephr>
             *
@@ -1733,8 +1524,7 @@
             Is it possible to ban some sites from being present in my google search results.
         </rephr>
         <rephr>
-            The list retreived by google contains some sites I know are not relevant for me, how could I get rid of
-            those?
+            The list retreived by google contains some sites I know are not relevant for me, how could I get rid of those?
         </rephr>
         <rephr>
             What would be the best way to ensure that some sites will be ommited from my search results on google.
@@ -1807,8 +1597,7 @@
             How can I completely delete trello cards or lists, I'm not talking about archiving but full blown deletion.
         </rephr>
         <rephr>
-            I can't seem to find the delete option on trello, I know I can archive cards but I just want to completely
-            delete a particular one.
+            I can't seem to find the delete option on trello, I know I can archive cards but I just want to completely delete a particular one.
         </rephr>
         <rephr>
             I wan't to remove a list in trello, is there a way to do this (can't find the option anywhere).
@@ -2335,8 +2124,7 @@
             Can I create a direct link to zip (without view) in google drive.
         </rephr>
         <rephr>
-            When I make a link in google drive it lists the contents, I'd like it to lead to a simple downlad, can this
-            be done?
+            When I make a link in google drive it lists the contents, I'd like it to lead to a simple downlad, can this be done?
         </rephr>
         <rephr>
             How do I make a google drive link to a zip file simply perform a save as, and not display the contents.
@@ -2345,15 +2133,13 @@
             Is there a way to make google drive links provide download and not a preview of the file contents.
         </rephr>
         <rephr>
-            I do not want google drive to display the files inside my zip files but to just give a download option, is
-            there a way to achieve this?
+            I do not want google drive to display the files inside my zip files but to just give a download option, is there a way to achieve this?
         </rephr>
         <rephr>
             *
         </rephr>
         <rephr>
-            Can I produce a link to a zip file on google drive that will not trigger the "view" option but only
-            download?
+            Can I produce a link to a zip file on google drive that will not trigger the "view" option but only download?
         </rephr>
         <rephr>
             How do I make links to zip files in google drive download the file and not open it?
@@ -2365,8 +2151,7 @@
             Disabling view of zip files on gd and having them downloaded instead.
         </rephr>
         <rephr>
-            I don't want my google drive to open my zip files, i just want people with the link to be able to download
-            the content. What are my options?
+            I don't want my google drive to open my zip files, i just want people with the link to be able to download the content. What are my options?
         </rephr>
         <question>
             In Google Drive, how can you link directly to “Download” a zip file and not view the contents?
@@ -2398,12 +2183,10 @@
             I'd like to keep formatting when copying code into my mails in gmail, how can I do this?
         </rephr>
         <rephr>
-            Whenever I c/p code into my mails in gmail I lose all the indentation and keyword special markup, is there a
-            better way to do it?
+            Whenever I c/p code into my mails in gmail I lose all the indentation and keyword special markup, is there a better way to do it?
         </rephr>
         <rephr>
-            I'm spending too much time fixing my code font and indentation after pasting it into gmail. Is there a way
-            to to do it faster?
+            I'm spending too much time fixing my code font and indentation after pasting it into gmail. Is there a way to to do it faster?
         </rephr>
         <rephr>
             How to most efficiently transfer program code into a gmail mail without losing all the font properties.
@@ -2430,8 +2213,7 @@
             What is the easiest way to format code when pasting to Gmail?
         </question>
         <answer>
-            Try this online Syntax highlighter: http://tohtml.com/ It converts your code to HTML and uses inline styling
-            highlight the syntax etc.
+            Try this online Syntax highlighter: http://tohtml.com/ It converts your code to HTML and uses inline styling highlight the syntax etc.
         </answer>
         <answer>
             Markdown Here I've been using Markdown Here for quite some time now and it beautifully accepts
@@ -2474,8 +2256,7 @@
             I'm concerned with my sensitive data being in the trello cloud, is there a private option?
         </rephr>
         <rephr>
-            I really like trello but am uncomfortable with it being purely online, is there an offline version I could
-            have locally?
+            I really like trello but am uncomfortable with it being purely online, is there an offline version I could have locally?
         </rephr>
         <rephr>
             I'd like to have an instance of trello on my company server for all employees to use, is this an option?
@@ -2593,15 +2374,13 @@
             Can I share a search query from google and have the results appear the same?
         </rephr>
         <rephr>
-            I've noticed copying the google search string doesn't give same results for all users, can I somehow share
-            my exact results?
+            I've noticed copying the google search string doesn't give same results for all users, can I somehow share my exact results?
         </rephr>
         <rephr>
             I want to send a google search to my friend so he can see my results, how can I do this?
         </rephr>
         <rephr>
-            Is it possible to replicate identical search results on google on a different computer by copying the search
-            query string?
+            Is it possible to replicate identical search results on google on a different computer by copying the search query string?
         </rephr>
         <rephr>
             Sharing google search results of my query.
@@ -2754,8 +2533,7 @@
             Does vimeo support making links that have a point in time in the video specified.
         </rephr>
         <rephr>
-            I'd like to send my friend a link to a particularly important part of a vimeo video, can I include the time
-            when to start into the link?
+            I'd like to send my friend a link to a particularly important part of a vimeo video, can I include the time when to start into the link?
         </rephr>
         <rephr>
             Specifying in a link at which point in the vimeo video to start playing.
@@ -2915,23 +2693,19 @@
     </qapair>
     <qapair>
         <rephr>
-            I've made a google spreadsheet with a large number of sheets, now i'd like to send a link to a specific one.
-            How do I do it?
+            I've made a google spreadsheet with a large number of sheets, now i'd like to send a link to a specific one. How do I do it?
         </rephr>
         <rephr>
             Is it possible to link to a particular sheet in google spreadsheets?
         </rephr>
         <rephr>
-            If I need to send to some people the second sheet of my google spread sheet, is there a way to generate a
-            link to exactly that sheet?
+            If I need to send to some people the second sheet of my google spread sheet, is there a way to generate a link to exactly that sheet?
         </rephr>
         <rephr>
-            When sending links to google spreadsheets documents is it possible to specify which sheet should be the
-            active one.
+            When sending links to google spreadsheets documents is it possible to specify which sheet should be the active one.
         </rephr>
         <rephr>
-            Can I include information about which sheet should be opened by default when sending a link to a google
-            spreadsheet with multiple sheets?
+            Can I include information about which sheet should be opened by default when sending a link to a google spreadsheet with multiple sheets?
         </rephr>
         <rephr>
             *
@@ -3289,8 +3063,7 @@
             Is it possible to do analysis on traffic data from github.
         </rephr>
         <rephr>
-            I'm really interested in who has been accessing my github repo, is there a way to get an overview of these
-            users?
+            I'm really interested in who has been accessing my github repo, is there a way to get an overview of these users?
         </rephr>
         <rephr>
             *
@@ -3305,8 +3078,7 @@
             Finding out from where users are accessing my github repo.
         </rephr>
         <rephr>
-            I'd like to know from where the majority of traffic for my github repository is coming from, can this be
-            done?
+            I'd like to know from where the majority of traffic for my github repository is coming from, can this be done?
         </rephr>
         <rephr>
             Traffic analysis for a repository i have on github.
@@ -4107,20 +3879,16 @@
             Quora displays only the first / best answer, can I read the rest of the answers without registering?
         </rephr>
         <rephr>
-            Quora insists I must register if I want to read all the answers to a question, is there some way around
-            this?
+            Quora insists I must register if I want to read all the answers to a question, is there some way around this?
         </rephr>
         <rephr>
-            I refuse to register on Quora, I resent such bullying tactics. Still, is it possible to read all the answers
-            to a question there anyway?
+            I refuse to register on Quora, I resent such bullying tactics. Still, is it possible to read all the answers to a question there anyway?
         </rephr>
         <rephr>
-            I'm looking for a way to bypass the registration requirement imposed by Quora on people who want to see the
-            complete answer list.
+            I'm looking for a way to bypass the registration requirement imposed by Quora on people who want to see the complete answer list.
         </rephr>
         <rephr>
-            I'd like to see the full list of answers for a Quora question but without the hassle of registering, what
-            are my options?
+            I'd like to see the full list of answers for a Quora question but without the hassle of registering, what are my options?
         </rephr>
         <rephr>
             *
@@ -4173,8 +3941,7 @@
             Does trello support of conditional workflows?
         </rephr>
         <rephr>
-            A particular task for which I have a trello card can not start until another task is done, is there away to
-            model this in trello?
+            A particular task for which I have a trello card can not start until another task is done, is there away to model this in trello?
         </rephr>
         <rephr>
             Handling tasks which depend on each other in Trello.
@@ -4339,8 +4106,7 @@
             Is there an option to mark a trello card as done, but not remove it from the list?
         </rephr>
         <rephr>
-            I usually move a trello card to the done list to mark it as done, but is there some flag that i could set
-            instead (without moving it).
+            I usually move a trello card to the done list to mark it as done, but is there some flag that i could set instead (without moving it).
         </rephr>
         <rephr>
             Does trello support the concept of marking a card as done?
@@ -4405,8 +4171,7 @@
             I want to send mail to everyone who ever sent me mail, can I somehow get all of the addresses from gmail?
         </rephr>
         <rephr>
-            My friend and I want to make a comprehensive analysis of who sent us mail. Can we get a list of emails of
-            all of our incoming gmail messages?
+            My friend and I want to make a comprehensive analysis of who sent us mail. Can we get a list of emails of all of our incoming gmail messages?
         </rephr>
         <rephr>
             *
@@ -4424,8 +4189,7 @@
             How can I get addresses from which I received mail on gmail.
         </rephr>
         <rephr>
-            I had a virus and now i want to warn all e-mail addresses that ever sent me mail, is there an easy way to do
-            this in gmail?
+            I had a virus and now i want to warn all e-mail addresses that ever sent me mail, is there an easy way to do this in gmail?
         </rephr>
         <question>
             Get e-mail addresses from Gmail messages received
@@ -4635,8 +4399,7 @@
             Is office a lot better than google docs, where can I find a good comparison?
         </rephr>
         <rephr>
-            I'm a college student, is there anything in Microsoft office that i might be missing if I decide to switch
-            to google docs.
+            I'm a college student, is there anything in Microsoft office that i might be missing if I decide to switch to google docs.
         </rephr>
         <rephr>
             Would you say that google documents is a viable alternative to Microsoft office?
@@ -4971,8 +4734,7 @@
             Is it possible to find the point in time when my subscription to a youtube channel started.
         </rephr>
         <rephr>
-            I wanna know when i first subscribed to a channel of my friend on youtube, wheere can i find this
-            information?
+            I wanna know when i first subscribed to a channel of my friend on youtube, wheere can i find this information?
         </rephr>
         <rephr>
             Is there a way to see the date when my youtube channel subscription started?ll
@@ -5031,8 +4793,7 @@
             Is it possible to have several Dropbox accounts on my computer?
         </rephr>
         <rephr>
-            Both me and my brother use the same computer can we both set up our separate dropbox accounts on this
-            machine?
+            Both me and my brother use the same computer can we both set up our separate dropbox accounts on this machine?
         </rephr>
         <rephr>
             Setting up more than one dropbox account on the same computer.
@@ -5087,8 +4848,7 @@
             Is there a way to make sure that only my friends will be able to see my fb posts?
         </rephr>
         <rephr>
-            What setting do I have to tweak on facebook to prevent people who are not my friends from seeing my info and
-            posts?
+            What setting do I have to tweak on facebook to prevent people who are not my friends from seeing my info and posts?
         </rephr>
         <rephr>
             I'd like to hide my posts on fb from people who are not my friends, how do i do this?
@@ -5187,19 +4947,16 @@
             When more than one user are looking at a google spreadsheet they share filters, is there a way around this?
         </rephr>
         <rephr>
-            A filter introduced by one user is immediately applied to all other users looking at the same google
-            spreadsheet. How can I avoid this?
+            A filter introduced by one user is immediately applied to all other users looking at the same google spreadsheet. How can I avoid this?
         </rephr>
         <rephr>
             Is it possible to have separate filters applied for each individual user looking at a google spreadsheet?
         </rephr>
         <rephr>
-            When multiple users are looking at a google spreadsheet can each of them apply a different filter without
-            influencing the view of other users?
+            When multiple users are looking at a google spreadsheet can each of them apply a different filter without influencing the view of other users?
         </rephr>
         <rephr>
-            Can I make google spreadsheet filters user specific eventhough several users are looking at the same
-            spreadsheet at the same time?
+            Can I make google spreadsheet filters user specific eventhough several users are looking at the same spreadsheet at the same time?
         </rephr>
         <rephr>
             *
@@ -5339,12 +5096,10 @@
             I'd like to find web pages on which a particular image I have is located, how do I do this?
         </rephr>
         <rephr>
-            Is there any web site where I could submit an image and get a list of locations on the web where this image
-            is located?
+            Is there any web site where I could submit an image and get a list of locations on the web where this image is located?
         </rephr>
         <rephr>
-            How can I do a reverse search of an image, giving an image as input and getting similar versions of the
-            image as output?
+            How can I do a reverse search of an image, giving an image as input and getting similar versions of the image as output?
         </rephr>
         <rephr>
             Searching the web using an image as a query.
@@ -5680,12 +5435,10 @@
             Getting e-mail notices when people tweet specific hash tags?
         </rephr>
         <rephr>
-            There is a funny guy on twitter, can I make it so that I get e-mail message everytime he posts something
-            with given hashtags?
+            There is a funny guy on twitter, can I make it so that I get e-mail message everytime he posts something with given hashtags?
         </rephr>
         <rephr>
-            Can I connect gmail and twitter so I'm notified when people I'm following tweet something with hash tags I
-            specify?
+            Can I connect gmail and twitter so I'm notified when people I'm following tweet something with hash tags I specify?
         </rephr>
         <rephr>
             *
@@ -5754,8 +5507,7 @@
             Is it possible to make my google calendar show me activities that I scheduled on facebook?
         </rephr>
         <rephr>
-            I've got a friend who is organising various meetings and events on facebook, can I somehow forward these to
-            my gmail calendar?
+            I've got a friend who is organising various meetings and events on facebook, can I somehow forward these to my gmail calendar?
         </rephr>
         <rephr>
             I'd like to see my fb activities in my google calendar.
@@ -5816,12 +5568,10 @@
             How to restrict access to my Dropbox for a machine that is no longer in my possesion?
         </rephr>
         <rephr>
-            I forgot to uninstall Dropbox before giving my computer to my nephew, is there a way to fix this through the
-            online interface?
+            I forgot to uninstall Dropbox before giving my computer to my nephew, is there a way to fix this through the online interface?
         </rephr>
         <rephr>
-            How can I get rid of dropbox on a particular computer that is linked to my account using only the online
-            interface?
+            How can I get rid of dropbox on a particular computer that is linked to my account using only the online interface?
         </rephr>
         <rephr>
             *
@@ -5871,16 +5621,13 @@
             Is there a way to incorporate position information into a link to a Google doc that im sending?
         </rephr>
         <rephr>
-            I have a very long document on google docs, I'd like to link to a particular page within the document, is
-            this possible?
+            I have a very long document on google docs, I'd like to link to a particular page within the document, is this possible?
         </rephr>
         <rephr>
-            I need to link to a given paragraph within a google doc, this paragraf is half way through the document so I
-            don't want my recepient to have to scroll all the way down?
+            I need to link to a given paragraph within a google doc, this paragraf is half way through the document so I don't want my recepient to have to scroll all the way down?
         </rephr>
         <rephr>
-            I want to provide links to a few specific places within a document on google, is this functionality
-            supported?
+            I want to provide links to a few specific places within a document on google, is this functionality supported?
         </rephr>
         <rephr>
             *
@@ -5932,30 +5679,25 @@
     </qapair>
     <qapair>
         <rephr>
-            Is it possible to configure gmail so that when I reply to a mail the default "from" adress is the one that
-            the mail was sent to?
+            Is it possible to configure gmail so that when I reply to a mail the default "from" adress is the one that the mail was sent to?
         </rephr>
         <rephr>
             Can I change my default gmail reply address to be chosen depending on the address the mail was sent to?
         </rephr>
         <rephr>
-            I have multiple addresses in gmail, I'd like my default reply address be the same one that was on the mail
-            I'm replying to, is this supported in gmail?
+            I have multiple addresses in gmail, I'd like my default reply address be the same one that was on the mail I'm replying to, is this supported in gmail?
         </rephr>
         <rephr>
-            I'd like to modify my sent from adress based on the receiving address of incoming mails (I have more than
-            one mail).
+            I'd like to modify my sent from adress based on the receiving address of incoming mails (I have more than one mail).
         </rephr>
         <rephr>
-            Is it possible to have a custom reply address in gmail which selects the original recipient address for the
-            mail being replied to.
+            Is it possible to have a custom reply address in gmail which selects the original recipient address for the mail being replied to.
         </rephr>
         <rephr>
             *
         </rephr>
         <rephr>
-            I have multiple e mail addresses, how do I set up gmail so that the reply address is the one the mail was
-            sent to?
+            I have multiple e mail addresses, how do I set up gmail so that the reply address is the one the mail was sent to?
         </rephr>
         <rephr>
             Setting up gmail so that the default reply address was the one from the incoming mail.
@@ -6119,8 +5861,7 @@
             I need to find the oldest mail on gmail from my friend, how can I do this?
         </rephr>
         <rephr>
-            I want to find the very first message that my wife sent me by mail, it was to my gmail account, is this
-            possible?
+            I want to find the very first message that my wife sent me by mail, it was to my gmail account, is this possible?
         </rephr>
         <rephr>
             I'd like to find the mail farthest back in time from a friend of mine, can I do this in gmail?
@@ -6180,8 +5921,7 @@
             Is there a way to prevent me liking something on facebook be instantly public?
         </rephr>
         <rephr>
-            What are the privacy options that could prevent all of my facebook likes to immediately be forwarded to my
-            friends?
+            What are the privacy options that could prevent all of my facebook likes to immediately be forwarded to my friends?
         </rephr>
         <rephr>
             I'd like to stop my facebook friends being notified every time I like something, I just want some privacy.
@@ -6242,12 +5982,10 @@
             How can I enforce google to use the .com domain instead of switching to my local domain every time.
         </rephr>
         <rephr>
-            Why is google.com constantly changing to my local country domain, I don't want this, I want to see the USA
-            version of the results.
+            Why is google.com constantly changing to my local country domain, I don't want this, I want to see the USA version of the results.
         </rephr>
         <rephr>
-            What is the best way to browse google as it is in the states, as opposed to the localized version my small
-            european country has.
+            What is the best way to browse google as it is in the states, as opposed to the localized version my small european country has.
         </rephr>
         <rephr>
             *
@@ -6394,8 +6132,7 @@
             Is there a kind of content that's left out from Google search?
         </rephr>
         <rephr>
-            Do you think that Google deliberately leaves out some results, due to either technical difficulties or
-            company interests?
+            Do you think that Google deliberately leaves out some results, due to either technical difficulties or company interests?
         </rephr>
         <rephr>
             *
@@ -6459,8 +6196,7 @@
     </qapair>
     <qapair>
         <rephr>
-            I've accidentally set up a computer to be trusted by google two factor authentication, how do I revoke this
-            trust?
+            I've accidentally set up a computer to be trusted by google two factor authentication, how do I revoke this trust?
         </rephr>
         <rephr>
             I need to untrust a copmuter with google 2 factor auth asap, how can I do this?
@@ -6469,12 +6205,10 @@
             Is there an easy way to remove trust for google's two step auth from a computer?
         </rephr>
         <rephr>
-            I made a mistake by trusting a computer for my google 2 factor authentication, I wish to undo this but I
-            don't know how.
+            I made a mistake by trusting a computer for my google 2 factor authentication, I wish to undo this but I don't know how.
         </rephr>
         <rephr>
-            Why is there no option to untrust computers that you trusted for google two step authentication. I made a
-            mistake and now I can't fix it.
+            Why is there no option to untrust computers that you trusted for google two step authentication. I made a mistake and now I can't fix it.
         </rephr>
         <rephr>
             *
@@ -6630,8 +6364,7 @@
             Is it possible to enforce people to ask for my permission before associating stuff with me on facebook?
         </rephr>
         <rephr>
-            I'm concerned about my privacy, I feel I keep getting tagged on facebook over and over without anyone asking
-            me if this is ok? Is there anything I can do?
+            I'm concerned about my privacy, I feel I keep getting tagged on facebook over and over without anyone asking me if this is ok? Is there anything I can do?
         </rephr>
         <rephr>
             What facebook settings can allow me to control who is allowed to tag me and where?
@@ -6686,19 +6419,16 @@
             Is there an alternative similar to google docs that I could host on my own server.
         </rephr>
         <rephr>
-            I'm afraid for my sensitive data in the cloud, is there something similar to google documents that could be
-            self hosted?
+            I'm afraid for my sensitive data in the cloud, is there something similar to google documents that could be self hosted?
         </rephr>
         <rephr>
-            I'd like the same functionality as google docs but hosted locally for security reasons, is there any
-            software that might fulfill these requirements?
+            I'd like the same functionality as google docs but hosted locally for security reasons, is there any software that might fulfill these requirements?
         </rephr>
         <rephr>
             I'd like my local server to run something akin to google docs. Is there any software suite for this?
         </rephr>
         <rephr>
-            I require a application for document editing such as google docs but hosted on my company infrastructure
-            instead of the cloud.
+            I require a application for document editing such as google docs but hosted on my company infrastructure instead of the cloud.
         </rephr>
         <rephr>
             *
@@ -6707,15 +6437,13 @@
             Is there an alternative solution similar to google docs that I could host locally?
         </rephr>
         <rephr>
-            I like google docs but i don't want my sensitive data in the cloud, is there a similar but self hosted
-            solution?
+            I like google docs but i don't want my sensitive data in the cloud, is there a similar but self hosted solution?
         </rephr>
         <rephr>
             I'm looking for software that is similar to google documents but can be hosted privately.
         </rephr>
         <rephr>
-            I want to locally host some software that has similar functionality to google docs, is there any software
-            like this?
+            I want to locally host some software that has similar functionality to google docs, is there any software like this?
         </rephr>
         <rephr>
             I require software like google docs but that can be locally hosted on my server.
@@ -6758,20 +6486,16 @@
             Some youtube videos have automatically generated subtitles, is it possible to download only the subtitles?
         </rephr>
         <rephr>
-            There are automated transcripts for some youtube videos, is there an option to download only the transcripts
-            and not the videos?
+            There are automated transcripts for some youtube videos, is there an option to download only the transcripts and not the videos?
         </rephr>
         <rephr>
-            I'm kinda low on bandwidth, so I'd like to download only the autogenerated transcription of a youtube video
-            while ignoring the video itself, is this possible?
+            I'm kinda low on bandwidth, so I'd like to download only the autogenerated transcription of a youtube video while ignoring the video itself, is this possible?
         </rephr>
         <rephr>
-            There are subtitles for some youtube videos that were added in an automated way, is there a method to export
-            only the subtitles for a video?
+            There are subtitles for some youtube videos that were added in an automated way, is there a method to export only the subtitles for a video?
         </rephr>
         <rephr>
-            Can I download a file containing the transcript (subtitles) generated for a particular video automatically
-            by youtube?
+            Can I download a file containing the transcript (subtitles) generated for a particular video automatically by youtube?
         </rephr>
         <rephr>
             *
@@ -6857,8 +6581,7 @@
             Is it possible to share a photo album on facebook with people who are not members of FB?
         </rephr>
         <rephr>
-            I'd like to share my photos in my facebook albums with my grandma who is, of course, not on facebook, is
-            there a way to do this?
+            I'd like to share my photos in my facebook albums with my grandma who is, of course, not on facebook, is there a way to do this?
         </rephr>
         <rephr>
             How can I allow someone unregistered on facebook to still be able to see my albums and pictures?
@@ -6926,16 +6649,13 @@
             Can I download a whole folder via the Dropbox web?
         </rephr>
         <rephr>
-            I need to download a folder containing lots of files on Dropbox, can I just download the folder using the
-            web interface?
+            I need to download a folder containing lots of files on Dropbox, can I just download the folder using the web interface?
         </rephr>
         <rephr>
-            The dropbox website is providing a way to download files, but I need more than files, I need an entire
-            directory. There must be a way to do this?
+            The dropbox website is providing a way to download files, but I need more than files, I need an entire directory. There must be a way to do this?
         </rephr>
         <rephr>
-            Is there a method of exporting for downloading the whole folder that I'm interested in from dropbox using
-            just a browser?
+            Is there a method of exporting for downloading the whole folder that I'm interested in from dropbox using just a browser?
         </rephr>
         <rephr>
             *
@@ -7068,8 +6788,7 @@
             Can I make gmail separate calendar notifications into a different group?
         </rephr>
         <rephr>
-            I'm getting spammed by all the notices I'm getting from google calendar, is it possible to filter then out
-            into their own group?
+            I'm getting spammed by all the notices I'm getting from google calendar, is it possible to filter then out into their own group?
         </rephr>
         <rephr>
             How do I filter out calendar notifications in gmail?
@@ -7078,8 +6797,7 @@
             Can I make a separate gmail category for mails coming from the calendar?
         </rephr>
         <rephr>
-            I'd like to consider the mails coming from google calendar separately from the rest, can I have a special
-            label for them?
+            I'd like to consider the mails coming from google calendar separately from the rest, can I have a special label for them?
         </rephr>
         <rephr>
             *
@@ -7126,8 +6844,7 @@
             I'd like to send an email with a delay, does gmail support this?
         </rephr>
         <rephr>
-            I dont want people to see I was writing mails late at night, I'd like to write them now but set up that they
-            get automatically sent tomorrow morning. Can I do this in gmail?
+            I dont want people to see I was writing mails late at night, I'd like to write them now but set up that they get automatically sent tomorrow morning. Can I do this in gmail?
         </rephr>
         <rephr>
             I'd like to set a time when a gmail mail will be sent (instead of right away). Is there an option for this?
@@ -7219,8 +6936,7 @@
             Is it possible to hide (not block) contacts from hangouts chat list?
         </rephr>
         <rephr>
-            I use google chat a lot, but I'd like to hide some of my contacts from the contact list, is there an option
-            for this?
+            I use google chat a lot, but I'd like to hide some of my contacts from the contact list, is there an option for this?
         </rephr>
         <rephr>
             I need to make some of the people I've chatted with disappear from my contacts list in google chat.
@@ -7229,8 +6945,7 @@
             Making people invisible in the chat list of google hangouts.
         </rephr>
         <rephr>
-            I'd like to remove some friends from my contact list in google hangouts (not remove them as my friends i
-            just want them to be absent from the list).
+            I'd like to remove some friends from my contact list in google hangouts (not remove them as my friends i just want them to be absent from the list).
         </rephr>
         <rephr>
             *
@@ -7291,8 +7006,7 @@
             Is there a way to know if the recipient has read my mail?
         </rephr>
         <rephr>
-            I've sent an important mail and I'd really like to know if the receiver has read it? Is there any way to
-            tell?
+            I've sent an important mail and I'd really like to know if the receiver has read it? Is there any way to tell?
         </rephr>
         <rephr>
             How can I be sure that the person I've sent mail to has actually read it. Is there a way to know?
@@ -7485,8 +7199,7 @@
             What are my options if I want a simple web app to help me organize and schedule meeting times?
         </rephr>
         <rephr>
-            I often need to find a time which works for everyone in our team to meet, is there a service on the net that
-            might make this more efficient?
+            I often need to find a time which works for everyone in our team to meet, is there a service on the net that might make this more efficient?
         </rephr>
         <rephr>
             *
