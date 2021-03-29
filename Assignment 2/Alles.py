@@ -15,16 +15,13 @@ import fasttext
 import fasttext.util
 import io
 from sklearn.metrics.pairwise import cosine_similarity
+from lxml import etree
+
 
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('stopwords')
 
-# #testje
-# df1=pd.read_csv("Data/xml file to csv.csv")
-# questions=df1.iloc[:,0].tolist()
-# print(questions)
-# print(len(questions))
 
 #cleaning
 #Clear text files for future saving

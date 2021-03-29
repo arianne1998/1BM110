@@ -1,0 +1,2750 @@
+ 
+How to make font strikethrough on github.
+ 
+Is it possible to get  strikethrough letter formatting on github markdown.
+ 
+Making the text on github crossed out.
+ 
+Introducing stikethrough formatting on markdown for github.
+ 
+The <s> tag for font on github markdown doesnt work, is there an alternative?
+ 
+*
+ 
+Making the letters i write on github striked through.
+ 
+Producing strikethrough text in github.
+ 
+Does github support strikethrough letters?
+ 
+How can I cross out my text on git hub?
+ 
+I want to have strikethrough text on github, is this possible?
+ 
+How can I delete my facebook account?
+ 
+What is the best way to remove my facebook account?
+ 
+I want to get rid of my facebook account, how do I do it?
+ 
+Removing my FB account.
+ 
+Whats the fastest way to delete my account on facebook.
+ 
+*
+ 
+How to remove facebook account?
+ 
+I'd like to completely remove my fb account, how do I do this?
+ 
+Is there a way to make my facebook account disappear completely.
+ 
+Deleting FB acc.
+ 
+I don't want my facebook account any more how do I delete it.
+ 
+Is it possible to add new styles to google documents.
+ 
+How could I introduce new styles to google docs.
+ 
+I'd like to add some new styles to my docs on google, how can I do that?
+ 
+Is it possible add alternative styles to my documents on google?
+ 
+How could I use a new style with on a google doc?
+ 
+*
+ 
+I'd like to introduce new styles in google docs, how do I achieve that?
+ 
+Can I add some custom styles to google docs?
+ 
+I have some ideas for a new style in my google documents, can I add it somehow?
+ 
+My friend made a style for my google documents, how do I add it?
+ 
+Where is the option to add new styles to google documents?
+ 
+How to make text crossed out in gmail?
+ 
+Making gmail text strikethrough.
+ 
+Using a strike through font in gmail.
+ 
+Gmail provides bold, italic and underline options for text formatting but I can't find how to make it strikethrough.
+ 
+Getting letters in gmail mails to be strikethrough.
+ 
+*
+ 
+How can I make letters in gmail crossed out.
+ 
+I'd like to strikethrough text in gmail.
+ 
+Strikethrough font in gmail.
+ 
+Does gmail support strikethrough font.
+ 
+Making the text formatting strike through in my gmail mails.
+ 
+Is it possible to link a google spreadsheets cell to a cell in another document.
+ 
+I have two spreadsheets on google docs is it possible to reference their cells via links?
+ 
+Can I link to a particular cell of a google spreadsheet document from a cell in another document?
+ 
+Is it possible to insert a link into a google spreadsheet that would lead to a cell in another google spreadsheet?
+ 
+How can I link together cells in google spreadsheets documents.
+ 
+*
+ 
+How do I link two cells from different google spreadsheet documents.
+ 
+I have a cell in a google spreadsheet and I want to link it to another cell from a different google sheet is this possible?
+ 
+I need to reference a cell from another google sheets document in a cell in my current document, can this be done?
+ 
+Linking together cells from different google spreadsheet documents.
+ 
+Referencing a cell from a different google spreadsheet document.
+ 
+Is it possible to use markdown in google docs.
+ 
+How can I introduce markdown into google documents.
+ 
+I have a markdown document that I'd like to convert to google docs, what's the easiest way to to this?
+ 
+Can I format font in google docs using markdown.
+ 
+I'm really fond of the markdown format, is it possible to use it in conjunction with google docs?
+ 
+*
+ 
+Can I write google docs using markdown.
+ 
+I really like markdown, can I use it in google documents.
+ 
+I'd like to use markdown in google documents, is there a way?
+ 
+How do I use markdown in google documents.
+ 
+Do google docs support markdown.
+ 
+Is it possible to paste only the text from gmail and ignore the formatting.
+ 
+While copying text from a mail in gmail I'd like to leave out the formatting, how can I do this?
+ 
+Can I copy text from gmail but only the raw text?
+ 
+How can I copy just the text from gmail but ignore the special font styles.
+ 
+Can I remove the formatting while pasting text from gmail.
+ 
+*
+ 
+Can I ignore formatting when copying and pasting from gmail.
+ 
+How do I make it so that the formatting is ignored when copying from gmail.
+ 
+Copying raw text (no formatting) from gmail.
+ 
+I'd like to omit any formatting from the text I copy from a mail in gmail, is this possible?
+ 
+Is there a way to copy only the text from gmail (withut formatting).
+ 
+How can I download a Youtube video.
+ 
+I'd like to download a youtube video, how can I do this?
+ 
+Is it possible to store youtube videos to my disk for later offline viewing?
+ 
+Do I have to be online to watch a youtube video or can I somehow download it?
+ 
+I'd like to send a youtube video to a friend who has no internet, can I somehow send him the raw file?
+ 
+*
+ 
+Is it possible to download a youtube video?
+ 
+How could I save a youtube video locally?
+ 
+Viewing a youtube video offline.
+ 
+Storing a youtube video locally for later viewing.
+ 
+I'd like to store a local backup of my favourite youtube video. Is this possible?
+ 
+Is it posible to get code syntax highlighting in google docs.
+ 
+I have some Python code, can I get it to display as actual code (with colors and all) in google docs.
+ 
+How can I get colored code in google documents.
+ 
+Is there a way to get color formatting of code in google docs.
+ 
+I pasted some C# code into google docs, can i get special coloring for it automatically?
+ 
+*
+ 
+How can I get syntax highlighting in google docs.
+ 
+Do google documents support syntax coloring.
+ 
+I'm a programmer and I'd like to get syntax highlihts in google docs, is this possible?
+ 
+How do I get google code to color my C++ code.
+ 
+How do I turn on syntax coloring for google docs.
+ 
+Is it possible to export gmail messages to text files?
+ 
+Is it possible to export gmail messages to html files?
+ 
+How can I save my email from gmail in plain textual format?
+ 
+Can I download an email from gmail as a text file?
+ 
+What are my options for exporting text from gmail mails as files?
+ 
+*
+ 
+How can I export gmail messages to text based formats?
+ 
+I'd like to backup all my mails on gmail into a text format, can I do this?
+ 
+What are the options for backing up my gmail mails as text files?
+ 
+Can I save all my gmail mails in html?
+ 
+Can I store locally my mails from gmail (as text or html)?
+ 
+How can facebook detect whether or not you are logged in in gmail.
+ 
+How is it possible that when resetting password, facebook will detect if you are already logged into your gmail account.
+ 
+What's the deal with facebook knowing when you are logged into google, and even using it when you reset your password.
+ 
+Did you know that FB is aware if you are logged into google or not, and can use this information for it's own authentication purposes.
+ 
+Is there a deal between facebook and google, because it seems that when I'm logged into my gmail accounts, facebook can detect this?
+ 
+*
+ 
+Can facebook know when you are logged in gmail?
+ 
+Can fb detect if you are looged into yout google account?
+ 
+Is there a way for facebook to be aware that you are logged into your gmail account?
+ 
+I've heard facebook can detect if you're logged into your gmail account, is this true?
+ 
+Why can facebook see when I am and when I am not logged into my gmail account.
+ 
+Is there a method to filter gmail messages that are not labeled.
+ 
+Filtering unlabeled gmail messages.
+ 
+Applying a filter to gmail mails that would leave only unlabeled mails.
+ 
+How to filter out mails that are missing a label.
+ 
+Filter gmail messages without a label.
+ 
+*
+ 
+Filtering gmail mails that are missing a label.
+ 
+How do I filter only those mails in gmail that have no label.
+ 
+Is it possible to filter messages without a label in gmail.
+ 
+Out of all gmail messages I want to filter those with no label, how do I do this?
+ 
+I'd like to filter all messages in gmail that are missing a label.
+ 
+What is the procedure with your facebook account if you die.
+ 
+In the case of my death, what would happen to my FB acc.
+ 
+If I kick the bucket, what happens to my facebook account.
+ 
+What is the destiny of my facebook account should I die.
+ 
+In the sad event one of my friends dies, what happens to their fb account?
+ 
+*
+ 
+What is the procedure with your fb account if you die.
+ 
+If I die, what will happen to my facebook account?
+ 
+If somebody dies, what's gonna happen to their fb account?
+ 
+What does facebook do with accounts of people who have died?
+ 
+Where does your facebook account go after your death?
+ 
+Is it possible to forward multiple emails in gmail?
+ 
+How can I forward more than one email in gmail at the same time?
+ 
+Forwarding several emails simultaneously in gmail.
+ 
+If I want to forward several emails in gmail, do I have to do it one by one, or is there a better way?
+ 
+How to forward more than one email from gmail?
+ 
+*
+ 
+I'd like to forward multiple mails in gmail, is this possible?
+ 
+Can I forward more than one mail in gmail?
+ 
+How do I forward multiple gmails in gmail.
+ 
+I'd like to forward more than one email simultaneously in gmail, can this be done?
+ 
+I often find myself needing to forward mails in a batch in gmail, can forward them all together in a single click?
+ 
+Are there any webapps to create ascii art?
+ 
+I'm fond of art with only characters, anyone know of a cool website where I could play around with that?
+ 
+I'm an admirerer of ascii art, any apps on the internet for exploring/creating this kind of art?
+ 
+I have a photo of a friend. He's kind of a geek so I'd like to get an ascii picture version of it. Any sites I could use to do this easily?
+ 
+Does anyone know of any sites where I could build old MS-DOS style character art from images?
+ 
+*
+ 
+I's there a site that can turn images into ascii art?
+ 
+I'm looking for a web site that could turn pictures i upload into ascii art.
+ 
+Do you know of any web site that would turn pics to ms-dos ascii art?
+ 
+I need a web site that would convert a picture of my girlfriend into ascii art.
+ 
+I'm fond of ascii art, is there a site where I could convert my favourite images into it?
+ 
+I'm a little paranoid my data from trello will get lost, how can I back it up easily.
+ 
+I'd like to export my trello data, what's the best way to do this.
+ 
+In case anything happened to my information on trello I'd be lost, can I somehow download it all for safe keeping.
+ 
+I'd like to be sure that my trello cards and boards won't be lost, how can I back them up.
+ 
+Is there a way to export my trello information so I can save it locally to ensure it is safe.
+ 
+*
+ 
+What are my options for exporting my data from trello?
+ 
+I'm scared that all my trello data will be lost, how can i back it up?
+ 
+I'd like to locally back up all my trello data, how do I do this?
+ 
+Is it an option to export all my trello data so I can have a safe local backup of my stuff?
+ 
+What is the best way to export trello data to my local back up.
+ 
+Can I import a list of tasks into trello?
+ 
+How could I introduce some cards / lists into trello from outside files?
+ 
+Does trello support importing from csv?
+ 
+I'd like to import some data into trello from rather big (text) files, is this doable?
+ 
+Can Trello initialize tasks (cards and lists) from a file. My list of tasks is huge and I'd like to generate a file to import into trello.
+ 
+*
+ 
+Is it possible to import a list of tasks that i made into trello?
+ 
+I'd like to import a very large list of tasks into trello, what's the easiest way to do this?
+ 
+Is there an option in trello to import a large task list from say a csv or something?
+ 
+I need to import tasks from a file in trello, the number of tasks is large I cant copy it by hand. Is there an automated way?
+ 
+What import options does trello support for lists of tasks?
+ 
+Can I impose boolean conditions on gmail search conditions?
+ 
+Is it possible to search gmail with a disjunction of two conditions?
+ 
+Can I use conjunctions and disjunctions on search constraints when searching gmail?
+ 
+How can I use logical expressions on multiple criteria when searching gmail?
+ 
+Can I use more than one search criterion on gmail, maybe connected with an or or and?
+ 
+*
+ 
+Is there an option to introduce boolean constraints on conditions in gmail filter?
+ 
+Using several conditions in a gmail filter with logical operations in between.
+ 
+Combining several filter criteria in gmail filter using logical operators.
+ 
+Is it possible to have multiple filter criteria in gmail, connecter with logical operations?
+ 
+I'd like to have a logical expression on several conditions as my gmail filter, is this supported?
+ 
+Is it possible to embed a google spreadsheet into another google document?
+ 
+Can google docs contain other objects such as spreadsheets?
+ 
+Can I include a spreadsheet into my text document on google docs?
+ 
+Is it possible to include a chart from google spreadsheets into a regular google document?
+ 
+How can I include charts or tables from spreadsheets into google docs, like I can in regular office?
+ 
+*
+ 
+Can I put an entire google spreadsheet as just a part into a large google document?
+ 
+Including google spreadsheets into google documents.
+ 
+Embedding google spreadsheets into google documents.
+ 
+Inserting an entire google spreadsheets in a google docs.
+ 
+How can I embed a google spreadsheets into a google docs.
+ 
+I archived a gmail message by accident, is it possible to undo this?
+ 
+I made a mistake by archiving a mail in gmail how can I get it back?
+ 
+What happens to archived mails in gmail, is it possible to retrieve them?
+ 
+Did I lose the gmail message that I sent to the archive, maybe I can still get to it?
+ 
+My kid archived some messages I need on gmail, what can I do to fix it?
+ 
+*
+ 
+Is it possible to undo archiving a gmail message?
+ 
+I archived a gmail mail by mistake, can undo this?
+ 
+I inadvertently sent a gmail mail into the archive, how do I fix this?
+ 
+I accidentally archived a mail, can I get it back?
+ 
+How do I undo the archive operation in gmail?
+ 
+Is it possible to split conversations in gmail?
+ 
+I'm having a hard time keeping track of who I replied to in a gmail conversation with a lot of people, can I split it?
+ 
+How could I break down a large gmail thread into several smaller ones that would be easier to manage.
+ 
+I sent a bcc mail to several people, now gmail has merged all responses, it's confusing! Can I somehow separate these?
+ 
+I'd like to manage a thread of mails that gmail assigned to the same conversation. I'd like to have several separate smaller ones, is this possible?
+ 
+*
+ 
+Splitting conversations in gmail.
+ 
+Can I split a conversation in gmail?
+ 
+Gmail merged two conversation threads it shouldn't have. How do i split them.
+ 
+Is splitting conversations possible in mail threads on gmail.
+ 
+How to divide a conversation on gmail.
+ 
+I keep finding sites that just copy content from elsewhere, can I block them from my search results?
+ 
+I'd like to have a list of sites that are not allowed to appear in my search results, how can I do this?
+ 
+Is it possible to ban some sites from being present in my google search results.
+ 
+The list retreived by google contains some sites I know are not relevant for me, how could I get rid of those?
+ 
+What would be the best way to ensure that some sites will be ommited from my search results on google.
+ 
+*
+ 
+How can I make google remove some results from my search results.
+ 
+Is there a way to enforce google to omit osme results from my personal google search.
+ 
+How do I prevent google from showing some sites in my personal search results.
+ 
+I'd like to blacklist some sites from my google results, is there a way to do this.
+ 
+I need some results to be removed from my results on google. What can I do about this?
+ 
+Is it possible to delete a list in trello?
+ 
+I accidentally created a card in trello, what is the way to get rid of it?
+ 
+How can I completely delete trello cards or lists, I'm not talking about archiving but full blown deletion.
+ 
+I can't seem to find the delete option on trello, I know I can archive cards but I just want to completely delete a particular one.
+ 
+I wan't to remove a list in trello, is there a way to do this (can't find the option anywhere).
+ 
+*
+ 
+I'd like to delete a list in trello, what is the way?
+ 
+Removing a card in trello.
+ 
+Deleting a trello card.
+ 
+Can I remove trello cards or lists (I mean completely remove not archive).
+ 
+Is there a way to permanently delete a card in trello.
+ 
+How can I force google to use the exact words I type in.
+ 
+I'm sure the text I write into google is what I want word for word, how can I disable google interpreting it differently.
+ 
+Is there a way to disable the "did you mean" feature and have google interpret my query literally.
+ 
+I'd like to give a literal query to google (disable any spell checking etc.)
+ 
+How do I make google search for the exact same string that I type in.
+ 
+*
+ 
+Can I turn off google spellcheck and synonyms when searching.
+ 
+Is it possible to make google use the exact words that I typed in.
+ 
+I need to search for the exact words that i type into google, is there a way to do this?
+ 
+How do I disable the "did you mean" feature and have google search for exactly the same terms i typed in.
+ 
+Making google find the exact string that was typed in.
+ 
+Is it possible to follow someone on twitter but keep a low profile so he doesn't know.
+ 
+How can I discreetly follow someone on twitter (I don't want them to know I'm following them).
+ 
+Silent (undetectable) ways of following someone on twitter.
+ 
+I want to become a follower of a person on twitter but I'd like it to be a secret. Is this possible?
+ 
+Can I secretly follow someone on twitter.
+ 
+*
+ 
+Can I follow somebody on twitter without them knowing.
+ 
+Discreet way to follow someone on twitter.
+ 
+I want to follow someone on twitter but i don't want them to know, is there any solution for this?
+ 
+Is it an option to silently follow someone on twitter without them being aware of this.
+ 
+How could I become a follower of a person on twitter without them finding out, like ever.
+ 
+I'd like to make a backup of all the stuff I've been writing on twitter. How do I do that?
+ 
+How do I backup my twitter history.
+ 
+I'd like to make sure my twitter data doesn't get lost. What are some extra steps I could take?
+ 
+Can I take extra precautions to ensure that my messages on twitter won't be lost.
+ 
+Methods of performing a back up of a twitter account.
+ 
+*
+ 
+Is it possible to perform a back up of all my tweets?
+ 
+I'd like to back up everything I ever wrote on twitter, is there an option for this?
+ 
+I'm concerned I will lose my tweets, what are my options to perform a local back up.
+ 
+What are the options of locally backing up my twitter data?
+ 
+Can I export my twitter data (tweets and everything) in order to make a backup.
+ 
+Is there a way to contact a user on github.
+ 
+Getting in touch with a user on github,
+ 
+I've found someone on github who I think would make a swell colaborator, how can I message them?
+ 
+Is there a possibility to send messages over github.
+ 
+I'd like to communicate with an author on github, is this possible?
+ 
+*
+ 
+Is it possible to communicate with a particular user on github.
+ 
+Contacting someone on github.
+ 
+How do I get in touch with a developer i like on github.
+ 
+Does git hub allow some kind of messages to contact users.
+ 
+I need to directly contact a user on github.
+ 
+I'd like to transfer attachment from one mail to another in gmail.
+ 
+Is it possible to attach an attachment in gmail directly from another mail?
+ 
+Can I avoid saving an attachment if I only want to attach it to a new mail?
+ 
+How can I skip the save as step and just forward an attachment from one mail to a different one?
+ 
+Can I include attachment from a different mail to my current one (without downloading)?
+ 
+*
+ 
+Is it possible to attach an attachment to another mail without saving it first?
+ 
+How to avoid downloading attachments if I want to attach them to antother mail im writing.
+ 
+Is there an option to copy the attachment from one mail to another in gmail?
+ 
+I'd like to attach a file that I received as an attachment, can I avoid downloading it?
+ 
+Is there a way to attach to a new mail an attachment received in another mail?
+ 
+How can I play all youtube videos by a specific user.
+ 
+I know a great guy on youtube, I want to play all his videos one after the other, how do I go about this?
+ 
+Is it possible to play a sequence of videos published on youtube by the same person?
+ 
+Can I list and view all videos from the same person on youtube.
+ 
+I'd like to view videos from the same youtuber. I could use a playlist but surely there must be a faster way.
+ 
+*
+ 
+How can I play all youtube videos of a user?
+ 
+Is it possible to view all the videos of a particular user on youtube.
+ 
+I like a user on youtube, and I'd like to play all his videos. How can I do this.
+ 
+What is the easiest way of playing all user's youtube videos.
+ 
+I'd like to sequentially view all videos a specific youtube user has published.
+ 
+Can I create a direct link to zip (without view) in google drive.
+ 
+When I make a link in google drive it lists the contents, I'd like it to lead to a simple downlad, can this be done?
+ 
+How do I make a google drive link to a zip file simply perform a save as, and not display the contents.
+ 
+Is there a way to make google drive links provide download and not  a preview of the file contents.
+ 
+I do not want google drive to display the files inside my zip files but to just give a download option, is there a way to achieve this?
+ 
+*
+ 
+Can I produce a link to a zip file on google drive that will not trigger the "view" option but only download?
+ 
+How do I make links to zip files in google drive download the file and not open it?
+ 
+Avoiding zip files on google drive opening on click.
+ 
+Disabling view of zip files on gd and having them downloaded instead.
+ 
+I don't want my google drive to open my zip files, i just want people with the link to be able to download the content. What are my options?
+ 
+What is the easiest way to paste code into gmail.
+ 
+I'd like to keep formatting when copying code into my mails in gmail, how can I do this?
+ 
+Whenever I c/p code into my mails in gmail I lose all the indentation and keyword special markup, is there a better way to do it?
+ 
+I'm spending too much time fixing my code font and indentation after pasting it into gmail. Is there a way to to do it faster?
+ 
+How to most efficiently transfer program code into a gmail mail without losing all the font properties.
+ 
+*
+ 
+Retaining the formatting of my code when copying into gmail.
+ 
+Formatting code in gmail.
+ 
+Keeping indendation of code that I paste into gmail.
+ 
+I lose indentation of code that I copy into a mail on gmail, how can I keep the code formatting.
+ 
+Efficiently pasting code into gmail without losing indentation.
+ 
+Is it possible to host my own trello?
+ 
+Is trello an exclusively online service or can I buy it and host it privately?
+ 
+I'm concerned with my sensitive data being in the trello cloud, is there a private option?
+ 
+I really like trello but am uncomfortable with it being purely online, is there an offline version I could have locally?
+ 
+I'd like to have an instance of trello on my company server for all employees to use, is this an option?
+ 
+*
+ 
+Can I have an instance of trello locally.
+ 
+I don't like my data being in the trello cloud, can I have a trello deployment locally.
+ 
+I want to have my own instance of trello, is this possible?
+ 
+How can I host my local trello instance.
+ 
+I'd like to have an instance of trello on a private server.
+ 
+I'd like to search for some keywords within the tweets of a specific person, how is this done?
+ 
+Is it possible to search within messages that a particular person tweeted.
+ 
+Can I constrain my search on tweets to only those of a single user.
+ 
+I have a guy on twitter I really like, can I do search on only his tweets?
+ 
+How do I narrow down my search on tweets to those published by a specific user.
+ 
+*
+ 
+Searching within tweet posts of a specific person.
+ 
+Is it possible to limit my tweet search on twitter to a single user.
+ 
+How can I search tweets of a particular user on twitter.
+ 
+I need to find a tweet from a certain someone on twitter, how can I limit my search to this user?
+ 
+Finding a tweet amoung the tweets of a single user on twitter.
+ 
+Can I share a search query from google and have the results appear the same?
+ 
+I've noticed copying the google search string doesn't give same results for all users, can I somehow share my exact results?
+ 
+I want to send a google search to my friend so he can see my results, how can I do this?
+ 
+Is it possible to replicate identical search results on google on a different computer by copying the search query string?
+ 
+Sharing google search results of my query.
+ 
+*
+ 
+Is it possible to share the exact search results of a google query?
+ 
+Replicating identical search results on google on a different computer.
+ 
+Copying the query string on google doesnt give same results on all computers.
+ 
+How could I share the unchanged results of my google query with other people.
+ 
+I'd like to share my google results but the results change on other people's computers, is there a way around this?
+ 
+How can I find out who unfriended me on fb.
+ 
+Can I see who stopped being my friend on facebook.
+ 
+I've noticed the number of my friends on facebook decreased, how can I investigate?
+ 
+I want to identify the person who ceased to be my fb friend.
+ 
+How do I search for the person who canceled his friendship with me on facebook.
+ 
+*
+ 
+Determining who removed me from their friends list on facebook.
+ 
+Finding out who stopped being my facebook friend.
+ 
+Finding out who deleted me as their facebook friend.
+ 
+I want to know who stopped being my friend on fb.
+ 
+Is it possible to keep track of who removed me from their fb friends list.
+ 
+I'd like to link to a specific portion of a video on vimeo.
+ 
+I saw this funny bit on a Vimeo clip, how can I link to that exact time in the video.
+ 
+Can you make a link that leads to a specific time point in a vimeo video.
+ 
+How do I send people a vimeo clip but with a predefined point where in the video to start.
+ 
+Is it possible to attach start time information when sending links to videos on vimeo.
+ 
+*
+ 
+Link to a point in a vimeo video.
+ 
+How can i produce a link that will take someone to a particular time in a vimeo video.
+ 
+Does vimeo support making links that have a point in time in the video specified.
+ 
+I'd like to send my friend a link to a particularly important part of a vimeo video, can I include the time when to start into the link?
+ 
+Specifying in a link at which point in the vimeo video to start playing.
+ 
+What is wolfram alpha used for?
+ 
+I hear a lot of good things about wolfram alpha from my friends, what's the big deal?
+ 
+Who would want to use wolfram alpha and for what?
+ 
+Why is wolfram alpha so popular?
+ 
+What are the advantages of wolfram alpha?
+ 
+*
+ 
+Why would I use wolfram alpha?
+ 
+What would be good arguments for using wolfram alpha?
+ 
+Is there a reason why wolfram alpha is so popular?
+ 
+What would be the biggest advantage of using the wolfram alpha tool?
+ 
+For what purpose is wolfram alpha primarily used?
+ 
+I've made a google spreadsheet with a large number of sheets, now i'd like to send a link to a specific one. How do I do it?
+ 
+Is it possible to link to a particular sheet in google spreadsheets?
+ 
+If I need to send to some people the second sheet of my google spread sheet, is there a way to generate a link to exactly that sheet?
+ 
+When sending links to google spreadsheets documents is it possible to specify which sheet should be the active one.
+ 
+Can I include information about which sheet should be opened by default when sending a link to a google spreadsheet with multiple sheets?
+ 
+*
+ 
+Linking to a particular sheet of a google sheets document?
+ 
+Including information about what sheet to display when linking to a google spreadsheets document.
+ 
+Do google spreadsheets support links that include information about which sheet should be active.
+ 
+How can i specify which sheet should be active when sending a link to a google spreadsheets document.
+ 
+Specifying the exact sheet that will be active in a link to google spreadsheets.
+ 
+Can I search gmail to find messages sent or received on a particular day.
+ 
+Is it possible to filter and search gmail messages by date.
+ 
+I know the exact time when I received a message, can I include this into gmail search.
+ 
+I'd like to constrain my mail search in gmail to a particular time period. Is this possible?
+ 
+Filtering messages in gmail with respect to time.
+ 
+*
+ 
+Filtering messages on gmail by date.
+ 
+Finding a mail in gmail that was received on a particular day.
+ 
+Constraining gmail search to a particular date.
+ 
+Filtering search results of mails on gmail to a time period.
+ 
+Including time of mail received into search criteria in gmail.
+ 
+Is it possible to link to a specific point in a youtube video.
+ 
+I found an epic moment in a clip on youtube, can I specify this moment as the start point when sending a link to people?
+ 
+Can I incorporate information about where in the video to start when sending youtube links to friends.
+ 
+I'd like to specify at what time a youtube video i'm linking to should start, is this possible?
+ 
+How can I link to a particular time in a youtube video.
+ 
+*
+ 
+Is it possible to include information about when to start into a link to a youtube video.
+ 
+Specify a custom start point of a youtube video when I link to it.
+ 
+I'd like to link to a specific time point within a youtube video, is this supported?
+ 
+Does youtube support including starting point information into links to its videos?
+ 
+How to include start time point for a youtube video when I link it to someone?
+ 
+How can I see the parent directory of a google document.
+ 
+I often get links to google docs but i can't find an easy way to determine in which folder they are.
+ 
+What's the easiest way to get the name of the directory where a particular google document is located.
+ 
+I got a direct link to a google spreadsheet but I need the name of the folder where it's located, how can I get this quickly?
+ 
+Is there an efficient way to get the name of the parent directory for a file on google drive.
+ 
+*
+ 
+Is it possible to view the parent directory of a document on google docs.
+ 
+How can I see the folder in which a google document is located.
+ 
+Is there a way to determine the directory in which my google document resides.
+ 
+Finding out the parent directory of my google document.
+ 
+How can I get the name of my google document's parent folder.
+ 
+I'd like to see where the different traffic to my github repo comes from. Is this possible?
+ 
+Does github offer some analytical tools for traffic analysis.
+ 
+How can I determine the locations and profiles of users that are accessing my github repo.
+ 
+Is it possible to do analysis on traffic data from github.
+ 
+I'm really interested in who has been accessing my github repo, is there a way to get an overview of these users?
+ 
+*
+ 
+How can I track traffic for my github repo?
+ 
+Tracking traffic sources of a github project.
+ 
+Finding out from where users are accessing my github repo.
+ 
+I'd like to know from where the majority of traffic for my github repository is coming from, can this be done?
+ 
+Traffic analysis for a repository i have on github.
+ 
+Is it possible to search for mails with no reply in gmail.
+ 
+I'm afraid I've left some mails unreplied in gmail but i can't remember which, can I use gmail search to find them?
+ 
+Finding unreplied mails in gmail.
+ 
+Identifying mails that are not replied.
+ 
+Determining for which of my mails a reply is missing.
+ 
+*
+ 
+Finding mails i forgot to reply to in gmail.
+ 
+Filtering gmail search by whether I replied or not.
+ 
+Searching gmail for a mail I did not reply to.
+ 
+Search for unreplied mails in gmail.
+ 
+Locating mails with no reply in gmail.
+ 
+Searching only the primary inbox in gmail.
+ 
+I have lots of inboxes on gmail but I only care about my primary one, how can I make search look only there.
+ 
+Search in gmail works on all my inboxes, but some of them I don't care about, can I do something about this?
+ 
+Constraining gmail search to a particular inbox.
+ 
+Can I make gmail search ignore some of my inboxes.
+ 
+*
+ 
+I have several inboxes on gmail, but I only want to search the primary one, how can I achieve this?
+ 
+Limiting gmail search to the main inbox.
+ 
+Constraining search on gmail to my main inbox.
+ 
+Making gmail consider only my primary inbox when performing searches.
+ 
+Focusing gmail search on a particular inbox (i have several).
+ 
+Is it possible to subscribe to a google mailing list even though my email address is not google based.
+ 
+I have a non google mailing address, can I still participate in googlegroups?
+ 
+Do google groups support e-mails that are not from gmail.
+ 
+I invited to my google group a friend who has a yahoo mail, will this still work?
+ 
+Is a gmail mail mandatory to use google's mailing lists.
+ 
+*
+ 
+Can I be part of a google mailing list without a gmail address?
+ 
+Do google mailing lists support non gmail mails?
+ 
+Is it possible to be part of a google group without having a google based email?
+ 
+I'd like to add a friend to my google group but he doesn't have a google mail address, is this doable?
+ 
+What are my options for adding a person without a gmail mail address to a google mailing list?
+ 
+When searching in google drive, can I look only in a specific folder.
+ 
+Limiting my search to a particular directory on gd.
+ 
+How can I constrain my search to be only in a single folder of google drive.
+ 
+Is it possible to look for files only in one folder of google drive.
+ 
+I'd like to filter my search on google drive to include only files from a directory im interested in.
+ 
+*
+ 
+Limiting google drive search to a particular folder.
+ 
+How can I search within a directory on gd?
+ 
+How can I constrain my search to a particular directory on google drive?
+ 
+Is it possible to search within a specific folder on google drive?
+ 
+Does google drive support searching within a directory?
+ 
+Can I get more than 20 results per page when searching gmail?
+ 
+I find the default twenty mails I get from gmail search to small, how can I increase it?
+ 
+Is there a way to regulate the number of results returned by gmail search?
+ 
+The number of mails displayed in gmail search is not enough, I want to make it bigger.
+ 
+When looking for mails in gmail I'd prefer a longer list to be displayed, what can I do?
+ 
+*
+ 
+Twenty results per page in gmail search is too low, can I increase the number of results shown?
+ 
+How can I change the maximum number of results returned by gmail mail search?
+ 
+I have a lot of mails to search in gmail, i'd like to have more than 20 results show in the result list.
+ 
+Making gmail display a larger number of search results.
+ 
+Increasing the number of mails returned by gmail search.
+ 
+I'm a bit paranoid I'll lose my mails on gmail, can I back them up?
+ 
+Saving all my gmail mails offline to make sure they are safe.
+ 
+How can I perform a full backup of my gmail account.
+ 
+Is it possible to download all my gmail  mails so I can store them somewhere for safekeeping.
+ 
+I'd like to archive all my gmail mails locally, what's the easiest way to do that.
+ 
+*
+ 
+Downlading all my mails from gmail for a local backup.
+ 
+Is it possible to locally save my mails from gmail into my private backup.
+ 
+Archiving gmail mails locally.
+ 
+Creating a private backup of my gmail mails.
+ 
+Exporting gmail mails to my computer for backup purposes.
+ 
+Is it possible to send a fax online?
+ 
+What are my options for sending fax online?
+ 
+I don't have a fax-machine but I hear I can turn my computer into one via the internet. How does it work?
+ 
+Can I send faxes over the internet, is it expensive, what are the best services?
+ 
+What would you recommend as a solution for sending faxes over the internet?
+ 
+*
+ 
+How do I send fax online?
+ 
+Is there a way to send a fax over the internet?
+ 
+Is there an online service that would provide me with fax sending options?
+ 
+What are the possibilities for sending fax online?
+ 
+I need to send fax over the net, is there any online service to provide this?
+ 
+Why does the buffering of youtube videos stop when the video is paused?
+ 
+I't seems that youtube videos do not continue loading unless the video is running?
+ 
+Is this a bug? My video on youtube won't load after i pause, it will continue loading once unpaused.
+ 
+Youtube does not buffer videos untill the end if the video is in a paused state, can I fix this?
+ 
+I can't get youtube to preload a video, whenever I pause the buffer download stops.
+ 
+*
+ 
+Why does youtube cease buffering a video as soon as it's paused?
+ 
+Is there a bug on youtube, because my videos stop buffering as soon as I hit the pause button?
+ 
+Can I get youtube to buffer videos even if they are not playing?
+ 
+Buffering of videos on youtube stopping when videos is paused?
+ 
+As soon as I pause a youtube video the buffering is halted, is this normal?
+ 
+I want to delete all mail from my gmail account.
+ 
+How can I get rid of all of my mails in gmail.
+ 
+I'd like to remove every mail I ever got in gmail.
+ 
+How do I completely erase my mails from gmail.
+ 
+I'm very low on space on gmail so I want to mass delete my mails, is this possible?
+ 
+*
+ 
+I have to many mails in my gmail account, I want to remove them all, how do I do this?
+ 
+I'd like to completely delete all my mails in gmail, what's the fastest way to do this?
+ 
+I need to quickly delete all my gmail mails.
+ 
+Getting rid of all mails in gmail quickly.
+ 
+How do I remove the entire content from my inbox in gmail?
+ 
+Gmail filters out attachments that contain exe files, is there a way around this?
+ 
+I'd like to send executable files via gmail, is this possible?
+ 
+Can I somehow mask an exe file so that gmail doesn't remove it from my mail.
+ 
+I'd like to send a windows program as a gmail attachment but I can't because I keep getting an error message.
+ 
+How could I send a windows exe over gmail?
+ 
+*
+ 
+Gmail will not let me send an exe file via mail, is there a workaround?
+ 
+Gmail won't let me send executable files as attachments, is there an option around this?
+ 
+How can I send an executable file via gmail?
+ 
+Sending programs over gmail.
+ 
+Is it possible to mask an exe file so that gmail will let me attach it to a mail?
+ 
+Quora displays only the first / best answer, can I read the rest of the answers without registering?
+ 
+Quora insists I must register if I want to read all the answers to a question, is there some way around this?
+ 
+I refuse to register on Quora, I resent such bullying tactics. Still, is it possible to read all the answers to a question there anyway?
+ 
+I'm looking for a way to bypass the registration requirement imposed by Quora on people who want to see the complete answer list.
+ 
+I'd like to see the full list of answers for a Quora question but without the hassle of registering, what are my options?
+ 
+*
+ 
+Can I somehow read all the answers on quora without registering?
+ 
+I really don't want to register on quora, but I can't see all the answers, is there a way around this?
+ 
+Is there a possibility to see all quora answers without registering?
+ 
+Can an unregistered user somehow see all the answers on quora?
+ 
+I want to see all the answers of a quora question but i do not want to register, is there a solution?
+ 
+Managing interdependencies between trello cards.
+ 
+Is it possible to add information about mutual dependencies between tasks on trello.
+ 
+Does trello support of conditional workflows?
+ 
+A particular task for which I have a trello card can not start until another task is done, is there away to model this in trello?
+ 
+Handling tasks which depend on each other in Trello.
+ 
+*
+ 
+Is it possible to add information about task interdependencies on trello?
+ 
+Handling tasks that depend on each other in Trello.
+ 
+Can I specify on trello that a task should be completed before another starts?
+ 
+Introducing info about task interdependencies on trello?
+ 
+Specifying on trello interdependencies between various tasks.
+ 
+How does gmail thread mails?
+ 
+What is the logic between grouping mails into threads on gmail?
+ 
+What algorithm does gmail use to group my incoming mails?
+ 
+How is a thread of conversation constructed by gmail?
+ 
+What's the idea behind coupling mails together into threads by gmail?
+ 
+*
+ 
+On what prinicple does gmail create threads?
+ 
+Gmail groups my mails into conversations, how does this work?
+ 
+How does gmail know which mails to assign to which conversation thread?
+ 
+What is the algorithm behind generating conversation threads from individual mails in gmail?
+ 
+How does gmail generate conversation threads from individual mails?
+ 
+Is it possible to mark a trello card as done but not move it from its current list?
+ 
+What is the best way to specify that a trello card is finished?
+ 
+Is it mandatory to move a trello card to another list to mark it as done.
+ 
+How can I say that a card is done on trello without changing the list where it is?
+ 
+When a task for a trello card is finished how can I leave it in the current list but specify it's done.
+ 
+*
+ 
+Is there an option to mark a trello card as done, but not remove it from the list?
+ 
+I usually move a trello card to the done list to mark it as done, but is there some flag that i could set instead (without moving it).
+ 
+Does trello support the concept of marking a card as done?
+ 
+Marking a card as done in trello?
+ 
+Flagging a card as done in trello (without moving it).
+ 
+Can I get a list of mails for all people who sent me mail?
+ 
+How can I export a set of mails for all persons I received mail from?
+ 
+Is it possible to extract a compilation of e-mail addresses for all mails I've ever received on gmail.
+ 
+I want to send mail to everyone who ever sent me mail, can I somehow get all of the addresses from gmail?
+ 
+My friend and I want to make a comprehensive analysis of who sent us mail. Can we get a list of emails of all of our incoming gmail messages?
+ 
+*
+ 
+I'd like to get a list of all people who ever sent me emails in gmail.
+ 
+Listing all email addresses who sent me mail.
+ 
+Getting a listing of all mails from which i received messages (ever).
+ 
+How can I get addresses from which I received mail on gmail.
+ 
+I had a virus and now i want to warn all e-mail addresses that ever sent me mail, is there an easy way to do this in gmail?
+ 
+I'd like to filter mails that were sent just to me in gmail.
+ 
+Can gmail single out only those mails where I am the only recipient?
+ 
+I'd like to find mails on gmail that we're not sent to anyone else but me.
+ 
+Is it possible to search for only those mails on gmail where there are no other recipients but me?
+ 
+Filtering mail that was sent only to me in gmail.
+ 
+*
+ 
+I'd like to search gmail for mails where I am the only recipient?
+ 
+Filter gmail mails to those that were sent to me alone.
+ 
+Singling out mails in gmail where I am the sole recipient?
+ 
+Filtering mails to those that were sent to only me.
+ 
+Searching gmail to find mails that were sent to noone else but me.
+ 
+I'm a college student so I can't really afford full blown office365, are google docs an ok alternative?
+ 
+What are the pros and cons of using google documents when compared to office?
+ 
+Is office a lot better than google docs, where can I find a good comparison?
+ 
+I'm a college student, is there anything in Microsoft office that i might be missing if I decide to switch to google docs.
+ 
+Would you say that google documents is a viable alternative to Microsoft office?
+ 
+*
+ 
+Are google documents a viable alternative to MS Office?
+ 
+What additional functionality does MS Office offer that google docs is missing?
+ 
+To a college student, are there any significant advantages of MS Office over google docs?
+ 
+What would be the downside of using google docs compared to microsoft office?
+ 
+As a college student i can't afford microsoft office, are google docs a viable alternative?
+ 
+Can I host a commercial website on github?
+ 
+I have a small company and we'd like to host our pages on github, is this allowed?
+ 
+What are the legal considerations of hosting a for-profit web site on github?
+ 
+Does github allow companies to host their pages for commercial purposes?
+ 
+I'd like to put my company pages on github, is this an option?
+ 
+*
+ 
+Is it allowed to host commercial code on github?
+ 
+Our small company would like to use github as our repository, is this allowed?
+ 
+Can commercial code be hosted on github.
+ 
+Are there legal problems with hosting a for profit web site on github?
+ 
+Does github tolerate hosting of commercial pages?
+ 
+Can I link to a specific location on google maps?
+ 
+Does google maps support creating a link to a particular location of interest?
+ 
+I'd like to send a link to exactly a particular spot on google maps to my friend, how can I do that?
+ 
+What is the easiest way to send a link to some place like a  restaurant on google maps?
+ 
+When linking to maps from google can I pick a particular spot to link to?
+ 
+*
+ 
+Is it possible to include location information to a link to google maps?
+ 
+Can I link to a particular location on google maps?
+ 
+I want to link to a specific place (like a restaurant) on google maps, how can I do this?
+ 
+Is it possible to link to a specific point on the map in google maps?
+ 
+Inlcuding spatial coordinates of a point into a link to google maps.
+ 
+I have some data in my google spreadsheet can I sort it automatically?
+ 
+Is there a sort function in google spreadsheets?
+ 
+I'd like to put numbers in a column of google spreadsheets in ascending order, how do I do this?
+ 
+Can I order items descendingly in google spreadsheets.
+ 
+Sorting data in google spreadsheets.
+ 
+*
+ 
+I'd like to automatically sort some data in google sheets, how do I do it?
+ 
+Ordering data in google sheets with respect to values in some column?
+ 
+Sorting numbers in a column in google spreadsheets?
+ 
+Ordering data in ascending order in google spreadsheets?
+ 
+How do I make some data automatically sorted in descending order on google spreadsheets?
+ 
+Can I somehow find out at what point in time I subscribed to a youtube channel.
+ 
+I'm a subscriber on a channel on youtube, I wonder for how long, how can I find out?
+ 
+I'd like to know the exact date when i started my subscription to a youtube channel. Is this possible?
+ 
+Where can I find information about when my subscription to a channel on youtube started.
+ 
+Is it possible to get the time of when i first subscribed to a particular youtube channel.
+ 
+*
+ 
+Where can I see when I first subscribed to a youtube channel?
+ 
+How can I find out when my subscription to a youtube channel started?
+ 
+Is it possible to find the point in time when my subscription to a youtube channel started.
+ 
+I wanna know when i first subscribed to a channel of my friend on youtube, wheere can i find this information?
+ 
+Is there a way to see the date when my youtube channel subscription started?ll
+ 
+Is it possible to have more than one Dropbox account on the same computer.
+ 
+Having multiple dropbox accounts on the same box.
+ 
+Can I have both my and my sisters dropbox account simultaneously on our family computer.
+ 
+Having several Dropbox accounts simultaneously on the same pc.
+ 
+Options for using more than one Dropbox account with the same computer.
+ 
+*
+ 
+Having more than one dropbox account per computer.
+ 
+Can I have multiple Dropbox accounts on the same physical computer?
+ 
+Is it possible to have several Dropbox accounts on my computer?
+ 
+Both me and my brother use the same computer can we both set up our separate dropbox accounts on this machine?
+ 
+Setting up more than one dropbox account on the same computer.
+ 
+How can I be sure that my posts on facebook will stay private?
+ 
+Is there a way to make sure that only my friends will be able to see my fb posts?
+ 
+What setting do I have to tweak on facebook to prevent people who are not my friends from seeing my info and posts?
+ 
+I'd like to hide my posts on fb from people who are not my friends, how do i do this?
+ 
+I'm concerned about the privacy of my facebook posts, what should I be aware of?
+ 
+*
+ 
+How do I enforce that stuff i posted on facebook will stay private?
+ 
+Hiding my posts on fb from people that are not my friends.
+ 
+Keeping my privacy with respect to things i post on facebook.
+ 
+Do I have a guarantee that posts I put on facebook will stay private within my circle of friends?
+ 
+How do I make sure my privacy is safe on facebook.
+ 
+I'd like to add a size column to my gmail, is this possible?
+ 
+How can I see the size of all my mails in gmail, and possibly sort them?
+ 
+I'm running out of space on gmail, are there options to see mail sizes and possibly remove large mails?
+ 
+How can I see how big my mails in gmail are, I need to delete some really large ones.
+ 
+Is it possible to display how much KB / MB my gmails have, I could really use this information.
+ 
+*
+ 
+How do I tell gmail to display the size of mails.
+ 
+Is it possible to get size information in gmail.
+ 
+I'd like to know how big my gmail mails are so I can delete the biggest ones.
+ 
+I need to know the size of my mails in gmail, where can I display it?
+ 
+How can I make gmail show me the size in KB or MB of my mails.
+ 
+When more than one user are looking at a google spreadsheet they share filters, is there a way around this?
+ 
+A filter introduced by one user is immediately applied to all other users looking at the same google spreadsheet. How can I avoid this?
+ 
+Is it possible to have separate filters applied for each individual user looking at a google spreadsheet?
+ 
+When multiple users are looking at a google spreadsheet can each of them apply a different filter without influencing the view of other users?
+ 
+Can I make google spreadsheet filters user specific eventhough several users are looking at the same spreadsheet at the same time?
+ 
+*
+ 
+Different users looking at the same spreadsheet see the same filters, is there a way around this?
+ 
+The filtering of data offered by google spreadsheets is the same for all users, can this be changed?
+ 
+Is it possible to have separate custom filters for different users on google spreadsheets.
+ 
+When multiple users are looking at a google spreadsheet can they each have different filters?
+ 
+Using a different filter for each user looking at a google spreadsheets document.
+ 
+How can I add a bibliography to my google docs?
+ 
+What's the easiest way to add references to my google documents?
+ 
+I'd like to introduce bibliographic references to my google docs, how do I do this?
+ 
+In latex its easy to generate a references section, do google docs have some similar functionality?
+ 
+After a cite a paper how do I add its reference to the end of the document in google docs?
+ 
+*
+ 
+How do I add a bibliography to my google docs document?
+ 
+Adding references to literature in my google docs.
+ 
+Can I automatically generate a references section in google docs (like you can i latex).
+ 
+What is the easiest way to add a bibliography section to my google docs document?
+ 
+Adding references to a google doc.
+ 
+Can you recommend a good reverse image search engine?
+ 
+I'd like to find web pages on which a particular image I have is located, how do I do this?
+ 
+Is there any web site where I could submit an image and get a list of locations on the web where this image is located?
+ 
+How can I do a reverse search of an image, giving an image as input and getting similar versions of the image as output?
+ 
+Searching the web using an image as a query.
+ 
+*
+ 
+What would be a good reverse image search engine?
+ 
+I need a search engine that would take an image as input and find similar images, is there such a thing?
+ 
+Is there a search engine that could find images like the one I give as input.
+ 
+How can I search the web using an image as the query.
+ 
+I need to find images that look like the one I have, is there a web page to help me?
+ 
+Is there a way to analyze the file sizes on dropbox.
+ 
+I reached my storage limit on dropbox and need to decide what to delete, what's the easiest way to do this?
+ 
+I don't have any more space on dropbox, how can I find files taking up the most space so I can delete them?
+ 
+Does dropbox offer any kind of storage space analysis on my files?
+ 
+I'd like to have an overview of file sizes in my dropbox, is there some dropbox functionality for this?
+ 
+*
+ 
+Storage space analysis in dropbox.
+ 
+Getting an summary on the size of files and folders in my dropbox.
+ 
+Performing analysis on the file sizes in my dropbox.
+ 
+Does dropbox provide some kind of storage space analysis utility?
+ 
+I'd like to get an overview of storage space used by my dropbox files.
+ 
+Can I add subtitles to a youtube video that is not mine?
+ 
+Subtitling someone elses video on youtube.
+ 
+I'd like to add sub title text to a youtube video, but I'm not the owner, is this possible?
+ 
+Can someone else add subtitles to my video on youtube?
+ 
+How can I subtitle a video of a different youtube user?
+ 
+*
+ 
+Adding subtitles on youtube to a vide that is not mine.
+ 
+Subtitling a video of another user on youtube.
+ 
+Adding subtitles to a youtube video for which im not the owner.
+ 
+Providing sub titles on a youtube video that was submitted by another user.
+ 
+Adding subtitles to someone else's youtube video.
+ 
+Is it possible to add an urgent flag to a mail in gmail?
+ 
+I'd like to label some of my outgoing mails in gmail as urgent, can this be done?
+ 
+How do I specify that some mails i send through gmail are time sensitive?
+ 
+What are my options to mark a mail I'm sending as top priority.
+ 
+Why doesn't gmail allow me to assign a special tag to mails in case of urgency.
+ 
+*
+ 
+Can I flag a particular gmail mail as urgent?
+ 
+Adding an urgency flag to a mail in gmail?
+ 
+I have a very important mail in gmail can i flag it as urgent?
+ 
+Is there a special annotation I could assign to an urgent mail in gmail?
+ 
+How can I specify via gmail that a certain mail is very urgent?
+ 
+Is it possible to search for only those messages that I have archived?
+ 
+How can I filter out only archived messages in gmail?
+ 
+I'd like to browse only the messages in the archive in gmail, is this possible?
+ 
+I need to find a message that is archived, can I restrict my search to look only in archived mail?
+ 
+Limiting the scope of a gmail search to archived mail exclusively.
+ 
+*
+ 
+Can I somehow list archived mails in gmail.
+ 
+I'd like to filter my mails to see the ones i archived, is this possible in gmail.
+ 
+Finding a mail in the archive in gmail.
+ 
+Searching the mails i put into my archive on gmail.
+ 
+Performing search on gmail on mails that are in the archive.
+ 
+Can I make it so that I get notified by email when a particular user tweets.
+ 
+I'd like to get e-mail notifications when specific people write posts on twitter.
+ 
+Getting e-mail notices when people tweet specific hash tags?
+ 
+There is a funny guy on twitter, can I make it so that I get e-mail message everytime he posts something with given hashtags?
+ 
+Can I connect gmail and twitter so I'm notified when people I'm following tweet something with hash tags I specify?
+ 
+*
+ 
+Setting up email notifications for a user on twitter.
+ 
+I want to make it so I get an e-mail when a particular user tweets something.
+ 
+Is there a way to ensure I get e mail notifications when someone writes something on his twitter?
+ 
+I'd like to recieve an mail every time a specific twitter user writes a new post.
+ 
+Does twitter support sending e-mail to followers when a user tweets something.
+ 
+Importing facebook events into my calendar on google.
+ 
+Is it possible to make my google calendar show me activities that I scheduled on facebook?
+ 
+I've got a friend who is organising various meetings and events on facebook, can I somehow forward these to my gmail calendar?
+ 
+I'd like to see my fb activities in my google calendar.
+ 
+Could I make the callendar on my google account aware of social activities I've arranged via facebook.
+ 
+*
+ 
+Is it possible to import events from facebook into my calendar in gmail?
+ 
+How can I add activities scheduled on facebook to my google calendar?
+ 
+Including events from facebook into my google calendar.
+ 
+How do I make my calendar on google aware of stuff i scheduled on facebook.
+ 
+Adding activities aranged on facebook to my google calendar.
+ 
+Is it possible to unlink a computer from dropbox without having direct access to that computer?
+ 
+I wanna remove Dropbox from a computer I no longer have, what is the best way to do that?
+ 
+How to restrict access to my Dropbox for a machine that is no longer in my possesion?
+ 
+I forgot to uninstall Dropbox before giving my computer to my nephew, is there a way to fix this through the online interface?
+ 
+How can I get rid of dropbox on a particular computer that is linked to my account using only the online interface?
+ 
+*
+ 
+Unlinking a computer from dropbox without direct access.
+ 
+Remotely removing a dropbox from a computer.
+ 
+Deleting dropbox from a computer remotely.
+ 
+Denying access to dropbox for a computer that i don't have access to.
+ 
+Removing dropbox access for a computer I no longer own.
+ 
+Can I link to a specific location within a google document?
+ 
+Is there a way to incorporate position information into a link to a Google doc that im sending?
+ 
+I have a very long document on google docs, I'd like to link to a particular page within the document, is this possible?
+ 
+I need to link to a given paragraph within a google doc, this paragraf is half way through the document so I don't want my recepient to have to scroll all the way down?
+ 
+I want to provide links to a few specific places within a document on google, is this functionality supported?
+ 
+*
+ 
+Linking to a specific position inside a google doc.
+ 
+Linking to a particular page of a google doc.
+ 
+Is there a way to include position in the document when i link to a google docs document?
+ 
+I'd like to link to a given position within my document on google docs, is this possible?
+ 
+Do google docs support including the position in the document when making links?
+ 
+Is it possible to configure gmail so that when I reply to a mail the default "from" adress is the one that the mail was sent to?
+ 
+Can I change my default gmail reply address to be chosen depending on the address the mail was sent to?
+ 
+I have multiple addresses in gmail, I'd like my default reply address be the same one that was on the mail I'm replying to, is this supported in gmail?
+ 
+I'd like to modify my sent from adress based on the receiving address of incoming mails (I have more than one mail).
+ 
+Is it possible to have a custom reply address in gmail which selects the original recipient address for the mail being replied to.
+ 
+*
+ 
+I have multiple e mail addresses, how do I set up gmail so that the reply address is the one the mail was sent to?
+ 
+Setting up gmail so that the default reply address was the one from the incoming mail.
+ 
+How do I make it so that gmail will set my reply address to the one to which the mail was sent to?
+ 
+Which setting do I have to change so that my default reply address is the one for which the mail was sent?
+ 
+Is it possible to make gmail set my reply adress as the on the incoming mail was intended for.
+ 
+I have an important meeting in google hangouts, but I don't have a google account, can I still somehow join?
+ 
+Is a google account a prerequisite for joining a google hangouts session.
+ 
+I wanna start a google hangout with my pal who has no google account, does he have to make one?
+ 
+Is it mandatory to have an account with google in order to chat online via google hangouts.
+ 
+I'd like to use the hangouts feature of google, does this mean I have to make a google account?
+ 
+*
+ 
+Is a google account needed to use google hangouts?
+ 
+Can my friend join google hangouts if he doesn't have a google account?
+ 
+Is a google account a neccessary condition for joining google hangouts?
+ 
+Does my father need to have a gmail account in order to use google hangouts?
+ 
+Using hangouts without a google user account.
+ 
+What does the archive operation on gmail do?
+ 
+How are gmail mails archived?
+ 
+When gmail sends my mails to the archive, what exactly does this mean?
+ 
+What is archiving in gmail?
+ 
+The final destination of archived mails in gmail.
+ 
+*
+ 
+Where does mail I archive in gmail actually go?
+ 
+What is the destination of archived mail in gmail?
+ 
+How does archiving work on gmail?
+ 
+Where are archived mails actually kept in gmail?
+ 
+What does the archive operation on gmail do anyway?
+ 
+I'd like to find the first message from a particular person on gmail,
+ 
+I need to find the oldest mail on gmail from my friend, how can I do this?
+ 
+I want to find the very first message that my wife sent me by mail, it was to my gmail account, is this possible?
+ 
+I'd like to find the mail farthest back in time from a friend of mine, can I do this in gmail?
+ 
+Finding the first ever mail that given person has sent to you on gmail.
+ 
+*
+ 
+Searching for the first message someone sent me.
+ 
+Finding the oldest mail that a particular person has sent to me.
+ 
+Locating the earliest message I received from someone.
+ 
+Finding out the oldest message from a person.
+ 
+How can I find out the oldest (first) mail i received from someone.
+ 
+I don't want all my fb friends to instantly get notified of my likes.
+ 
+Is there a way to prevent me liking something on facebook be instantly public?
+ 
+What are the privacy options that could prevent all of my facebook likes to immediately be forwarded to my friends?
+ 
+I'd like to stop my facebook friends being notified every time I like something, I just want some privacy.
+ 
+Is there a way to limit how public my likes on facebook become?
+ 
+*
+ 
+Is it possible to hide my likes from my facebook friends?
+ 
+Is there a privacy option that would conceal my likes from my fb friends?
+ 
+How can I stop my friends on facebook from being notified of my every like.
+ 
+I'd like to limit who can see what I like on facebook, what are my options?
+ 
+How do I stop facebook from sharing what I liked with other people.
+ 
+Is it possible to access the US version of google search even though I live elsewhere?
+ 
+I'd like to access google.com instead of being redirected to my own local version of google.
+ 
+How can I enforce google to use the .com domain instead of switching to my local domain every time.
+ 
+Why is google.com constantly changing to my local country domain, I don't want this, I want to see the USA version of the results.
+ 
+What is the best way to browse google as it is in the states, as opposed to the localized version my small european country has.
+ 
+*
+ 
+Is it possible to access the US google from outside the states?
+ 
+Can I view the USA version of google even though i'm not located in the USA.
+ 
+Browsing google from the states and not my localized version.
+ 
+Accessing the US version of google from elsewhere.
+ 
+Accessing the USA version of google and not one on my local country domain.
+ 
+I'd like to disable autoplay on youtube.
+ 
+Can I somehow stop videos on youtube from automatically playing each time I click on them.
+ 
+I want to disable the feature that starts youtube videos immediately after I click on them.
+ 
+How can I turn off the auto play feature of youtube?
+ 
+I despise the fact that youtube videos start immediately after I click on them, is there some fix for this?
+ 
+*
+ 
+How do I stop videos from starting immediately when i click on them on youtube.
+ 
+Stop youtube videos from automatically playing when clicked.
+ 
+Youtube videos play right away after you click them, can this be disabled?
+ 
+Can I disable the youtube feature that plays videos right away after clicking them.
+ 
+Disabling auto play features on youtube.
+ 
+What type of content does google omit from it's indexing procedure?
+ 
+Is there a specific kind of webpages that google doesn't index?
+ 
+What are the limitations of google's indexing algorithms, does anything get missed?
+ 
+Is there a kind of content that's left out from Google search?
+ 
+Do you think that Google deliberately leaves out some results, due to either technical difficulties or company interests?
+ 
+*
+ 
+Is there something that is left out of google results?
+ 
+Is something missed by google search?
+ 
+Does google omit some items from the search results.
+ 
+Are there some pages that google omits from it's indexing procedure.
+ 
+Does google deliberately skip indexing some pages?
+ 
+I've accidentally set up a computer to be trusted by google two factor authentication, how do I revoke this trust?
+ 
+I need to untrust a copmuter with google 2 factor auth asap, how can I do this?
+ 
+Is there an easy way to remove trust for google's two step auth from a computer?
+ 
+I made a mistake by trusting a computer for my google 2 factor authentication, I wish to undo this but I don't know how.
+ 
+Why is there no option to untrust computers that you trusted for google two step authentication. I made a mistake and now I can't fix it.
+ 
+*
+ 
+Is it possible to untrust a computer that was included into google 2 factor authentication.
+ 
+How can I remove the trust for a computer involved in google 2 factor auth.
+ 
+I'd like to quickly remove trust for a computer with google two factor authentication.
+ 
+I mistakenly trusted a computer with google two factor authentication, can i somehow undo this?
+ 
+I accidentaly trusted a computer with google two factor authentication, can I fix this?
+ 
+Is it possible to remove entries from my github activity feed?
+ 
+I wrote some stuff in my github feed that i'd like to delete, what are my options?
+ 
+A wise guy friend of my wrote some stupid stuff on my github feed, what are my options to get rid of it?
+ 
+I got angry and wrote sam bad stuff about C# in messages about my github activity , can I take it back?
+ 
+Editing your feed of activities on github to moderate content.
+ 
+*
+ 
+Can I delete some entries from my github activity feed?
+ 
+I'd like to remove some entries from my github activity feed.
+ 
+I'd like to get rid of entries on my github activity feed.
+ 
+I need to delete stuff from my activity feed on github.
+ 
+How could I edit my activities on github, I'd like to delete some comments.
+ 
+Is it possible to see / browse all public trello boards?
+ 
+Is there a way to get a list of all available (public) trello boards?
+ 
+I have a public trello board, can I somehow see what other public boards are available?
+ 
+Does trello offer information on all the public boards in existence?
+ 
+Where can I find what public boards does trello have to offer?
+ 
+*
+ 
+Where can I find a list of publicly available trello boards?
+ 
+Viewing all available public trello boards.
+ 
+Listing trello boards that are available publicly.
+ 
+Is there a master list of public trello boards?
+ 
+Can I find out what public boards are available on trello?
+ 
+How can I stop people from tagging me in photos on facebook without asking me first?
+ 
+Is it possible to enforce people to ask for my permission before associating stuff with me on facebook?
+ 
+I'm concerned about my privacy, I feel I keep getting tagged on facebook over and over without anyone asking me if this is ok? Is there anything I can do?
+ 
+What facebook settings can allow me to control who is allowed to tag me and where?
+ 
+What is the best way to ensure my privacy with respect to tagging on FB?
+ 
+*
+ 
+Can I configure facebook so that people have to ask me before tagging me in photos?
+ 
+Can I make it so that people can not tag me in facebook photos without my permission?
+ 
+I'm getting tagged all the time in pictures on facebook, can I enforce people to ask me first?
+ 
+How do I make sure that people first as for my permission before associating me with stuff on facebook?
+ 
+I want people to first ask for my permission before associating me with things on fb, how do I ensure this?
+ 
+Is there an alternative similar to google docs that I could host on my own server.
+ 
+I'm afraid for my sensitive data in the cloud, is there something similar to google documents that could be self hosted?
+ 
+I'd like the same functionality as google docs but hosted locally for security reasons, is there any software that might fulfill these requirements?
+ 
+I'd like my local server to run something akin  to google docs. Is there any software suite for this?
+ 
+I require a application for document editing such as google docs but hosted on my company infrastructure instead of the cloud.
+ 
+*
+ 
+Is there an alternative solution similar to google docs that I could host locally?
+ 
+I like google docs but i don't want my sensitive data in the cloud, is there a similar but self hosted solution?
+ 
+I'm looking for software that is similar to google documents but can be hosted privately.
+ 
+I want to locally host some software that has similar functionality to google docs, is there any software like this?
+ 
+I require software like google docs but that can be locally hosted on my server.
+ 
+Some youtube videos have automatically generated subtitles, is it possible to download only the subtitles?
+ 
+There are automated transcripts for some youtube videos, is there an option to download only the transcripts and not the videos?
+ 
+I'm kinda low on bandwidth, so I'd like to download only the autogenerated transcription of a youtube video while ignoring the video itself, is this possible?
+ 
+There are subtitles for some youtube videos that were added in an automated way, is there a method to export only the subtitles for a video?
+ 
+Can I download a file containing the transcript (subtitles) generated for a particular video automatically by youtube?
+ 
+*
+ 
+Youtube automatically generated subtitles for a video, can I download those?
+ 
+I'd like to download subtitles automatically generated by Youtube.
+ 
+Downloading the auto generated transcription of a youtube video.
+ 
+Downloading the transcript that youtube generated for a video.
+ 
+Could I somehow download the automatically generated subtitles for a youtube video?
+ 
+Is it possible to share a photo album on facebook with people who are not members of FB?
+ 
+I'd like to share my photos in my facebook albums with my grandma who is, of course, not on facebook, is there a way to do this?
+ 
+How can I allow someone unregistered on facebook to still be able to see my albums and pictures?
+ 
+Can a person who is not a member of fb (nor willing to become one) somehow see the pictures I upload?
+ 
+Is registering for facebook mandatory to see someone's albums, or is there another way?
+ 
+*
+ 
+Is it possible to share a facebook photo album with people who are not registered on facebook?
+ 
+I want to share a photo album on fb with my friend who is not on facebook. Is this possible?
+ 
+Sharing a facebook album with people that are not registered facebook users?
+ 
+I need to share a picture album on facebook with someone who is not a facebook member?
+ 
+Sharing albums on facebook with people who are not registered.
+ 
+I'd like to download an entire directory from the dropbox web interface, what is the easiest way to do this?
+ 
+Can I download a whole folder via the Dropbox web?
+ 
+I need to download a folder containing lots of files on Dropbox, can I just download the folder using the web interface?
+ 
+The dropbox website is providing a way to download files, but I need more than files, I need an entire directory. There must be a way to do this?
+ 
+Is there a method of exporting for downloading the whole folder that I'm interested in from dropbox using just a browser?
+ 
+*
+ 
+Downloading an entire folder from dropbox.
+ 
+I'd like to download an entire directory from dropbox, how do I do it?
+ 
+What is the best way to download a directory from Dropbox.
+ 
+Easiest way to export and download a directoy from Dropbox.
+ 
+I need to dowload an entire folder from my dropbox web interface, is there an option for this?
+ 
+I'd like to find the oldest commit in my github repo.
+ 
+Can I search for the initial commit to my github repo.
+ 
+How can I identify the oldest commit I've made to my github.
+ 
+Out of all the commits that I made to my github repo, how can I find the very first one?
+ 
+I'm intersted to know the age of my github project, what's a simple way to find this?
+ 
+*
+ 
+Finding the very first commit to my github repository.
+ 
+Locating the initial commit to my repo on github.
+ 
+How can I find when the first commit for a given repo on github happened.
+ 
+Determine the time of when I commited something to a github repo.
+ 
+
+ 
+Can I make gmail separate calendar notifications into a different group?
+ 
+I'm getting spammed by all the notices I'm getting from google calendar, is it possible to filter then out into their own group?
+ 
+How do I filter out calendar notifications in gmail?
+ 
+Can I make a separate gmail category for mails coming from the calendar?
+ 
+I'd like to consider the mails coming from google calendar separately from the rest, can I have a special label for them?
+ 
+*
+ 
+Is it possible to add a filter to gmail for calendar notices.
+ 
+Google calendar is spamming me with notifications, can I somehow separate them from the rest of my mails?
+ 
+Can I filter out google calendar notifications into a separate tab?
+ 
+Can I single out notices about events I get from Google calendar into a separate category?
+ 
+Filtering google calendar notifications.
+ 
+I'd like to send an email with a delay, does gmail support this?
+ 
+I dont want people to see I was writing mails late at night, I'd like to write them now but set up that they get automatically sent tomorrow morning. Can I do this in gmail?
+ 
+I'd like to set a time when a gmail mail will be sent (instead of right away). Is there an option for this?
+ 
+What are my options if I want for a mail I've written in gmail to be sent to the recepient on a later date?
+ 
+I need to put off sending a mail I've written for a few hours, what's the easiest way to do that?
+ 
+*
+ 
+Is it possible to send an e-mail with a delay on gmail?
+ 
+Delayed sending of a mail in gmail?
+ 
+Sending a mail on a timer in gmail?
+ 
+Setting a time when a gmail mail will be sent.
+ 
+Putting a time delay on sending a gmail mail.
+ 
+Is it possible to hide (not block) contacts from hangouts chat list?
+ 
+I use google chat a lot, but I'd like to hide some of my contacts from the contact list, is there an option for this?
+ 
+I need to make some of the people I've chatted with disappear from my contacts list in google chat.
+ 
+Making people invisible in the chat list of google hangouts.
+ 
+I'd like to remove some friends from my contact list in google hangouts (not remove them as my friends i just want them to be absent from the list).
+ 
+*
+ 
+Hiding contacts from hangouts chat?
+ 
+I'd like to hide (not remove or block) certain people from google chat.
+ 
+Making some people in my google chat list invisible.
+ 
+I need to hide some of the people i chatted with over google chat, is there a way to do this?
+ 
+Conceal some of my contacts in the gmail chat list.
+ 
+Is there a way to know if the recipient has read my mail?
+ 
+I've sent an important mail and I'd really like to know if the receiver has read it? Is there any way to tell?
+ 
+How can I be sure that the person  I've sent mail to has actually read it. Is there a way to know?
+ 
+I'm dying to find out if my buddy read the mail I've sent him. How can I find out?
+ 
+Is there a possibility to identify whether a mail i've sent has been opened and read or not?
+ 
+*
+ 
+Can I somehow know if my intended recepient has actually read the mail i've sent.
+ 
+Finding out if the receiver has read the mail that i sent.
+ 
+How could I know if the mail I sent has been read by the recepient?
+ 
+Is it possible to find out if my mail was read.
+ 
+Once i have sent a mail, is there a mecahnism to know whether it was opened and read?
+ 
+I've fixed a small mistake in my youtube video, can I upload the fixed version over the faulty one?
+ 
+Is it possible to change one youtube video with another?
+ 
+How can I switch out one of my old youtube videos with a new better one?
+ 
+Does youtube support replacement of videos?
+ 
+I need to reupload my video on youtube because I've made a small error, but I't seems it isn't possible??
+ 
+*
+ 
+Is it possible to replace a video on youtube with a new one?
+ 
+Can I switch my youtube video with a new one?
+ 
+Is it possible to change a video on youtube with a new improved version?
+ 
+How could I switch a video on youtube with a new one?
+ 
+Does youtube allow changing a video once it's been uploaded?
+ 
+How does the friend finder on fb work?
+ 
+What is the idea behind friend recommendations on facebook?
+ 
+What algorithm does fb use when trying to find new friends for me?
+ 
+I keep getting friendship suggestions from fb, how does it come up with them?
+ 
+How does facebook decide which users to suggest as potential friends for me?
+ 
+*
+ 
+How does facebook detect potential friends for me?
+ 
+How does facebook friend finder work?
+ 
+How does facebook recommend friends?
+ 
+I get lots of friend suggestions from fb, how does this work?
+ 
+How does facebook find friends to recommend to me?
+ 
+What application would you recommend to find a good time slot for a meeting?
+ 
+Are there any easy to use apps on the web to schedule meetings?
+ 
+I need to find a suitable time period for a large group to get together, any web tools that might help me?
+ 
+What are my options if I want a simple web app to help me organize and schedule meeting times?
+ 
+I often need to find a time which works for everyone in our team to meet, is there a service on the net that might make this more efficient?
+ 
+*
+ 
+Finding a time for a meeting, is there an application online for this?
+ 
+I need to schedule meetings, can some web app help me?
+ 
+How do I secure a good time slot for a meeting using a web app?
+ 
+Is there any app on the internet that might help me organize meeting times for a group of people?
+ 
+Find a time to schedule meetings via a web app.
+ 
+I need to make a simple sequence diagram, nothing fancy, are there any web tools I could use?
+ 
+I don't need all the complexities of microsoft visio, is there maybe a web app for drawing simple diagrams?
+ 
+Are there any web based alternatives to professional diagram drawing software?
+ 
+I find myself often having to draw very simple diagrams, is there perhaps a web service that I could use for this?
+ 
+While offering docs and spreadsheets, there is no diagramming software online from google, is there another online tool that I could use to quickly draw some simple stuff I need?
+ 
+*
+ 
+Is there any online tool to make a sequence diagram?
+ 
+I'd like to draw a sequential diagram, is there an online tool for this.
+ 
+I need to draw a sequence diagram, but I dont want to use visio, are there any online tools?
+ 
+In what online tool can I draw simple diagrams.
+ 
+I need an online tool to make a sequence diagram.
+ 
+Is there a way to share bookmarks across different computers?
+ 
+Can I somehow access my favorites and bookmarks from another computer without having to set everything up again?
+ 
+How can I make my bookmarks accesible from more than one computer?
+ 
+Is there an option to store my favourites and bookmarks information in the cloud so I can access it from various different devices?
+ 
+I'd like to be able to share my favourites settings across different browsers?
+ 
+*
+ 
+Sharing bookmarks or favorites across different computers?
+ 
+How can I transfer my bookmarks from one computer to another?
+ 
+Transfering bookmarks and favorites to a new computer?
+ 
+Moving my bookmarks to a new computer.
+ 
+Getting my bookmarks and favorites from my old computer when getting a new one.
+ 
+What are some good online radio apps?
+ 
+Can I listen to music directly online, can you tell me some good sites to do this?
+ 
+I'd like a customizable application online for playing my favourite songs?
+ 
+Is there an online app where I can have playlists with my favourite songs and listen to them online?
+ 
+Can you recommend some cloud based applications for listening to music?
+ 
+*
+ 
+Online radio music apps.
+ 
+Listening to radio online.
+ 
+Is there a online app for listening radio that is really personalizable?
+ 
+How can I listen to radio online?
+ 
+Any online radio app with lots of personalization options?
+ 
+Can I list the files that dropbox is syncing at this moment?
+ 
+I'd like to find out which files are currently being synced on my dropbox, how can I do this?
+ 
+What is the easiest way to get the files that are being synced at the current time?
+ 
+Is there a way to determine which files my dropbox service is syncing at any particular moment?
+ 
+How can I see which files are currently being synced?
+ 
+*
+ 
+I need to know which files are being synced.
+ 
+How to know which files dropbox is syncing.
+ 
+Can I find out what dropbox is currently syncing.
+ 
+Figuring out which files dropbox is downloading.
+ 
+Can dropbox report which files are syncing?
+ 
+I'd like to export my logs from google chat, how do I do this?
+ 
+Can I somehow download all my chats from google as text files?
+ 
+I'd like to save my google chat text, how can I do this?
+ 
+Exporting google chat logs.
+ 
+Is there a way to download all the text I've ever written in google chat?
+ 
+*
+ 
+I need to download my chat logs from google, how do i do this?
+ 
+How do I download all the text I have in my google chat?
+ 
+I need to save the entire text I wrote into my google chat, what's the easiest way to do this?
+ 
+What's the best way to export and download my chat logs from google?
+ 
+I'd like to export all text I've written into google chat (for backup purposes), how do I do this?
+ 
+Searching for keywords that contain special chars on google.
+ 
+I have some program code with special chars that I want to search for on google but the results are really bad, what can I do?
+ 
+Is it true that google completely ignores all punctuation?
+ 
+How can I search for a string containing specific chars such as + or - on google search?
+ 
+Why doesn't google work when I enter punctuation chars and such?
+ 
+*
+ 
+Special characters in google search.
+ 
+Specific characters (e.g. punctuation) are ignored in google search, is there a way to fix this?
+ 
+Finding a keyword containing special chars in google search.
+ 
+How are special characters handled by google search?
+ 
+How can I find a word that has special chars in google search?
+ 
+I'm looking for a site that would allow people to collaborate on translation tasks?
+ 
+Is there a website where a crowd of translators could work together?
+ 
+Is there a website where people can translate together?
+ 
+Translation is done much faster when several people can collaborate, is there a website to suppor this?
+ 
+I'm looking for a social translation web site, is there any on the web?
+ 
+*
+ 
+Is there a social translation website somewhere?
+ 
+Is there a web site where people might collaborate on translation tasks?
+ 
+I'm looking for a web app that would allow translator to translate together.
+ 
+Collaborative translation website.
+ 
+Internet app for collaboration of a group of translators on a translation task.
+ 
+Is there a way to backup all my facebook private messages by downloading them?
+ 
+I'd like to save all my facebook private messages on my computer locally, how can I do this?
+ 
+What is the easiest way to export all my pm's from fb?
+ 
+I've written a lot of stuff as pm's on facebook, now I wanna browse it all on my local computer, is threre a way to do this?
+ 
+How do I transfer all my private msg's from facebook to my computer?
+ 
+*
+ 
+Is it possible to download all of my messages from facebook?
+ 
+I'd like to download all my fb messages.
+ 
+I want to make a backup of all my facebook messaes, how do I do this?
+ 
+Can I export all my private messages from facebook into my private backup?
+ 
+Downloading and backing up my private messages from facebook.
+ 
+I'd like to monitor who has access to my google drive folders, where can I find this information?
+ 
+Where can I see which accounts have access privileges to my google drive folders?
+ 
+Monitor access rights for my google drive directories?
+ 
+I have some sensitive data in one of my goole drive dirs, how can I be sure who is eligible to see it?
+ 
+What are my options for seeing who can access my data that I've got in a gd folder?
+ 
+*
+ 
+I'd like to know who has access to my google drive folders.
+ 
+How can I tell who can access my files and folders on gd.
+ 
+I need to know access rights for people to my google drive documents.
+ 
+How can I find out which users can view or change my directories on google drive.
+ 
+Is it possible to monitor who is able to access my stuff on gd?
+ 
+Is there a way to turn off the notification alert sound in google hangouts?
+ 
+I find the sound that notifies you of something in gho very irritating, is there a way to get rid of it?
+ 
+I'd like to mute the notification sound in GHO, not really disable notifications all together just mute the sound?
+ 
+Is it possible to remove the sound that google hangouts produces when you get notifications?
+ 
+I'd like my notifications on google hangousts to be silent, where is the option for this?
+ 
+*
+ 
+Turning off GHO notification alert?
+ 
+I do not want to get audio notification when someone contacts me on google hangouts, can I turn it off?
+ 
+Disabling notifications for when someone contacts me on GHO.
+ 
+I'd like to mutre the notification sound on google hangouts.
+ 
+Disabling GHO notification sounds.
+ 
+How does facebook generate results when you search for a name?
+ 
+What algorithm does facebook use for searching people?
+ 
+What is the idea behind people search on facebook?
+ 
+What methodology does facebook employ in its search engine for users?
+ 
+How does facebook rank persons in the result list when i search?
+ 
+*
+ 
+What does facebook do when you search for a name?
+ 
+How does facebook handle searches for a name?
+ 
+What happens behind the scenes when zou search for a name on facebook?
+ 
+What algorithm does facebook use when displaying results of a search by name?
+ 
+When you search for a name on facebook, how is the result list generated?
+ 
+I'm looking for an online tool that would allow me to keep track of books.
+ 
+I have a large movie collection, is there an app on the web that would allow me to manage it?
+ 
+Are there any online tools for collection management, in particular books.
+ 
+How can I easily keep in order what books and movies I have and catalog them. Maybe some online tool?
+ 
+I'd like to catalog some movies of mine, is there an app on the web for this?
+ 
+*
+ 
+Web app for cataloging books or movies.
+ 
+Keeping records of books and movies via a web app.
+ 
+Is there some web app the would allow me to manage a movie collection?
+ 
+I have a big collection of novels, is there a web app for managing it?
+ 
+I'm a collector, I need some online software to keep track of all the items in my collections, is there any?
+ 
+Is it possible to disable automatic saving of documents on google docs?
+ 
+How can I stop google documents from saving my work every 3 seconds?
+ 
+I'm getting glitches in google docs because is trying to save my document too often, is there a workaround for this?
+ 
+I'm a bit annoyed by google docs being saved extremely often, is there an option to fix this?
+ 
+Google documents performs saving far too much, I'd like to stop that.
+ 
+*
+ 
+Google is auto saving my document too often, can I disable this feature?
+ 
+Removing the auto save feature from google docs?
+ 
+Making google docs save my documents less often?
+ 
+Automated saving every few seconds in google docs bothers me, how do I disable this?
+ 
+Is it possible to prevent google from automatically saving my document every few secs?
+ 
+Is it possible to set ownership of all files and folders within a given gd folder?
+ 
+I'd like to recursively set ownership on google drive, is this possible?
+ 
+How to change the owner of everything inside a google drive folder?
+ 
+What is the best way to recursively set the user who owns files and folders on GD?
+ 
+Is it an option to specify owners of many files within the same google drive folder at the same time?
+ 
+*
+ 
+Is it possible to recursively set ownership for a gd folder?
+ 
+I need to set ownership for all files an folders in a particular google drive folder, is there a way?
+ 
+I'd like to change the owner of every google document in a directory.
+ 
+Specifying ownership of file on google drive recursively.
+ 
+Chaning the owner of the entire contents of a google drive directory.
+ 
+Are there online language interpreters I could use to test my programming skills?
+ 
+I'd like to see how well I can code, I hear there are websites where you can code online, which are they?
+ 
+Are there any places online where I could program and get results to see how well I'm doing?
+ 
+I'm looking for online interpreting sites, where I could write in my code and see the results in order to practice.
+ 
+Is there  an app that would let me write interpreted program code online and execute it in an online environment?
+ 
+*
+ 
+Online app for testing my programming abilities.
+ 
+Web sites for practicing coding onilne.
+ 
+Sites where there are online interpreters to test my code in.
+ 
+Are there any sites where I can code online and get my interpreted code executed.
+ 
+Polishing my programming and coding skills in an online setting.
+ 
+Can I add the recipient of an e-mail to my gmail contacts?
+ 
+What is the easiest way to add the person the mail was sent to (in the to or cc fields) to my google contacts?
+ 
+I can add to my gmail contact list the person who sent me the mail, can I do the same for the person in CC?
+ 
+How can I put e-mails in the "TO" section of a gmail message into my list of contacts.
+ 
+Creating new contact entries from addresses in to TO or CC parts of my gmail message.
+ 
+*
+ 
+Add one of the recepients of a mail I got to my google contacts?
+ 
+How can I add a recepient of a mail as a new contact in gmail?
+ 
+Inserting into my gmail contact list a person in the CC field of a mail i got.
+ 
+Creating a contact from a person in the CC field of a mail.
+ 
+I'd like to add a recepient of one of my mails (in cc) to my gmail contacts.
+ 
+Is it possible to manually construct a message that will be marked as spam by gmail?
+ 
+I'm testing my various mail categories, how can I test my spam category?
+ 
+I'd like to create a message that will be filtered by the google spam filter?
+ 
+How could i deliberately create  a gmail mail that is spam according to google's filters?
+ 
+I'd like to try out my spam filter on google, what type of message should I send to see if it's working?
+ 
+*
+ 
+Is it possible to intentionally make a message that will be marked as spam in gmail?
+ 
+Purposefully create a mail that will be considered spam by gmail.
+ 
+How could I make a message that will be classified into the spam category by the gmail spam filter?
+ 
+I need to make sure that my mail will be marked as spam in gmail, is there way to do this?
+ 
+Intentionally constructing a message that will be considered spam by gmail.
+ 
+How do I insert a caption to an image in google docs?
+ 
+I want to have a small piece of text describing a picture in my google document, how do I do this?
+ 
+I'd like to caption a photo in google docs , what's the easiest way to do this while maintaing text wrap?
+ 
+Is there a way to add a small text box beneath an image in google docs with a description?
+ 
+How do I add captions to my pictures in google docs without using tables?
+ 
+*
+ 
+Is it possible to add a caption to a google docs image.
+ 
+I'd like to put some text as a caption to a google docs picture.
+ 
+Captioning a photo in google docs.
+ 
+Adding some descriptive text beneath an image in google docs.
+ 
+Inserting a caption beneath a picture in google docs.
+ 
+Is it possible to encrypt gmail messages?
+ 
+I'm very worried someone might read my important mails, what security features does gmail offer?
+ 
+How secure is gmail anyway? Is it possible to send mail that is locked with a key?
+ 
+I'd like to use PGP with gmail, is this an option?
+ 
+How do I make sure that my mails sent through gmail can't be read by third parties? Any advice?
+ 
+*
+ 
+Encrypting gmail messages.
+ 
+I'd like to use encryption when sending gmail messages.
+ 
+PGP in gmail.
+ 
+How do I send secured (encrypted) mails through gmail?
+ 
+Email encryption gmail.
+ 
+Is it possible to measure the distance between two points on google maps?
+ 
+I want to know how far two points on google maps are, how do I go about this?
+ 
+How can i find how far apart two pins on a google maps map are?
+ 
+What is the easiest way to get how far it is from point A to point B using google maps?
+ 
+I've planned a route for myself on google maps, where can I see how long it is?
+ 
+*
+ 
+Measuring distance in google maps?
+ 
+How do I measure how long my route on google maps is (in km).
+ 
+Is it possible to get the air distance between two points on google maps?
+ 
+Finding out how far my destination is on google maps.
+ 
+I need to know the distance of two places according to google maps.
+ 
+Is it possible to move contacts from my old google account to my new one?
+ 
+Is there a drag  & drop option for transferring some of my google contacts to my other account?
+ 
+I've made a new google account, I'd like to move some of my old contacts to this account. What are my options?
+ 
+Is there an option in the interface to switch some of my contacts from one google account to another? I only want this for some contacts not all.
+ 
+What are the possibilities of transfering contact data between different google accounts.
+ 
+*
+ 
+Moving google contacts from my account ot a new one.
+ 
+Is it possible to transfer contacts from one google account to another.
+ 
+I've made a new google account, can I import contacts from my old one?
+ 
+Transferring data from my old google account to a new one.
+ 
+I have two google accounts, i'd like to move my contacts from one to the other, is this possible?
+ 
+I'm trying out the new google maps interface, how can I add more than one destination?
+ 
+I can't figure out how to add multiple destination points in the new google maps?
+ 
+Google maps classic supported as many destinations as I wanted, is this feature gone in the new version?
+ 
+What is the easiest way to add additional intermediate points I want to include in my route on google maps.
+ 
+I have some intermediate points on my google maps route where I need to make some pickups, can I somehow force my route to go through the points?
+ 
+*
+ 
+Multiple destinations in google maps.
+ 
+Is it possible to have more than just one destination on google maps?
+ 
+I need to stop at a few points between my starting point and my destination, do google maps support this?
+ 
+Having more than one destination in google maps.
+ 
+Having many destinations in google maps.
+ 
+How secure is my sensitive data on dropbox?
+ 
+I'd like to know how tight dropbox' security is against attackers?
+ 
+Is my data safe on dropbox or could someone steal it?
+ 
+Is there a threat of malicious users eavesdroping my files while they are being transfered to dropbox?
+ 
+I'd like to use dropbox but I have concerns that my information might get stolen.
+ 
+*
+ 
+Is sensitive data on dropbox secure?
+ 
+Does Dropbox have good security against attackers?
+ 
+How safe is my data on dropbox?
+ 
+Is there a security threat to dropbox?
+ 
+Are there security threats to dropbox?
+ 
+How do I get the m dash in google docs.
+ 
+While in most other editors I can just type two hyphens to get an em-dash in google docs this doesnt work?
+ 
+What is the easiest way to get the m dash in google docs?
+ 
+I need the longer dash (em-dash) in google docs very often, but I cant seem to find a fast way to get it.
+ 
+Can I make the google docs automatically replace a double dash I type with the longer dash?
+ 
+*
+ 
+Is it possible to get the em dash in google docs?
+ 
+How do I get an m dash in google docs?
+ 
+Do google docs support the longer style dash (em dash).
+ 
+I desperately need the em dash in google docs how do I get it?
+ 
+I require the longer (em) dash in google docs, is this doable?
