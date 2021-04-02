@@ -112,7 +112,7 @@ np.fill_diagonal(TFIDF_array_full, 0)
 
 
 ####################################################################
-#data preparation for other 2 models
+#further data preparation so representations of other 2 models can be made
 with open('Data/cleaned_5.txt', 'w') as f:
     for item in word_list5:
         f.write("%s\n" % item)
@@ -163,26 +163,26 @@ np.fill_diagonal(sim_matrix_self_full, 0)
 
 #################################################################### part B and C WITHOUT STOPWORD REMOVAL
 ####################################################################
-#text representation and matrix creation TF/IDF (so part B and C)
+#text representation and matrix creation TF/IDF
 # TF/IDF vectorizer working
 tfidf_vectorizer = TfidfVectorizer()
 word_list4_corrected = [" ".join(x) for x in word_list4]
 
-#vectorize sentence list
+#vectorize sentence list for representation
 vect = TfidfVectorizer(min_df=1, stop_words="english")
 tfidf_nostop = vect.fit_transform(word_list4_corrected)
 
-#create similarity matrix which shows pairwise similarity, #rows/columns == #sentences
+#create similarity matrix showing pairwise similarity based on cosine similarity, #rows/columns == #sentences
 pairwise_similarity = tfidf_nostop * tfidf_nostop.T
 TFIDF_array_nostop=pairwise_similarity.toarray()
 
-#fill up diagonal where values are 1
+#fill up diagonal where values with 0 for making search of top n in part D easier
 np.fill_diagonal(TFIDF_array_nostop, 0)
 
 
 
 ####################################################################
-#data preparation for other 2 models
+#further data preparation so representations of other 2 models can be made
 with open('Data/cleaned_4.txt', 'w') as f:
     for item in word_list4:
         f.write("%s\n" % item)
@@ -195,16 +195,15 @@ for line in lines:
     questions.append(line)
 
 # Get sentence vectors for questions
-#print all vectors##############################
 for i in range(0, len(questions)):
     question = questions[i]
     a_nostop=ft.get_sentence_vector(question)
 
-# Cosine similarity matrix for pre-trained
+# create cosine similarity matrix for pre-trained using fasttext
 vectors = [ft.get_sentence_vector(question) for question in questions]
 sim_matrix_pre_nostop = cosine_similarity(vectors, vectors)
 
-#fill up diagonal where values are 1
+#fill up diagonal where values with 0 for making search of top n in part D easier
 np.fill_diagonal(sim_matrix_pre_nostop, 0)
 
 
@@ -213,18 +212,17 @@ np.fill_diagonal(sim_matrix_pre_nostop, 0)
 model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
 
 # Get sentence vectors questions
-#print all vectors##############################
 for question in questions:
     a_nostop=model.get_sentence_vector(question)
 
-# Cosine similarity matrix for self trained
+# Cosine similarity matrix for self trained using fasttext
 vectors = [model.get_sentence_vector(question) for question in questions]
 sim_matrix_self_nostop = cosine_similarity(vectors, vectors)
 
-#fill up diagonal where values are 1
+#fill up diagonal where values with 0 for making search of top n in part D easier
 np.fill_diagonal(sim_matrix_self_nostop, 0)
 
-#################################################################### part B and C WITHOUT LEMMATISATION
+#################################################################### part B and C WITHOUT LEMMATISATION AND WIHTOUT STOPWORD REMOVAL
 ####################################################################
 #text representation and matrix creation TF/IDF (so part B and C)
 # TF/IDF vectorizer working
@@ -239,13 +237,13 @@ tfidf_nolem = vect.fit_transform(word_list3_corrected)
 pairwise_similarity = tfidf_nolem * tfidf_nolem.T
 TFIDF_array_nolem=pairwise_similarity.toarray()
 
-#fill up diagonal where values are 1
+#fill up diagonal where values with 0 for making search of top n in part D easier
 np.fill_diagonal(TFIDF_array_nolem, 0)
 
 
 
 ####################################################################
-#data preparation for other 2 models
+#further data preparation so representations of other 2 models can be made
 with open('Data/cleaned_3.txt', 'w') as f:
     for item in word_list3:
         f.write("%s\n" % item)
@@ -258,7 +256,6 @@ for line in lines:
     questions.append(line)
 
 # Get sentence vectors for questions
-#print all vectors##############################
 for i in range(0, len(questions)):
     question = questions[i]
     a_nostop=ft.get_sentence_vector(question)
@@ -267,7 +264,7 @@ for i in range(0, len(questions)):
 vectors = [ft.get_sentence_vector(question) for question in questions]
 sim_matrix_pre_nolem = cosine_similarity(vectors, vectors)
 
-#fill up diagonal where values are 1
+#fill up diagonal where values with 0 for making search of top n in part D easier
 np.fill_diagonal(sim_matrix_pre_nolem, 0)
 
 
@@ -276,7 +273,6 @@ np.fill_diagonal(sim_matrix_pre_nolem, 0)
 model = fasttext.train_unsupervised('Data/stackExchange-FAQ.xml', dim=100)
 
 # Get sentence vectors questions
-#print all vectors##############################
 for question in questions:
     a_nostop=model.get_sentence_vector(question)
 
@@ -284,12 +280,12 @@ for question in questions:
 vectors = [model.get_sentence_vector(question) for question in questions]
 sim_matrix_self_nolem = cosine_similarity(vectors, vectors)
 
-#fill up diagonal where values are 1
+#fill up diagonal where values with 0 for making search of top n in part D easier
 np.fill_diagonal(sim_matrix_self_nolem, 0)
 
 
 ################################################################# part D
-#create dataframe of questions with their qapair
+#create dataframe of questions with their corresponding qapair
 df=pd.read_csv("Data/qapairs to csv.csv")
 list1=df.iloc[:,0].tolist()
 list2=list(range(0,1249))
@@ -297,16 +293,16 @@ dict={'qapair':list1,'question':list2}
 qapair_df=pd.DataFrame(dict)
 print(qapair_df)
 
-#define functions to calculate precision based on top N
+#define function that calculates precision based on specified array and top N
 def precision_top(array, n):
     #make upper triangular part of array 0 to remove duplicates
     array=np.tril(array)
-    #find indices of questions with highest similarity
+    #find indices of questions with highest similarity based on given N
     N=n
     a_1d = array.flatten()
     idx_1d = a_1d.argsort()[-N:]
     x_idx, y_idx = np.unravel_index(idx_1d, array.shape)
-    #determine precision
+    #determine precision and print the performance
     a = 0
     for i in range(0, N):
         if qapair_df[qapair_df['question'] == x_idx[i]]['qapair'].values == qapair_df[qapair_df['question'] == y_idx[i]]['qapair'].values:
@@ -314,7 +310,7 @@ def precision_top(array, n):
     precision=a/N
     print("top", N, "precision is:", precision)
 
-
+#specify all arrays and their top N of which a precision calculation is required
 print('precision for fully preprocessed TF/IDF top 5, 3 and 1 respectively are: ')
 precision_top(TFIDF_array_full, 5)
 precision_top(TFIDF_array_full, 3)
